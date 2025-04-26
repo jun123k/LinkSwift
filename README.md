@@ -17,6 +17,12 @@
    不仅能够精简网盘界面，还支持美化网盘界面主题色
 </p>
 
+## 安装
+- LinkSwift
+  https://github.moeyy.xyz/https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js
+- （改）百度网盘会员青春版
+  https://github.moeyy.xyz/https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
+
 ## 说明
 
 基于[【网盘直链下载助手】](https://www.baiduyun.wiki/install.html)修改
