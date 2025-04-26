@@ -2,8 +2,8 @@
 // @name        （改）百度网盘会员青春版
 // @author      Hmjz100、Gwen
 // @namespace   github.com/hmjz100
-// @version     1.2.6
-// @description 《也许同类型中最好用？》系列 - 显示百度网盘身份信息为会员，支持使用视频倍速、生成字幕、下载AI字幕、关闭AI聊天、修改头像、修改用户名等功能，自定义程度超高！需要修改头部代码来配置显示内容（非常简单！）
+// @version     1.2.6.1
+// @description 《也许同类型中最好用？》系列、LinkSwift 官方扩展 - 显示百度网盘身份信息为会员，支持使用视频倍速、生成字幕、下载AI字幕、关闭AI聊天、修改头像、修改用户名等功能，自定义程度超高！需要修改头部代码来配置显示内容（非常简单！）
 // @icon        data:image/png;base64,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
 // @license     MIT
 // @match       *://pan.baidu.com/*
@@ -17,6 +17,22 @@
 
 (function () {
 	'use strict';
+
+	/*
+	unsafeWindow 检测
+	代码为自创
+	*/
+	if (typeof unsafeWindow === 'undefined') {
+		window.unsafeWindow = window;
+	}
+
+	/*
+	防止代码因其他原因被执行多次
+	代码出自 “Via 轻插件”，作者谷花泰
+	*/
+	let key = encodeURIComponent('百度网盘会员青春版:主代码');
+	if (window[key]) return;
+	window[key] = true;
 
 	var user = {
 		// 以下设置项中，常规项目（就是以//开头注释的项目）除非特殊说明，否则一般 0 为关闭，1 为开启
@@ -268,86 +284,108 @@
 		} else if (url.includes('/api/streaming') && url.includes('M3U8_SUBTITLE_SRT')) {
 			this.addEventListener('readystatechange', function () {
 				if (this.readyState == 4 && this.responseText.includes('#EXT-X-MEDIA:TYPE=SUBTITLES')) {
-					let res = this.response
-					if (user.debug === 1 || user.debug === 2) console.log("【（改）百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", res)
+					let res = this.response;
+					console.log("【（改）百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", res);
 
-					var nameMatch = this.responseText.match(/NAME="([^"]+)"/);
-					var aiSubMatch = this.responseText.match(/AI-SUB=([^,\s]+)/);
-					var urlMatch = this.responseText.match(/(https?:\/\/[^\s]+)/);
+					// 使用正则表达式提取所有字幕信息
+					var subsMatch = [...res.matchAll(/#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="([^"]+)",DEFAULT=[^,]+,AUTOSELECT=[^,]+,LANGUAGE="([^"]+)",VIDEO-LAN=[^,]+,AI-SUB=\s*([^,\s]+)\s*(https?:\/\/[^\s]+)/g)];
 
-					if (nameMatch && urlMatch && aiSubMatch && aiSubMatch[1] === 'YES') {
-						var subName = nameMatch[1];
-						var aiSub = aiSubMatch[1] === 'YES' ? 'AI-' : '';
-						var subUrl = urlMatch[0];
-						waitForKeyElements(`aside.vp-aside div.vp-tabs div.vp-tabs__content`, function (element) {
-							var button = $(`<span id="downloads"><h1>[独家功能] AI字幕均为逐句分割而非整段分割</h1><br/><button class="downloadSubtitle" data-href="${subUrl}" data-name="${aiSub}${subName}.srt"><i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> ${aiSub}${subName} (Blob下载,自动命名)</button><a class="downloadSubtitle" href="${subUrl}" title="默认命名是乱码，别忘了加上后缀 .srt 哦" target="_blank"><i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> ${aiSub}${subName} (打开链接,手动命名)</a></span>`)
-							button.find("button").on('click', async function (element) {
-								if (!$(this).data('href')) return;
-								element.preventDefault();
-								element = $(this)
-								let ins = {};
-								let progress = {};
-								let index = element.data('index');
+					var subsHTML = '';  // 用于存储所有按钮的HTML
 
-								element.prop('disabled', true);
+					// 遍历所有字幕项，生成对应的下载按钮
+					let index = 1
+					subsMatch.forEach(subInfo => {
+						console.log(subInfo)
+						var subName = subInfo[1];        // 字幕名称
+						var language = subInfo[2];       // 字幕语言
+						var aiSub = subInfo[3] === 'YES' ? 'AI-' : ''; // 判断是否为AI字幕
+						var subUrl = subInfo[4];         // 字幕下载地址
 
-								ins[index] = setInterval(function () {
-									let prog = +progress[index] || 0;
-									element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 已下载 ' + prog + "%");
-								}, 10);
+						// 生成按钮的HTML
+						subsHTML += `<br/>
+						<button class="downloadSubtitle" data-href="${subUrl}" data-name="${aiSub}${subName}.srt" data-index="${index}">
+							<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 
+							${aiSub}${subName} (Blob下载,自动命名)
+						</button>
+						<a class="downloadSubtitle" href="${subUrl}" title="默认命名是乱码，别忘了加上后缀 .srt 哦" target="_blank">
+							<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 
+							${aiSub}${subName} (打开链接,手动命名)
+						</a>`;
+						index++;
+					});
 
-								try {
-									let response = await unsafeWindow.fetch(element.data('href'));
-									if (!response.ok) throw new Error('网络响应失败');
+					// 等待指定的元素加载完后，插入生成的所有按钮
+					waitForKeyElements(`aside.vp-aside div.vp-tabs div.vp-tabs__content`, function (element) {
+						element.before(`<span id="downloads"><h1>[独家功能] AI字幕均为逐句分割而非整段分割</h1>${subsHTML}</span>`);  // 将所有按钮HTML插入到指定元素之前
 
-									let totalSize = response.headers.get('Content-Length') || 0;
-									let reader = response.body.getReader();
-									let receivedLength = 0;
-									let chunks = [];
+						// 为每个按钮添加点击事件
+						$('#downloads button.downloadSubtitle').on('click', async function (element) {
+							if (!$(this).data('href') || !$(this).data('name')) return;
+							element.preventDefault();
+							element = $(this);
+							let oriHTML = element.html()
+							let ins = {};
+							let progress = {};
+							let index = element.data('index');
 
-									while (true) {
-										const { done, value } = await reader.read();
-										if (done) break;
-										chunks.push(value);
-										receivedLength += value.length;
-										progress[index] = ((receivedLength / totalSize) * 100).toFixed(1);
-									}
+							element.prop('disabled', true);
 
-									const blob = new Blob(chunks);
+							ins[index] = setInterval(function () {
+								let prog = +progress[index] || 0;
+								element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 已下载 ' + prog + "%");
+							}, 10);
 
-									clearInterval(ins[index]);
-									progress[index] = 100;
-									element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 下载完成,浏览器弹框中')
+							try {
+								let response = await fetch(element.data('href'));
+								if (!response.ok) throw new Error('网络响应失败');
 
-									const url = URL.createObjectURL(blob);
-									const a = document.createElement('a');
-									a.href = url;
-									a.download = `${element.data('name')}`;
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
+								let totalSize = response.headers.get('Content-Length') || 0;
+								let reader = response.body.getReader();
+								let receivedLength = 0;
+								let chunks = [];
 
-									setTimeout(() => {
-										URL.revokeObjectURL(url);
-										document.body.removeChild(a);
-									}, 1000);
-
-									setTimeout(function () {
-										element.html(`<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> ${aiSub}${subName} (Blob下载,自动命名)`);
-										$(this).prop('disabled', false);
-									}.bind(this), 3000);
-								} catch (error) {
-									clearInterval(ins[index]);
-									console.error("下载失败:", error);
-									element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 下载失败,点击重试?');
-									$(this).prop('disabled', false).one('click', async function () {
-										$(this).trigger('click');
-									});
+								while (true) {
+									const { done, value } = await reader.read();
+									if (done) break;
+									chunks.push(value);
+									receivedLength += value.length;
+									progress[index] = ((receivedLength / totalSize) * 100).toFixed(1);
 								}
-							})
-							element.before(button)
-						})
-					}
+
+								const blob = new Blob(chunks);
+
+								clearInterval(ins[index]);
+								progress[index] = 100;
+								element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 下载完成,浏览器弹框中');
+
+								const url = URL.createObjectURL(blob);
+								const a = document.createElement('a');
+								a.href = url;
+								a.download = `${element.data('name')}`;
+								a.style.display = 'none';
+								document.body.appendChild(a);
+								a.click();
+
+								setTimeout(() => {
+									URL.revokeObjectURL(url);
+									document.body.removeChild(a);
+								}, 1000);
+
+								setTimeout(function () {
+									element.html(oriHTML);
+									$(this).prop('disabled', false);
+								}.bind(this), 3000);
+							} catch (error) {
+								clearInterval(ins[index]);
+								console.error("下载失败:", error);
+								element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 下载失败,点击重试?');
+								$(this).prop('disabled', false).one('click', async function () {
+									$(this).trigger('click');
+								});
+							}
+						});
+					});
+
 				}
 			});
 			originalOpen.apply(this, arguments);
@@ -509,7 +547,7 @@
 			background: #0095ff;
 			color: #fff;
 			padding: 5px;
-			margin: 0 0 20px 20px;
+			margin: 0 0 15px 20px;
 			width: fit-content;
 		}
 		a.downloadSubtitle:hover, a.downloadSubtitle:disabled, button.downloadSubtitle:hover, button.downloadSubtitle:disabled {
@@ -518,7 +556,7 @@
 	`)
 
 	// 禁止分析网页信息
-	unsafeWindow.Image = function () {
+	if (user.analytics === 0) unsafeWindow.Image = function () {
 		const img = new Image();
 		return new Proxy(img, {
 			set(target, prop, value) {
@@ -536,7 +574,7 @@
 		});
 	};
 	const originalCreateElement = document.createElement;
-	unsafeWindow.document.createElement = function (tagName) {
+	if (user.analytics === 0) unsafeWindow.document.createElement = function (tagName) {
 		const element = originalCreateElement.call(unsafeWindow.document, tagName);
 		if (tagName.toLowerCase() === 'img') {
 			Object.defineProperty(element, 'src', {
