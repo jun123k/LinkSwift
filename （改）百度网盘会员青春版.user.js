@@ -2,7 +2,7 @@
 // @name        （改）百度网盘会员青春版
 // @author      Hmjz100、Gwen
 // @namespace   github.com/hmjz100
-// @version     1.2.6.1
+// @version     1.2.6.2
 // @description 《也许同类型中最好用？》系列、LinkSwift 官方扩展 - 显示百度网盘身份信息为会员，支持使用视频倍速、生成字幕、下载AI字幕、关闭AI聊天、修改头像、修改用户名等功能，自定义程度超高！需要修改头部代码来配置显示内容（非常简单！）
 // @icon        data:image/png;base64,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
 // @license     MIT
@@ -30,9 +30,11 @@
 	防止代码因其他原因被执行多次
 	代码出自 “Via 轻插件”，作者谷花泰
 	*/
-	let key = encodeURIComponent('百度网盘会员青春版:主代码');
+	const key = encodeURIComponent('百度网盘会员青春版:主代码');
 	if (window[key]) return;
 	window[key] = true;
+
+	let mount = idontknow("LinkSwiftBaiduYouthMember")
 
 	var user = {
 		// 以下设置项中，常规项目（就是以//开头注释的项目）除非特殊说明，否则一般 0 为关闭，1 为开启
@@ -93,12 +95,12 @@
 					} catch (e) {
 						res = this.response, oriRes = this.response
 					}
-					res.login_info.vip_type && user.vip === 1 && user.previous === 0 ? res.login_info.vip_type = `${user.svip === 1 ? 2 : 1}1` : ""
-					res.login_info.vip_identity && user.vip === 1 && user.previous === 0 ? res.login_info.vip_identity = Number(`${user.svip === 1 ? 2 : 1}1`) : ""
-					res.login_info.vip_level && user.vip === 1 && user.previous === 0 ? res.login_info.vip_level = user.level : ""
-					res.login_info.vip_point && user.vip === 1 && user.previous === 0 ? res.login_info.vip_point = user.point : ""
+					res?.login_info?.vip_type && user.vip === 1 && user.previous === 0 ? res.login_info.vip_type = `${user.svip === 1 ? 2 : 1}1` : ""
+					res?.login_info?.vip_identity && user.vip === 1 && user.previous === 0 ? res.login_info.vip_identity = Number(`${user.svip === 1 ? 2 : 1}1`) : ""
+					res?.login_info?.vip_level && user.vip === 1 && user.previous === 0 ? res.login_info.vip_level = user.level : ""
+					res?.login_info?.vip_point && user.vip === 1 && user.previous === 0 ? res.login_info.vip_point = user.point : ""
 					res.login_info["photo_url"] && user.photo ? res.login_info["photo_url"] = user.photo : ""
-					res.login_info.username && user.name ? res.login_info.username = user.name : ""
+					res?.login_info?.username && user.name ? res.login_info.username = user.name : ""
 					if (user.debug === 1 || user.debug === 2) console.log("【（改）百度网盘会员青春版】Hook XHR", "\n请求地址:", url, "\n原始回复:", oriRes, "\n修改回复:", res)
 					Object.defineProperty(this, "responseText", {
 						writable: true,
@@ -290,39 +292,32 @@
 					// 使用正则表达式提取所有字幕信息
 					var subsMatch = [...res.matchAll(/#EXT-X-MEDIA:TYPE=SUBTITLES,GROUP-ID="subs",NAME="([^"]+)",DEFAULT=[^,]+,AUTOSELECT=[^,]+,LANGUAGE="([^"]+)",VIDEO-LAN=[^,]+,AI-SUB=\s*([^,\s]+)\s*(https?:\/\/[^\s]+)/g)];
 
-					var subsHTML = '';  // 用于存储所有按钮的HTML
+					var subsHTML = $(`<span class="${mount}"><h1>[独家功能] AI字幕均为逐句分割而非整段分割</h1></span>`);  // 用于存储所有按钮的HTML
 
 					// 遍历所有字幕项，生成对应的下载按钮
 					let index = 1
 					subsMatch.forEach(subInfo => {
 						console.log(subInfo)
-						var subName = subInfo[1];        // 字幕名称
-						var language = subInfo[2];       // 字幕语言
-						var aiSub = subInfo[3] === 'YES' ? 'AI-' : ''; // 判断是否为AI字幕
-						var subUrl = subInfo[4];         // 字幕下载地址
+						var subName = subInfo[1]; // 字幕名称
+						var language = subInfo[2]; // 字幕语言
+						var aiSub = subInfo[3] === 'YES' ? 'AI-' : ''; // 是否为AI生成
+						var subUrl = subInfo[4]; // 字幕下载地址
 
-						// 生成按钮的HTML
-						subsHTML += `<br/>
-						<button class="downloadSubtitle" data-href="${subUrl}" data-name="${aiSub}${subName}.srt" data-index="${index}">
-							<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 
-							${aiSub}${subName} (Blob下载,自动命名)
-						</button>
-						<a class="downloadSubtitle" href="${subUrl}" title="默认命名是乱码，别忘了加上后缀 .srt 哦" target="_blank">
-							<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 
-							${aiSub}${subName} (打开链接,手动命名)
-						</a>`;
+						let buttons = $(`<div>
+							<button class="downloadSubtitle beta" data-index="${index}" data-name="${aiSub}${subName}.srt" data-url="${subUrl}"><i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i>下载 ${aiSub}${subName} (测试)</button>
+							<a class="downloadSubtitle listener-tip" href="${subUrl}" title="默认命名是乱码，重命名的时候别忘了加上后缀 .srt 哦" data-title="默认命名是乱码，重命名的时候别忘了加上后缀 .srt 哦" target="_blank"><i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i>普通下载 ${aiSub}${subName}</a>
+						</div>`)
+
+						subsHTML.append(buttons);
 						index++;
 					});
 
-					// 等待指定的元素加载完后，插入生成的所有按钮
 					waitForKeyElements(`aside.vp-aside div.vp-tabs div.vp-tabs__content`, function (element) {
-						element.before(`<span id="downloads"><h1>[独家功能] AI字幕均为逐句分割而非整段分割</h1>${subsHTML}</span>`);  // 将所有按钮HTML插入到指定元素之前
-
-						// 为每个按钮添加点击事件
-						$('#downloads button.downloadSubtitle').on('click', async function (element) {
-							if (!$(this).data('href') || !$(this).data('name')) return;
-							element.preventDefault();
-							element = $(this);
+						$(`.${mount}`).remove();
+						element.after(subsHTML);
+						subsHTML.find(".downloadSubtitle.beta").on('click', async function (event) {
+							event.preventDefault();
+							let element = $(this);
 							let oriHTML = element.html()
 							let ins = {};
 							let progress = {};
@@ -332,11 +327,15 @@
 
 							ins[index] = setInterval(function () {
 								let prog = +progress[index] || 0;
-								element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 已下载 ' + prog + "%");
+								if (prog === 0) {
+									element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 正在下载...');
+								} else {
+									element.html('<i class="u-icon-download-bold" style="vertical-align: text-bottom;"></i> 已下载 ' + prog + '%');
+								}
 							}, 10);
 
 							try {
-								let response = await fetch(element.data('href'));
+								let response = await fetch(element.data("url"));
 								if (!response.ok) throw new Error('网络响应失败');
 
 								let totalSize = response.headers.get('Content-Length') || 0;
@@ -361,7 +360,7 @@
 								const url = URL.createObjectURL(blob);
 								const a = document.createElement('a');
 								a.href = url;
-								a.download = `${element.data('name')}`;
+								a.download = element.data("name");
 								a.style.display = 'none';
 								document.body.appendChild(a);
 								a.click();
@@ -384,8 +383,7 @@
 								});
 							}
 						});
-					});
-
+					}, true);
 				}
 			});
 			originalOpen.apply(this, arguments);
@@ -531,12 +529,17 @@
 			border-bottom: 10px solid #d29633 !important;
 		}
 
-		span#downloads h1 {
-			margin-left: 20px;
+		.${mount} {
+			margin: 15px 0 15px 20px;
+			display: grid;
+			grid-gap: 5px;
+		}
+
+		.${mount} h1 {
 			font-size: small;
 		}
 
-		[data-theme="dark"] span#downloads h1 {
+		[data-theme="dark"] .${mount} h1 {
 			color: white;
 		}
 			
@@ -547,8 +550,9 @@
 			background: #0095ff;
 			color: #fff;
 			padding: 5px;
-			margin: 0 0 15px 20px;
 			width: fit-content;
+			white-space: nowrap;
+			text-decoration:none;
 		}
 		a.downloadSubtitle:hover, a.downloadSubtitle:disabled, button.downloadSubtitle:hover, button.downloadSubtitle:disabled {
 			background: #0095ffD0;
@@ -595,7 +599,7 @@
 		return element;
 	};
 
-	waitForKeyElements(`.vp-video__control-bar--playback-rates button`, function (element) {
+	waitForKeyElements(`.vp-video__control-bar--playback-rates button, vp-video__control-bar--video-subtitles-select-item`, function (element) {
 		element.on('click', function () {
 			XMLHttpRequest.prototype.open = originalOpen;
 			setTimeout(function () {
@@ -786,52 +790,73 @@
 		})
 	}, 1)
 
+	/**
+	* waitForKeyElements
+	* @description 监测动态加载的 DOM 元素并在元素出现时执行回调函数。适用于 AJAX/iframe 内容。
+	* @param {string} selectorTxt - jQuery 选择器字符串，用于定位目标元素
+	* @param {function} actionFunction - 回调函数，会将 jQuery 元素对象作为参数返回。在函数中 `return true` 可以取消后续查找
+	* @param {boolean} [bWaitOnce=true] - 找到元素后是否仅执行一次回调函数
+	* @param {string} [iframeSelector] - 可选，iframe 元素选择器
+	* @example
+	* waitForKeyElements(".comments", (jNode) => {
+	*   jNode.text("内容已修改");
+	*   // return true; // 取消后续检测
+	* });
+	* @requires jQuery
+	*/
 	function waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector) {
-		function findInShadowRoots(root, selector) {
-			let elements = $(root).find(selector).toArray();
-			$(root).find('*').each(function () {
-				const shadowRoot = this.shadowRoot;
-				if (shadowRoot) {
-					elements = elements.concat(findInShadowRoots(shadowRoot, selector));
-				}
-			});
-			return elements;
-		}
-		var targetElements;
-		if (iframeSelector) {
-			targetElements = $(iframeSelector).contents();
-		} else {
-			targetElements = $(document);
-		}
-		let allElements = findInShadowRoots(targetElements, selectorTxt);
-		if (allElements.length > 0) {
-			allElements.forEach(function (element) {
-				var jThis = $(element);
+		var targetNodes, btargetsFound;
+
+		if (typeof iframeSelector == "undefined")
+			targetNodes = $(selectorTxt);
+		else
+			targetNodes = $(iframeSelector).contents().find(selectorTxt);
+
+		if (targetNodes && targetNodes.length > 0) {
+			btargetsFound = true;
+			targetNodes.each(function () {
+				var jThis = $(this);
 				var alreadyFound = jThis.data('alreadyFound') || false;
+
 				if (!alreadyFound) {
 					var cancelFound = actionFunction(jThis);
-					if (cancelFound) {
-						return false;
-					} else {
-						jThis.data('alreadyFound', true);
+					if (cancelFound)
+						btargetsFound = false;
+					else {
+						jThis.data('alreadyFound');
 					}
 				}
 			});
+		} else {
+			btargetsFound = false;
 		}
+
 		var controlObj = waitForKeyElements.controlObj || {};
-		var controlKey = selectorTxt.replace(/[^\w]/g, "_");
+		var controlKey = selectorTxt.replace(/[^\w]/g, "_") + actionFunction.toString().replace(/[^\w]/g, "_");
 		var timeControl = controlObj[controlKey];
-		if (allElements.length > 0 && bWaitOnce && timeControl) {
+
+		if (btargetsFound && bWaitOnce && timeControl) {
 			clearInterval(timeControl);
-			delete controlObj[controlKey];
+			delete controlObj[controlKey]
 		} else {
 			if (!timeControl) {
-				timeControl = setInterval(function () {
+				timeControl = setInterval(() => {
 					waitForKeyElements(selectorTxt, actionFunction, bWaitOnce, iframeSelector);
 				}, 1000);
 				controlObj[controlKey] = timeControl;
 			}
 		}
 		waitForKeyElements.controlObj = controlObj;
+	}
+
+	// 这是啥？我不到啊
+	function idontknow(input) {
+		let charArray = input.split('');
+		// Fisher-Yates 洗牌算法
+		for (let i = charArray.length - 1; i > 0; i--) {
+			let j = Math.floor(Math.random() * (i + 1));
+			[charArray[i], charArray[j]] = [charArray[j], charArray[i]];
+		}
+		return charArray.join('');
 	}
 })()
