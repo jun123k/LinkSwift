@@ -47,13 +47,14 @@
 - 如有bug等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)
 
 ## 版本号
-V. 1.0.9.7（改自 6.2.7 版本）  
+V. 1.1.0（改自 6.2.7 版本）  
 本脚本目前仅在 Github 与 GreasyFork 还有 脚本猫 发布，如果您是在其他渠道获取到本脚本的，请不要安装。
 
 ## 更新日志
 
 | 版本号 | 创建日期 | 更新日志 |
 | -------- | -------- | -------- |
+| 1.1.0   | 2025年05月08日 | 1、支持 UC 网盘、123 云盘；<br/>2、改进了网盘主题的注入方式；<br/>3、聚合并重构了部分重复函数，对整体脚本逻辑进行了梳理和精简；<br/>4、将脚本执行阶段从 document-body 适配为 document-start。 |
 | 1.0.9.7 | 2025年02月13日 | 1、修复移动云盘下载错误；<br/>2、优化代码，更好的错误识别；<br/>3、去除了游小猴云服务。 |
 | 1.0.9.6 | 2024年10月28日 | 1、支持在百度网盘中选择文件夹下载；<br/>2、优化部分提示。 |
 | 1.0.9.5 | 2024年10月14日 | 1、修复因代码逻辑错误而无法获取链接的 Bug。 |
@@ -107,94 +108,4 @@ V. 1.0.9.7（改自 6.2.7 版本）
 ---
 
 <p align="center">这是给认真阅读完README文件的人的赞美</p>
-<p align="center">个人博客: <a target="_blank" href="https://addbeflashlite.epizy.com">https://addbeflashlite.epizy.com</a></p>
-<!--1、增加“**注入**”功能（bushi）；  
-2、**去除广告**；  
-3、更新**Sweetalert2**至11版本；  
-4、部分CDN节点更换为jsdelivr；  
-5、去除更新提示；  
-6、修改并加宽界面，调整部分css，使Sweetalert2界面更美观，更与原版相近；  
-7、增加一个小彩蛋 提示：homo（需在未点亮按钮状态触发）；  
-【需要重新恢复按钮为未点亮状态请进入 已安装脚本->编辑->开发者->重置到出厂->确定】  
-8、修改/增加默认**主题色**；  
-9、修复了原作者留下的夸克网盘切换文件夹就多一个“下载助手”按钮的大BUG；  
-10、终于来了，在下载菜单增加“助手设置”“更新日志”按钮；  
-【再也不用点进油猴管理再进设置了(保留油猴管理内设置)】  
-11、修改阿里云盘和夸克网盘下载助手按钮样式；  
-12、增加“取消点亮按钮”油猴菜单；  
-13、修改部分css，使其与选择的主题更贴切；  
-14、跟进官方5.9.4版，修复文件名识别；  
-15、修复在切换按钮主题后夸克网盘不能正常显示按钮；  
-16、增加脚本信息菜单（没有用）；  
-17、优化阿里云盘显示svg图片；  
-18、修改弹窗按钮颜色；  
-19、修啦修啦，阿里云盘可以摸到下载菜单了；  
-20、小修小改css，让主题色出现在更多地方；  
-21、修改下载链接获取失败的提示；  
-22、增加更多的主题色，可在助手设置查看；  
-23、homo彩蛋被删去力（悲）；  
-24、感谢[Night-stars-1](https://githubfast.com/Night-stars-1)的帮助，修复因为原作者服务器导致的初始化暗号识别错误；  
-25、修改一些文本以及提供给服务器的信息；  
-26、修复了打开阿里云盘分享连接时因下载移动端广告导致只能点击API下载；  
-27、跟进官方6.0.4版本，修复夸克网盘获取下载链接失效、支持移动云盘；  
-28、新增百度云盘API下载支持复制链接；  
-29、为了照顾手机浏览器用户，增大项目之间间隙，新增隐藏IDM提示选项，可在助手设置中启用；  
-30、修改CSS，界面会出现更多的主题色；  
-31、支持在游小猴官网查看暗号；  
-32、修复部分语法错误；  
-33、修复部分界面错位，实现CSS内置；  
-34、百度网盘界面将变得更加简洁；  
-35、照顾小屏幕用户，将始终显示复制全部链接的按钮；  
-36、增加取消下载时的动画。  
-37、跟进官方V6.1.1版本，修复阿里云盘获取下载链接时的问题；  
-38、修复即使输入正确暗号也不能成功点亮按钮的服务器错误；  
-39、修复暗号错误。  
-40、将百度网盘界面修改为主题色，可在设置选择是否修改；  
-41、增加主题色名称，更改部分内容颜色；  
-42、移动云盘API下载支持批量复制；  
-43、优化控制台输出结果；  
-44、百度网盘API下载不使用IDM时可以显示剩余时间；  
-45、“取消点亮按钮”按钮的位置现已移动到设置页面；  
-46、homo特有的彩蛋又回来力(喜)；  
-47、修复夸克网盘按钮错位；  
-48、下载窗口加入关闭按钮；  
-49、重构夸克网盘、阿里云盘按钮；  
-50、\[实验功能，不影响正常使用\]支持百度网盘手机网页版，勾选文件后可在顶栏找到“下载助手”按钮；  -->
-
-<!--
-#### 带有*的为文字注释
-
-1、“简介”为[【网盘直链下载助手】原简介](https://greasyfork.org/zh-CN/scripts/436446)精简后得来的文字简介  
-2、“主题色”指紫色，如不喜欢，你可在助手选项中更改-->
-<!--如果你的“下载助手”图标需要很长时间才能显示，请进入脚本管理器编辑脚本，尝试将本脚本第28行和30行的“cdn.jsdelivr.net”替换为“fastly.jsdelivr.net”并在工具栏点击“文件→保存”，但这样会使脚本管理器无法自动检测脚本更新，所以在编辑界面下选择“设置→更新→将“检查更新”勾选并保存”即可。-->
-<!--因[上一个修改作者](https://greasyfork.org/zh-CN/scripts/422818)已经弃坑，所以由我来代其更新。
-
-## 公告
-
-1. 在网站“MonkeyFork”上的帐号“hmjz100”非本人，[MonkeyFork链接](https://www.monkeyfork.com/scripts/185.html)，[这个帐号](https://www.monkeyfork.com/users/10044-hmjz113.html)才是本人  
-2. **如果遇到了只加载出油猴菜单，没有出现“下载助手”按钮的情况，请先打开任意网盘页面，进入脚本菜单**(点击Tampermonkey图标即可打开，如下图)中的`⚙ 设置`→在打开的`助手设置`弹窗找到`使用油小猴服务器`→选择`不使用 [用 jsdelivr 连接本项目 Github 仓库](更新可能不及时)`可能会暂时解决该情况。   
-![2](https://greasyfork.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd3pKQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9a082a73b5617faa71ad0ae5f048f27c87df4ff6/1.png)
-3. 要是连油猴菜单也没有加载出来的话，请检查网络环境能否打开[`unpkg.com`](https://unpkg.com)，  
-我使用的DNS是微软推荐的`4.2.2.1`和`4.2.2.2`，可以正常访问[`unpkg.com`](https://unpkg.com)和[`api.youxiaohou.com`](https://api.youxiaohou.com)
-
-**本脚本是 <a>网盘直链</a> 获取，而 <a>不提供</a> 会员链接解析功能，只是为了给会员用户免下载网盘客户端使用的。**  
-###### (那些写着“查找内部隐藏优惠券”的脚本【大部分】都是搬运的现成脚本引用【不明来源】的查找优惠券脚本，装多了会影响你的购物体验(毕竟代码都不同，而且有可能收集你的隐私信息)，并且脚本作者能够盈利，所以各位还是要小心呀)
-
-**如果遇到了只加载出油猴菜单，没有出现“下载助手”按钮的情况，请先打开任意网盘页面，进入脚本菜单中的`⚙ 设置`→在打开的`助手设置`弹窗找到`使用油小猴服务器`→选择`不使用 [用 jsdelivr 连接本项目 Github 仓库](更新可能不及时)`可能会暂时解决该情况。**   
-![2](https://greasyfork.org/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd3pKQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9a082a73b5617faa71ad0ae5f048f27c87df4ff6/1.png)
-
-## 统计~
-
-![Daily Installs](https://palerock.cn/node-service/images/greasyfork/stats/daily-installs/449291)
-![Daily Updates](https://palerock.cn/node-service/images/greasyfork/stats/daily-updates/449291)
-![Total Installs](https://palerock.cn/node-service/images/greasyfork/stats/total-installs/449291)
-![Fan Score](https://palerock.cn/node-service/images/greasyfork/info/fan_score/449291?name=%E5%BE%97%E5%88%86&rcolor=orange)
-![Good Ratings](https://palerock.cn/node-service/images/greasyfork/info/good_ratings/449291?name=%E5%A5%BD%E8%AF%84&rcolor=darkcyan)
-![Views Info](https://palerock.cn/node-service/images/greasyfork/views-info/449291)
-![License](https://palerock.cn/node-service/images/greasyfork/info/license/449291?name=%E8%AE%B8%E5%8F%AF%E8%AF%81&rcolor=blueviolet)
-
-![Starchart](https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg)
-![Star History](https://api.star-history.com/svg?repos=hmjz100/Online-disk-direct-link-download-assistant&type=Date)
-
-![GreasyFork Fan Score](https://img.shields.io/badge/dynamic/json?label=评分&url=https%3A%2F%2Fgreasyfork.org%2Fscripts%2F449291.json&query=fan_score&logo=greasyfork&logoColor=white&labelColor=%23670000&color=gold&style=for-the-badge&cacheSeconds=10)
---> 
+<p align="center">个人博客: <a target="_blank" href="https://hmjz100blog.rf.gd">https://hmjz100blog.rf.gd</a></p>
