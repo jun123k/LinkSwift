@@ -33,7 +33,7 @@
 
 ## 简介
 
-支持百度阿里天翼迅雷夸克移动六大网盘，相比较原脚本，增加了更多功能~  
+支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘，相比较原脚本，增加了更多功能~  
 ![Tampermonkey BETA 篡改猴测试版](https://img.shields.io/chrome-web-store/v/gcalenpjmijncebpfijmoaglllgpjagf.svg?label=Tampermonkey%20BETA%20篡改猴测试版&logo=tampermonkey&logoColor=red&color=red)
 ![TamperMonkey 篡改猴](https://img.shields.io/chrome-web-store/v/dhdgffkkebhmkfjojejmpbldmpobfkfo.svg?label=Tampermonkey%20篡改猴&logo=tampermonkey&logoColor=white&color=brightgreen)  
 ![Google Chrome-≥76.0](https://img.shields.io/badge/Google_Chrome-≥76.0-yellow.svg)
