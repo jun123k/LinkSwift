@@ -13,9 +13,6 @@
    <br/>
    <img alt="Starchart" src="https://starchart.cc/hmjz100/Online-disk-direct-link-download-assistant.svg?variant=adaptive&line=%23574ab8">
 </p>
-<p align="center">
-   不仅能够精简网盘界面，还支持美化网盘界面主题色
-</p>
 
 ## 安装
 - LinkSwift
@@ -33,7 +30,7 @@
 
 ## 简介
 
-支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘，相比较原脚本，增加了更多功能~  
+支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘，相比较原脚本，增加了更多功能~
 ![Tampermonkey BETA 篡改猴测试版](https://img.shields.io/chrome-web-store/v/gcalenpjmijncebpfijmoaglllgpjagf.svg?label=Tampermonkey%20BETA%20篡改猴测试版&logo=tampermonkey&logoColor=red&color=red)
 ![TamperMonkey 篡改猴](https://img.shields.io/chrome-web-store/v/dhdgffkkebhmkfjojejmpbldmpobfkfo.svg?label=Tampermonkey%20篡改猴&logo=tampermonkey&logoColor=white&color=brightgreen)  
 ![Google Chrome-≥76.0](https://img.shields.io/badge/Google_Chrome-≥76.0-yellow.svg)
@@ -44,16 +41,17 @@
 #### 卑微的小标题
 
 这个脚本只有一个人在修改\~如果喜欢的话还请留个 Star 哦\~   
-- 如有bug等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)
+- 如有 bug 等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)
 
 ## 版本号
-V. 1.1.0（改自 6.2.7 版本）  
+V. 1.1.0.1（改自 6.2.7 版本）  
 本脚本目前仅在 Github 与 GreasyFork 还有 脚本猫 发布，如果您是在其他渠道获取到本脚本的，请不要安装。
 
 ## 更新日志
 
 | 版本号 | 创建日期 | 更新日志 |
 | -------- | -------- | -------- |
+| 1.1.0.1 | 2025年05月09日 | 1、修复查看 RPC 下载任务的 Bug。 |
 | 1.1.0   | 2025年05月08日 | 1、支持 UC 网盘、123 云盘；<br/>2、改进了网盘主题的注入方式；<br/>3、聚合并重构了部分重复函数，对整体脚本逻辑进行了梳理和精简；<br/>4、将脚本执行阶段从 document-body 适配为 document-start。 |
 | 1.0.9.7 | 2025年02月13日 | 1、修复移动云盘下载错误；<br/>2、优化代码，更好的错误识别；<br/>3、去除了游小猴云服务。 |
 | 1.0.9.6 | 2024年10月28日 | 1、支持在百度网盘中选择文件夹下载；<br/>2、优化部分提示。 |

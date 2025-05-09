@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              LinkSwift
 // @namespace         github.com/hmjz100
-// @version           1.1.0
+// @version           1.1.0.1
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       《也许同类型中最好用？》系列 - 一个基于 JavaScript 的网盘文件下载地址获取工具，基于【网盘直链下载助手】修改 | 支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘 | 开源・自用・去广 | 改界面・添功能・修Bug | 既超越原版，亦是同类中最好用版本！👋
@@ -104,7 +104,7 @@
  * @namespace github.com/hmjz100
  * @description  一个基于 JavaScript 盘的文件下载地址获取工具  
  * 支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘
- * @version 1.1.0
+ * @version 1.1.0.1
  * @license AGPL-3.0-or-later
  * @see {@link https://github.com/hmjz100/LinkSwift/ Github 仓库}
  */
@@ -137,7 +137,7 @@
 		scriptInfo = GM_info.script,
 		sauthor = scriptInfo.author,
 		sname = scriptInfo.name,
-		sversion = (scriptInfo?.version?.toString() || "1.1.0"),
+		sversion = (scriptInfo?.version?.toString() || "1.1.0.1"),
 		sicon = (scriptInfo?.icon || "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="),
 		mhandler = GM_info.scriptHandler,
 		mversion = GM_info.version;
@@ -578,7 +578,6 @@
 		 * @returns {string} Base64 编码结果字符串
 		 */
 		encodeBase(str) {
-			try { str = encodeURIComponent(str) } catch { }
 			try { str = btoa(str) } catch { }
 			return str;
 		},
@@ -588,7 +587,7 @@
 		 * @author 油小猴
 		 * @author hmjz100
 		 * @description 自动执行 URI 兼容性解码转换
-		 * @param {string} str2 - Base64 编码字符串
+		 * @param {string} str - Base64 编码字符串
 		 * @returns {string} 解码后的原始字符串
 		 */
 		decodeBase(str) {
@@ -1320,13 +1319,9 @@
 		 * @description 该函数将版本号按 `.` 分割为数字数组，逐段比较大小。
 		 * 若某段 a 的数字大于 b，则 a 更新；
 		 * 若所有段均相等，则版本相等（返回 false）。
-		 * @param {string} a - 待比较的版本号（如 "1.1.0"）
+		 * @param {string} a - 待比较的版本号
 		 * @param {string} b - 基准版本号（如 "1.0.9.7"）
 		 * @returns {boolean} - 若 a 比 b 更新，返回 true；否则返回 false
-		 * @example
-		 * isNewerVersion("1.1.0", "1.0.9.7"); // true
-		 * isNewerVersion("1.0.9.7", "1.1.0"); // false
-		 * isNewerVersion("1.1.0", "1.1.0");   // false
 		 */
 		isNewerVersion(a, b) {
 			const partsA = a.split('.').map(Number);
@@ -1686,6 +1681,12 @@
 						<div>风雨送春归，飞雪迎春到。已是悬崖百丈冰，犹有花枝俏。</div>
 						<div>俏也不争春，只把春来报。待到山花烂漫时，她在丛中笑。</div>
 					</blockquote>
+				</div>
+				<div class="block">
+					<name>V1.1.0.1</name>
+					<div>
+					<div>1、修复查看 RPC 下载任务的 Bug。</div>
+					</div>
 				</div>
 				<div class="block">
 					<name>V1.1.0</name>
@@ -2240,7 +2241,11 @@
 			div:where(.swal2-container) input:where(.swal2-select):focus-visible,
 			div:where(.swal2-container) textarea:where(.swal2-textarea):focus,
 			div:where(.swal2-container) textarea:where(.swal2-textarea):focus-visible
-			{outline:0;border:1px solid ${color};box-shadow:0 0 0 3px ${color}80}`);
+			{outline:0;border:1px solid ${color};box-shadow:0 0 0 3px ${color}80}
+			
+			.swal2-checkbox, .swal2-file, .swal2-input, .swal2-radio, .swal2-select, .swal2-textarea,
+			div:where(.swal2-container) input:where(.swal2-input), div:where(.swal2-container) input:where(.swal2-file), div:where(.swal2-container) textarea:where(.swal2-textarea), div:where(.swal2-container) select:where(.swal2-select), div:where(.swal2-container) div:where(.swal2-radio), div:where(.swal2-container) label:where(.swal2-checkbox)
+			{margin: 1em 2em}`);
 			base.addStyle(`${mount}-main-style`, 'style', `
 			::-webkit-scrollbar{width:8px;height:8px;transition:all 0.2s ease}
 			::-webkit-scrollbar-track{border-radius:10px;background:#fff}
@@ -2321,7 +2326,7 @@
 			.pointer{cursor:pointer}
 			.pl-setting-label{display:flex;align-items:center;justify-content:space-between;padding-top:10px}
 			.pl-label{flex:0 0 100px;text-align:left}
-			.pl-input{flex:1;padding:8px 10px !important;border:1px solid #c2c2c2;border-radius:5px;font-size:14px;min-width:300px;margin:0;}
+			.pl-input{flex:1;padding:8px 10px!important;border:1px solid #c2c2c2;border-radius:5px;font-size:14px!important;min-width:300px;margin:0;}
 			.init-input{width:90%;text-align:center;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;font-weight:300}
 			.pl-color{flex:1;display:flex;flex-wrap:wrap}
 			.pl-color-box{width:55px;height:55px;margin:10px 10px 0 0;box-sizing:border-box;border:1px solid #fff;cursor:pointer}
@@ -2944,7 +2949,11 @@
 			return '';
 		},
 
-		setBDUSS() {
+		setBDUSS(custom) {
+			if (custom) {
+				base.setStorage("baiduyunPlugin_BDUSS", { BDUSS: custom });
+				return;
+			}
 			try {
 				GM_cookie('list', { name: 'BDUSS' }, (cookies, error) => {
 					if (!error) {
@@ -3630,28 +3639,99 @@
 			}
 
 			if (!BDUSS) {
-				let dialog = await Swal.fire({
-					icon: 'info',
-					title: `提示`,
-					html: '你好呀，为了获取百度网盘文件的下载直链<br/>我们需要您安装原作者的辅助扩展<br/>来让 “下载助手” 读取您的网盘账号凭证<br/>获取到的凭证仅用于生成直链，请放心安装ヾ(≧▽≦*)o<br/><br/>不知道如何安装第三方扩展？<a class="pl-a" target="_blank" href="https://www.youxiaohou.com/zh-cn/crx.html">点此查看详情</a><br/>如果给浏览器开启了“开发者模式”后频繁提示<br/>“关闭开发者模式”，请使用<a class="pl-a" target="_blank" href="https://wws.lanzoub.com/b00vgnrha">此补丁</a>隐藏提示。<a class="pl-a" target="_blank" href="https://ooo.0x0.ooo/2022/05/04/zrNGX.png">界面汉化</a><br/>扩展安装后请刷新本页，以应用最新更改',
-					showConfirmButton: true,
-					showDenyButton: true,
-					showCloseButton: true,
-					allowOutsideClick: false,
-					allowEscapeKey: false,
-					allowEnterKey: false,
-					confirmButtonText: '前往 Chrome（Crx搜搜）',
-					denyButtonText: '前往 Firefox（Crx搜搜）',
-					position: 'center',
-					...swalDefault
-				});
-				if (dialog.isConfirmed) {
-					GM_openInTab('https://www.crxsoso.com/addon/detail/mphijdmblaalbakceeadippfkbgfgaaa', { active: true });
+				async function getBDUSS() {
+					let dialog = await Swal.fire({
+						icon: 'info',
+						title: `提示`,
+						html: '你好呀，为了获取百度网盘文件的下载直链<br/>我们需要您安装原作者的辅助扩展<br/>来让 “下载助手” 读取您的网盘账号凭证 (BDUSS)<br/>获取到的凭证仅用于生成直链，请放心安装\\(≧▽≦*)o<br/><br/>不知道如何安装第三方扩展？<a class="pl-a" target="_blank" href="https://www.youxiaohou.com/zh-cn/crx.html ">点此查看详情</a><br/>如果给浏览器开启了“开发者模式”后频繁提示<br/>“关闭开发者模式”，请使用<a class="pl-a" target="_blank" href="https://wws.lanzoub.com/b00vgnrha ">此补丁</a>隐藏提示。<a class="pl-a" target="_blank" href="https://ooo.0x0.ooo/2022/05/04/zrNGX.png ">界面汉化</a><br/>扩展安装后请刷新本页，以应用最新更改',
+						showConfirmButton: true,
+						showDenyButton: true,
+						showCancelButton: true,
+						showCloseButton: true,
+						allowOutsideClick: false,
+						allowEscapeKey: false,
+						allowEnterKey: false,
+						confirmButtonText: '前往 Chrome（Crx搜搜）',
+						denyButtonText: '前往 Firefox（Crx搜搜）',
+						cancelButtonText: '装不了扩展，我要手动输入',
+						position: 'center',
+						...swalDefault
+					});
+
+					if (dialog.isConfirmed) {
+						GM_openInTab('https://www.crxsoso.com/addon/detail/mphijdmblaalbakceeadippfkbgfgaaa ', { active: true });
+					}
+					if (dialog.isDenied) {
+						GM_openInTab('https://www.crxsoso.com/firefox/detail/baidunetdiskisasb ', { active: true });
+					}
+					if (dialog.isDismissed && dialog.dismiss === Swal.DismissReason.cancel) {
+						while (true) {
+							let idialog = await Swal.fire({
+								title: '手动输入凭证',
+								html: `<div class="bduss-box">
+									<h3>Via 浏览器获取方法</h3>
+									<p>打开任意百度网盘页面 →</p>
+									<p>点击地址栏左侧的安全图标 →</p>
+									<p>查看 Cookies →</p>
+									<p>找到 "BDUSS=" 字段 →</p>
+									<p>复制等于号后面的内容直到分号 (不含分号) →</p>
+									<p>然后粘贴到这里</p>
+									<hr/>
+									<h3>桌面端浏览器获取方法</h3>
+									<p>打开任意百度网盘页面 →</p>
+									<p>F12 打开开发者工具 →</p>
+									<p>转到 应用(Application) 标签 →</p>
+									<p>Cookies →</p>
+									<p>找到 "BDUSS" 字段 →</p>
+									<p>复制其值粘贴到这里</p>
+									<div class="input-box">
+										<input class="swal2-input init-input" id="init" type="text" style="margin-bottom:0" placeholder="输入凭证...">
+									</div>
+								</div>
+								<style>
+									.bduss-box > .input-box {
+										display:flex;flex-direction:column;align-items:center
+									}
+									.bduss-box > hr {
+										margin-top: 10px;
+									}
+									.bduss-box > hr {
+										border-style: inset;
+										border-width: 1px;
+									}
+								</style>`,
+								showConfirmButton: true,
+								showDenyButton: true,
+								confirmButtonText: '确认',
+								denyButtonText: '取消',
+								allowOutsideClick: false,
+								allowEscapeKey: false,
+								allowEnterKey: false,
+								focusConfirm: false,
+								...swalDefault
+							});
+							if (idialog.isConfirmed) {
+								let BDUSS = $('#init').val().trim();
+								if (BDUSS && BDUSS.length >= 192) {
+									$baidu.setBDUSS(BDUSS);
+									return message.success('提示：<br/>凭证设置成功<br/>请再获取一次下载链接吧~');
+								} else {
+									await Swal.fire({
+										icon: 'error',
+										title: '格式错误',
+										text: '请输入有效的 BDUSS（通常长度 ≥ 192 位）',
+										confirmButtonText: '确认',
+										...swalDefault
+									});
+									continue;
+								}
+							} else if (idialog.isDenied) {
+								return await getBDUSS();
+							}
+						}
+					}
 				}
-				if (dialog.isDenied) {
-					GM_openInTab('https://www.crxsoso.com/firefox/detail/baidunetdiskisasb', { active: true });
-				}
-				return;
+				return await getBDUSS();
 			}
 
 			if (page === 'home' || page === 'main') {
@@ -4415,6 +4495,7 @@
 				let processed = 0;
 
 				doc.find('.loading-popup .loading-title').html(`链接获取中`);
+				doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 				for (let i = 0; i < selectList.length; i += batchSize) {
 					// 当前批次文件
 					let batch = selectList.slice(i, i + batchSize);
@@ -5026,6 +5107,7 @@
 				let batchSize = 15;
 				let processed = 0;
 				doc.find('.loading-popup .loading-title').html(`链接获取中`);
+				doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 				for (let i = 0; i < selectList.length; i += batchSize) {
 					let batch = selectList.slice(i, i + batchSize);
 					let queue = [];
@@ -5540,6 +5622,7 @@
 			let batchSize = 15;
 			let processed = 0;
 			doc.find('.loading-popup .loading-title').html(`链接获取中`);
+			doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 			for (let i = 0; i < selectList.length; i += batchSize) {
 				let batch = selectList.slice(i, i + batchSize);
 				let queue = [];
@@ -6056,6 +6139,7 @@
 				let batchSize = 15;
 				let processed = 0;
 				doc.find('.loading-popup .loading-title').html(`链接获取中`);
+				doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 				for (let i = 0; i < selectList.length; i += batchSize) {
 					let batch = selectList.slice(i, i + batchSize);
 					let queue = [];
@@ -7502,7 +7586,7 @@
 				tag.contents().each(function () {
 					if (this.nodeType === 3 && $.trim(this.textContent)) {
 						hasTextNode = true;
-						return false; // break the loop
+						return;
 					}
 				});
 				if (!hasTextNode) return;
@@ -7566,6 +7650,7 @@
 					let queue = [];
 
 					doc.find('.loading-popup .loading-title').html(`链接获取中`);
+					doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 					batch.forEach((item, localIndex) => {
 						let globalIndex = i + localIndex;
 						queue.push(this.getFileUrlByOnce(item, globalIndex, token)
@@ -7598,6 +7683,7 @@
 					let queue = [];
 
 					doc.find('.loading-popup .loading-title').html(`链接获取中`);
+					doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 					batch.forEach((item, localIndex) => {
 						let globalIndex = i + localIndex;
 						queue.push(this.getFileUrlByOnce(item, globalIndex, token, ShareKey)
@@ -7623,65 +7709,63 @@
 		},
 
 		async getFileUrlByOnce(item, index, token, ShareKey) {
-			try {
-				if (item.DownloadUrl) return {
+			if (item.DownloadUrl) return {
+				index,
+				downloadUrl: item.DownloadUrl
+			};
+			let res = null;
+			if (ShareKey) {
+				res = await base.post(config.$123pan.api.getShareLink, {
+					"ShareKey": ShareKey,
+					"FileID": item.FileId,
+					"S3keyFlag": item.S3KeyFlag,
+					"Size": item.Size,
+					"Etag": item.Etag
+				}, {
+					"content-type": "application/json;charset=utf-8",
+					"authorization": `Bearer ${token}`,
+					"platform": "ios"
+				});
+			} else {
+				res = await base.post(config.$123pan.api.getLink, {
+					"driveId": 0,
+					"etag": item.Etag,
+					"fileId": item.FileId,
+					"s3keyFlag": item.S3KeyFlag,
+					"type": item.Type,
+					"fileName": item.FileName,
+					"size": item.Size
+				}, {
+					"content-type": "application/json;charset=utf-8",
+					"authorization": `Bearer ${token}`,
+					"platform": "ios"
+				});
+			}
+			if (res.data?.DownloadUrl) {
+				let url = res.data.DownloadUrl;
+				let surl = new URL(url).searchParams.get("params");
+				if (surl) url = base.decodeBase(surl);
+				url = await base.getFinalUrl(url);
+				return {
 					index,
-					downloadUrl: item.DownloadUrl
+					downloadUrl: url
 				};
-				let res = null;
-				if (ShareKey) {
-					res = await base.post(config.$123pan.api.getShareLink, {
-						"ShareKey": ShareKey,
-						"FileID": item.FileId,
-						"S3keyFlag": item.S3KeyFlag,
-						"Size": item.Size,
-						"Etag": item.Etag
-					}, {
-						"content-type": "application/json;charset=utf-8",
-						"authorization": `Bearer ${token}`,
-						"platform": "ios"
-					});
-				} else {
-					res = await base.post(config.$123pan.api.getLink, {
-						"driveId": 0,
-						"etag": item.Etag,
-						"fileId": item.FileId,
-						"s3keyFlag": item.S3KeyFlag,
-						"type": item.Type,
-						"fileName": item.FileName,
-						"size": item.Size
-					}, {
-						"content-type": "application/json;charset=utf-8",
-						"authorization": `Bearer ${token}`,
-						"platform": "ios"
-					});
-				}
-				if (res.data?.DownloadUrl) {
-					let url = res.data.DownloadUrl;
-					let surl = new URL(url).searchParams.get("params");
-					if (surl) url = base.decodeBase(surl);
-					url = await base.getFinalUrl(url);
-					return {
-						index,
-						downloadUrl: url
-					};
-				} else if (res.data?.DownloadURL) {
-					let url = res.data.DownloadURL;
-					let surl = new URL(url).searchParams.get("params");
-					if (surl) url = base.decodeBase(surl);
-					url = await base.getFinalUrl(url);
-					return {
-						index,
-						downloadUrl: url
-					};
-				} else {
-					return {
-						index,
-						downloadUrl: '获取下载地址失败，刷新后再试试吧~'
-					};
-				}
-			} catch (e) {
-				return message.error('提示：<br/>请先登录网盘后再刷新页面呢~');
+			} else if (res.data?.DownloadURL) {
+				let url = res.data.DownloadURL;
+				let surl = new URL(url).searchParams.get("params");
+				if (surl) url = base.decodeBase(surl);
+				url = await base.getFinalUrl(url);
+				return {
+					index,
+					downloadUrl: url
+				};
+			} else if (res?.code === 5112) {
+				return message.error('提示：<br/>请先登录网盘后再获取链接呢~');
+			} else {
+				return {
+					index,
+					downloadUrl: '获取下载地址失败，刷新后再试试吧~'
+				};
 			}
 		},
 
