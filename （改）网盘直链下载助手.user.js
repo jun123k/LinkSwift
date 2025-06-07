@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              LinkSwift
 // @namespace         github.com/hmjz100
-// @version           1.1.1.1
+// @version           1.1.1.2
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       (｡>ᴗ•)✧《也许同类型中最好用？》系列 - 一个基于 JavaScript 的网盘文件下载地址获取工具✨，基于【网盘直链下载助手】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 开源・自用・去广 | 改界面・添功能・修Bug | 既超越原版，亦是同类中最好用版本！👋
@@ -104,7 +104,7 @@
  * @namespace github.com/hmjz100
  * @description  一个基于 JavaScript 盘的文件下载地址获取工具
  * 支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘
- * @version 1.1.1.1
+ * @version 1.1.1.2
  * @license AGPL-3.0-or-later
  * @see{@link https://github.com/hmjz100/LinkSwift/ Github 仓库}
  */
@@ -135,7 +135,7 @@
 	let info = {
 		author: GM_info.script?.author,
 		name: GM_info.script?.name,
-		version: (GM_info.script?.version?.toString() || "1.1.1.1"),
+		version: (GM_info.script?.version?.toString() || "1.1.1.2"),
 		icon: (GM_info.script?.icon || "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="),
 		mhandler: GM_info.scriptHandler,
 		mversion: GM_info.version,
@@ -153,6 +153,7 @@
 		idm: {},
 		colored: false,
 		swalDefault: {
+			position: 'center',
 			heightAuto: false,
 			scrollbarPadding: false,
 			confirmButtonText: `<svg class="pl-icon"><use xlink:href="#pl-icon-fa-check"/></svg> 确认`,
@@ -1266,6 +1267,22 @@
 		 */
 		replaceColors(cssText, baseURI, type, colorMap) {
 			if (!cssText) return "";
+
+			if (baseURI) {
+				// 替换相对路径资源为绝对路径
+				cssText = cssText.replace(/url\s*\(\s*(['"]?)(.*?)\1\s*\)/g, (match, quote, url) => {
+					if (url && !/^(data:|https?:|\/\/)/i.test(url)) {
+						try {
+							let absoluteURL = new URL(url, baseURI).href;
+							return `url(${absoluteURL})`;
+						} catch (e) {
+							return match;
+						}
+					}
+					return match;
+				});
+			}
+
 			let colorList = ['#09AAFF', '#cc3235', '#518c17', '#ed944b', '#f969a5', '#bca280', '#574AB8', '#b673ab', '#1d2327', '#18a497', '#637dff', '#0d53ff', '#3181f9', '#f8d800', '#0396ff', '#32ccbc', '#f6416c', '#2271b1', '#59524c', '#ff679a', '#f44236', '#fec107', '#8bc24a', '#2594ed', '#9c28b1']
 
 			// 处理默认颜色列表
@@ -1332,21 +1349,6 @@
 				});
 			}
 
-			if (baseURI) {
-				// 替换相对路径资源为绝对路径
-				cssText = cssText.replace(/url$\s*(['"]?)([^'"]*?)\1\s*$/ig, (match, quote, url) => {
-					if (url && !/^(data:|https?:|\/\/)/i.test(url)) {
-						try {
-							let absoluteURL = new URL(url, baseURI).href;
-							return `url(${absoluteURL})`;
-						} catch (e) {
-							return match;
-						}
-					}
-					return match;
-				});
-			}
-
 			return cssText;
 		},
 
@@ -1387,8 +1389,9 @@
 						.then(response => response.text())
 						.then(responseText => {
 							let id = `${mount}-ColorUI-` + href.replace(/[^\w]/g, "_");
+							console.log(href)
 							let cssText = base.replaceColors(responseText, href, type, colorMap);
-							if (responseText === base.replaceColors(responseText, "", type, colorMap)) return;
+							if (responseText === base.replaceColors(responseText, href, type, colorMap)) return;
 							base.addStyle(id, 'style', cssText, tag[0], "after");
 						})
 				}, true);
@@ -2074,6 +2077,12 @@
 					</blockquote>
 				</div>
 				<div class="block">(ﾉ◕ヮ◕)ﾉ 遇到 Bug 要记得去 <a class="pl-a" href="https://github.com/hmjz100/LinkSwift/issues" target="_blank">Github 议题</a> 向我报告哦~</div>
+				<div class="block">
+					<name>V1.1.1.2</name>
+					<div>
+					<div>1、修复无法删除第一项远程配置的 Bug。</div>
+					</div>
+				</div>
 				<div class="block">
 					<name>V1.1.1.1</name>
 					<div>
@@ -2973,11 +2982,12 @@
 			temp.doc.on('click', '.listener-rpc-delete', async function (e) {
 				let type = $(this).data("type");
 				let list = base.getValue(`setting_${type}_rpc`);
-				let selectedIndex = $('.listener-rpc-select option:selected').val();
+				let selectedIndex = parseInt($('.listener-rpc-select option:selected').val(), 10);
 				if (selectedIndex === 'new' || !confirm('您确定要删除此项目吗？')) return;
-				list = list.filter((_, i) => i != selectedIndex);
-				if (list.length === 0) return alert('至少保留一个项目');
-				list[selectedIndex - 1].default = true;
+				list = list.filter((_, i) => i !== selectedIndex);
+				if (list.length === 0) return alert('至少保留一个配置');
+				let newDefaultIndex = selectedIndex === 0 ? 0 : selectedIndex - 1;
+				list[newDefaultIndex].default = true;
 				base.setValue(`setting_${type}_rpc`, list);
 				let select = $('.listener-rpc-select');
 				let options = list.map((item, index) => {
@@ -2985,8 +2995,8 @@
 				}).join("");
 				select.html(`${options}<option value="new">+ 创建新项目</option>`);
 				$('.listener-rpc-input').each(function () {
-					let type = $(this).data('type').split(".");
-					$(this).val(list[selectedIndex - 1][type[1]] || "");
+					let key = $(this).data('type').split(".")[1];
+					$(this).val(list[newDefaultIndex][key] || "");
 				});
 			});
 			temp.doc.on('click', '.listener-rpc-test', async function (e) {
@@ -4472,8 +4482,7 @@
 						allowEnterKey: false,
 						confirmButtonText: '前往 Chrome（Crx搜搜）',
 						denyButtonText: '前往 Firefox（Crx搜搜）',
-						cancelButtonText: '装不了扩展，我要手动输入',
-						position: 'center',
+						cancelButtonText: '装不了扩展，我要手动输入'
 					});
 
 					if (dialog.isConfirmed) {
@@ -4756,6 +4765,7 @@
 					allowedClientIds.includes(url.searchParams.get("client_id"))
 				) {
 					let dialog = await Swal.fire({
+						...temp.swalDefault,
 						icon: 'info',
 						title: `提示`,
 						html: `<p>(◍•ᴗ•◍) 你好呀，为了获取百度网盘文件的下载直链<br/>“下载助手” 需要你的授权，以获取网盘文件的访问令牌</p><br/>
@@ -4778,6 +4788,7 @@
 					}
 					if (dialog.isDenied) {
 						return await Swal.fire({
+							...temp.swalDefault,
 							icon: 'question',
 							title: `好吧(*￣3￣)╭`,
 							html: '那就再想一想<br/>想好了就按下 “授权” 按钮吧~',
@@ -4796,6 +4807,7 @@
 							let token = location.href.match(/access_token=(.*?)&/)[1];
 							base.setValue('baidu_access_token', token);
 							await Swal.fire({
+								...temp.swalDefault,
 								icon: 'success',
 								title: `成功啦`,
 								html: '<p>(◍•ᴗ•◍) 您已<b>成功授权/授权过</b>脚本获取网盘访问令牌~</p><p>获取到的令牌<b>仅用于调用百度官方 API 生成直链</b><br/>不会用于其他用途</p><p>等待 <span id="second">/</span> 秒之后将关闭此页面</p>',
@@ -4807,7 +4819,6 @@
 								allowEscapeKey: false,
 								allowEnterKey: false,
 								confirmButtonText: `<svg class="pl-icon"><use xlink:href="#pl-icon-fa-x-mark"/></svg> 关闭`,
-								position: 'center',
 								willOpen: () => {
 									let secondSpan = document.getElementById("second");
 									let interval = setInterval(() => {
@@ -7660,7 +7671,7 @@
 			 * @description 来自【网盘智能识别助手】，有改动
 			 */
 			console.log(
-				`%c\s%c LinkSwift\n一个基于 JavaScript 的网盘文件下载地址获取工具\n仓库：https://github.com/hmjz100/LinkSwift\n版本：${info.version}\n领域：${(window.self !== window.top ? "[iframe] " : "") + (document.title ? (document.title + " (" + location.origin + location.pathname + ")") : location.href)}`,
+				`%c %c LinkSwift\n一个基于 JavaScript 的网盘文件下载地址获取工具\n仓库：https://github.com/hmjz100/LinkSwift\n版本：${info.version}\n领域：${(window.self !== window.top ? "[iframe] " : "") + (document.title ? (document.title + " (" + location.origin + location.pathname + ")") : location.href)}`,
 				`background:url(${info.icon}) center center no-repeat;background-size:12px;padding:3px`, `padding:2px`
 			);
 
