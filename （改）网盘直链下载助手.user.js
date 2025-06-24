@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name              LinkSwift
 // @namespace         github.com/hmjz100
 // @version           1.1.1.3
@@ -941,7 +941,7 @@
 			for (let key in headers) {
 				newHeaders[key.toLowerCase().split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('-')] = headers[key];
 			}
-			headers = { "Content-Type": "application/json;charset=utf-8", "User-Agent": navigator.userAgent, "Origin": location.origin, "Referer": location.origin, "DNT": "1", ...newHeaders };
+			headers = { "User-Agent": navigator.userAgent, "Origin": location.origin, "Referer": `${location.origin}/`, "DNT": "1", ...newHeaders };
 			return new Promise((resolve, reject) => {
 				let sendRequest = () => {
 					let requestObj = base.xmlHttpRequest({
@@ -3933,7 +3933,7 @@
 					temp.doc.find('.loading-popup .loading-title').html(`授权获取中`);
 					temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取授权页面~</div>`);
 
-					let html = await base.get(config.$baidu.api.getAccessToken, {}, 'text');
+					let html = await base.get(config.$baidu.api.getAccessToken, undefined, 'text');
 
 					// 提取页面的发送确认授权的参数
 					let bdstoken = html.match(/name="bdstoken"\s+value="([^"]+)"/)?.[1];
@@ -3950,9 +3950,7 @@
 					temp.doc.find('.loading-popup .loading-title').html(`授权获取中`);
 					temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在自动确认授权~</div>`);
 					// 发送请求达到自动进行授权
-					await base.post(config.$baidu.api.getAccessToken, base.stringify(data), {
-						'Content-Type': 'application/x-www-form-urlencoded',
-					});
+					await base.post(config.$baidu.api.getAccessToken, base.stringify(data), { "Content-Type": "application/x-www-form-urlencoded" });
 
 					// 再次获取授权状态
 					let res2 = await base.getFinalUrl(config.$baidu.api.getAccessToken, undefined, true);
@@ -4956,7 +4954,7 @@
 				let originalHtml = o.link.html();
 
 				base._resetData(index);
-				base.get(e.currentTarget.dataset.link, { "Referer": `https://${location.host}/` }, 'blob', { filename, index });
+				base.get(e.currentTarget.dataset.link, undefined, 'blob', { filename, index });
 
 				let startTime = Date.now();
 				let prevLoaded = 0;
@@ -5216,16 +5214,7 @@
 		},
 
 		async getFileUrlByOnce(d, f) {
-			let authorization = `${base.getStorage('token').token_type} ${base.getStorage('token').access_token}`;
-			let res = await base.post(config.$aliyun.api.getLink, {
-				drive_id: d,
-				file_id: f
-			}, {
-				authorization,
-				"content-type": "application/json;charset=utf-8",
-				"referer": `https://${location.host}/`,
-				"x-canary": "client=windows,app=adrive,version=v6.0.0"
-			});
+			let res = await base.post(config.$aliyun.api.getLink, { drive_id: d, file_id: f }, { "Authorization": `${base.getStorage('token').token_type} ${base.getStorage('token').access_token}`, "X-Canary": "client=windows,app=adrive,version=v6.0.0" });
 			if (res.code === 'AccessTokenInvalid') {
 				return message.error('提示：<br/>访问令牌过期了，请刷新网页后再试');
 			}
@@ -5560,28 +5549,25 @@
 					let sign = this.getSign(undefined, body, time, key);
 
 					let res = await base.post(config.$mcloud.api.getLink, body, {
-						'Authorization': base.getCookie('authorization'),
-						'Caller': 'web',
-						'CMS-DEVICE': 'default',
-						'Content-Type': "application/json;charset=UTF-8",
-						'mcloud-channel': '1000101',
-						'mcloud-client': '10701',
-						'mcloud-sign': time + "," + key + "," + sign,
-						'mcloud-version': '7.14.2',
-						'Origin': 'https://yun.139.com',
-						'Referer': 'https://yun.139.com/',
-						'X-DeviceInfo': '||9|7.14.2|chrome|119.0.0.0|||windows 10||zh-CN|||',
-						'X-Huawei-ChannelSrc': '10000034',
-						'X-Inner-Ntwk': '2',
-						'X-M4C-Caller': 'PC',
-						'X-M4C-Src': '10002',
-						'X-SvcType': '1',
-						'X-Yun-Api-Version': 'v1',
-						'X-Yun-App-Channel': '10000034',
-						'X-Yun-Channel-Source': '10000034',
-						'X-Yun-Client-Info': '||9|7.14.2|chrome|119.0.0.0|||windows 10||zh-CN|||||',
-						'X-Yun-Module-Type': '100',
-						'X-Yun-Svc-Type': '1'
+						"Authorization": base.getCookie("authorization"),
+						"Caller": "web",
+						"CMS-DEVICE": "default",
+						"Mcloud-Channel": "1000101",
+						"Mcloud-Client": "10701",
+						"Mcloud-Sign": time + "," + key + "," + sign,
+						"Mcloud-Version": "7.14.2",
+						"X-DeviceInfo": "||9|7.14.2|chrome|119.0.0.0|||windows 10||zh-CN|||",
+						"X-Huawei-ChannelSrc": "10000034",
+						"X-Inner-Ntwk": "2",
+						"X-M4C-Caller": "PC",
+						"X-M4C-Src": "10002",
+						"X-SvcType": "1",
+						"X-Yun-Api-Version": "v1",
+						"X-Yun-App-Channel": "10000034",
+						"X-Yun-Channel-Source": "10000034",
+						"X-Yun-Client-Info": "||9|7.14.2|chrome|119.0.0.0|||windows 10||zh-CN|||||",
+						"X-Yun-Module-Type": "100",
+						"X-Yun-Svc-Type": "1"
 					});
 					if (res.success) {
 						return {
@@ -5598,9 +5584,7 @@
 				if (this.detectPage() === 'share') {
 					let vueDom = document.querySelector(".main_file_list").__vue__;
 
-					let res = await base.post(config.$mcloud.api.getShareLink, `linkId=${vueDom.linkID}&contentIds=${item.path}&catalogIds=`, {
-						'Content-Type': 'application/x-www-form-urlencoded',
-					});
+					let res = await base.post(config.$mcloud.api.getShareLink, `linkId=${vueDom.linkID}&contentIds=${item.path}&catalogIds=`, { "Content-Type": "application/x-www-form-urlencoded" });
 					if (res.code === 0) {
 						return {
 							index,
@@ -5951,13 +5935,7 @@
 					url += '&dt=1&shareId=' + item.shareId;
 				}
 				let sign = md5(o).toString();
-				let res = await base.get(url, {
-					"accept": "application/json;charset=UTF-8",
-					"sign-type": 1,
-					"accesstoken": token,
-					"timestamp": time,
-					"signature": sign
-				});
+				let res = await base.get(url, { "Accept": "application/json;charset=UTF-8", "Sign-Type": 1, "Accesstoken": token, "Timestamp": time, "Signature": sign });
 				if (res.res_code === 0) {
 					return {
 						index,
@@ -6312,12 +6290,7 @@
 					index,
 					downloadUrl: item.downloadUrl
 				};
-				let res = await base.get(config.$xunlei.api.getLink + item.id, {
-					'Authorization': `${token.credentials.token_type} ${token.credentials.access_token}`,
-					'content-type': "application/json",
-					'x-captcha-token': token.captcha.token,
-					'x-device-id': token.deviceid,
-				});
+				let res = await base.get(config.$xunlei.api.getLink + item.id, { "Authorization": `${token.credentials.token_type} ${token.credentials.access_token}`, "Content-Type": "application/json", "X-Captcha-Token": token.captcha.token, "X-Device-Id": token.deviceid });
 				if (res.web_content_link) {
 					return {
 						index,
@@ -6725,7 +6698,7 @@
 					let fids = batch.map(item => item.fid);
 
 					// 发起请求获取链接
-					let res = await base.post(config.$quark.api.getLink, { "fids": fids }, { "content-type": "application/json;charset=utf-8", "user-agent": config.$quark.api.ua.downloadLink });
+					let res = await base.post(config.$quark.api.getLink, { "fids": fids }, { "User-Agent": config.$quark.api.ua.downloadLink });
 
 					if (res?.code === 31001) {
 						return message.error('提示：<br/>请先登录网盘~<br/>代码：' + res.code);
@@ -7054,7 +7027,7 @@
 					let fids = batch.map(item => item.fid);
 
 					// 发起请求获取链接
-					let res = await base.post(config.$uc.api.getLink, { "fids": fids }, { "content-type": "application/json;charset=utf-8", "user-agent": config.$uc.api.ua.downloadLink });
+					let res = await base.post(config.$uc.api.getLink, { "fids": fids }, { "User-Agent": config.$uc.api.ua.downloadLink });
 
 					if (res?.code === 31001) {
 						return message.error('提示：<br/>请先登录网盘~<br/>代码：' + res.code);
@@ -7449,31 +7422,9 @@
 			};
 			let res = null;
 			if (ShareKey) {
-				res = await base.post(config.$123pan.api.getShareLink, {
-					"ShareKey": ShareKey,
-					"FileID": item.FileId,
-					"S3keyFlag": item.S3KeyFlag,
-					"Size": item.Size,
-					"Etag": item.Etag
-				}, {
-					"content-type": "application/json;charset=utf-8",
-					"authorization": `Bearer ${token}`,
-					"platform": "ios"
-				});
+				res = await base.post(config.$123pan.api.getShareLink, { "ShareKey": ShareKey, "FileID": item.FileId, "S3keyFlag": item.S3KeyFlag, "Size": item.Size, "Etag": item.Etag }, { "Authorization": `Bearer ${token}`, "Platform": "ios" });
 			} else {
-				res = await base.post(config.$123pan.api.getLink, {
-					"driveId": 0,
-					"etag": item.Etag,
-					"fileId": item.FileId,
-					"s3keyFlag": item.S3KeyFlag,
-					"type": item.Type,
-					"fileName": item.FileName,
-					"size": item.Size
-				}, {
-					"content-type": "application/json;charset=utf-8",
-					"authorization": `Bearer ${token}`,
-					"platform": "ios"
-				});
+				res = await base.post(config.$123pan.api.getLink, { "driveId": 0, "etag": item.Etag, "fileId": item.FileId, "s3keyFlag": item.S3KeyFlag, "type": item.Type, "fileName": item.FileName, "size": item.Size }, { "Authorization": `Bearer ${token}`, "Platform": "ios" });
 			}
 			if (res.data?.DownloadUrl) {
 				let url = res.data.DownloadUrl;
