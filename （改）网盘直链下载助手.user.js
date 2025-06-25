@@ -3628,6 +3628,7 @@
 					['#325cf0', `${temp.color}D0`],
 					['60, 128, 255', base.hexToRgba(temp.color)],
 					['42, 130, 228', base.hexToRgba(temp.color)],
+					['89, 125, 252', base.hexToRgba(temp.color)],
 				]);
 			}
 		},
@@ -6469,7 +6470,7 @@
 				let originalHtml = o.link.html();
 
 				base._resetData(index);
-				base.get(e.currentTarget.dataset.link, undefined, 'blob', { filename, index });
+				base.get(e.currentTarget.dataset.link, { "User-Agent": config.$quark.api.ua.downloadLink }, 'blob', { filename, index });
 
 				let startTime = Date.now();
 				let prevLoaded = 0;
@@ -6530,7 +6531,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await base.sendLinkToAria2(target.data("link"), target.data("filename"), [`Cookie:${document.cookie}`]);
+				let res = await base.sendLinkToAria2(target.data("link"), target.data("filename"), [`User-Agent:${config.$quark.api.ua.downloadLink}`, `Referer:https://${location.host}/`, `Cookie:${document.cookie}`]);
 				if (res === 'success') {
 					target.removeClass('pl-btn-danger').html('发送成功啦!快去看看吧~').animate({ opacity: '0.5' }, "slow");
 				} else {
@@ -6552,7 +6553,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await base.sendLinkToBitcomet(target.data("link"), target.data("filename"), { "cookie": document.cookie });
+				let res = await base.sendLinkToBitcomet(target.data("link"), target.data("filename"), { "user_agent": config.$quark.api.ua.downloadLink, "referrer": `https://${location.host}/`, "cookie": document.cookie });
 				if (res === 'success') {
 					target.removeClass('pl-btn-danger').html('发送成功啦!快去看看吧~').animate({ opacity: '0.5' }, "slow");
 				} else {
@@ -6728,9 +6729,9 @@
 					getFileSize: v => v.size,
 					getFileLink: v => v.download_url,
 					convert: {
-						aria2: `--header "Cookie:${document.cookie}"`,
-						curl: `-b "${document.cookie}"`,
-						bitcomet: `cookie=${encodeURIComponent(document.cookie)}`
+						aria2: `--header "User-Agent:${config.$quark.api.ua.downloadLink}" --header "Referer:https://${location.host}/" --header "Cookie:${document.cookie}"`,
+						curl: `-A "${config.$quark.api.ua.downloadLink}" -e "https://${location.host}/" -b "${document.cookie}"`,
+						bitcomet: `user_agent=${encodeURIComponent(config.$quark.api.ua.downloadLink)}&refer=${encodeURIComponent(`https://${location.host}/`)}&cookie=${encodeURIComponent(document.cookie)}`
 					},
 					tooltip: config.$quark.dom
 				});
@@ -6829,7 +6830,7 @@
 				let originalHtml = o.link.html();
 
 				base._resetData(index);
-				base.get(e.currentTarget.dataset.link, undefined, 'blob', { filename, index });
+				base.get(e.currentTarget.dataset.link, { "User-Agent": config.$uc.api.ua.downloadLink }, 'blob', { filename, index });
 
 				let startTime = Date.now();
 				let prevLoaded = 0;
@@ -6890,7 +6891,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await base.sendLinkToAria2(target.data("link"), target.data("filename"), [`Cookie:${document.cookie}`]);
+				let res = await base.sendLinkToAria2(target.data("link"), target.data("filename"), [`User-Agent:${config.$uc.api.ua.downloadLink}`, `Referer:https://${location.host}/`, `Cookie:${document.cookie}`]);
 				if (res === 'success') {
 					target.removeClass('pl-btn-danger').html('发送成功啦!快去看看吧~').animate({ opacity: '0.5' }, "slow");
 				} else {
@@ -6912,7 +6913,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let res = await base.sendLinkToBitcomet(target.data("link"), target.data("filename"), { "cookie": document.cookie });
+				let res = await base.sendLinkToBitcomet(target.data("link"), target.data("filename"), { "user_agent": config.$uc.api.ua.downloadLink, "referrer": `https://${location.host}/`, "cookie": document.cookie });
 				if (res === 'success') {
 					target.removeClass('pl-btn-danger').html('发送成功啦!快去看看吧~').animate({ opacity: '0.5' }, "slow");
 				} else {
@@ -7057,9 +7058,9 @@
 					getFileSize: v => v.size,
 					getFileLink: v => v.download_url,
 					convert: {
-						aria2: `--header "Cookie:${document.cookie}"`,
-						curl: `-b "${document.cookie}"`,
-						bitcomet: `cookie=${encodeURIComponent(document.cookie)}`
+						aria2: `--header "User-Agent:${config.$uc.api.ua.downloadLink}" --header "Referer:https://${location.host}/" --header "Cookie:${document.cookie}"`,
+						curl: `-A "${config.$uc.api.ua.downloadLink}" -e "https://${location.host}/" -b "${document.cookie}"`,
+						bitcomet: `user_agent=${encodeURIComponent(config.$uc.api.ua.downloadLink)}&refer=${encodeURIComponent(`https://${location.host}/`)}&cookie=${encodeURIComponent(document.cookie)}`
 					},
 					tooltip: config.$uc.dom
 				});
