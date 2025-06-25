@@ -7248,23 +7248,27 @@
 				if (tag.is(":hidden")) return;
 				tag.hide();
 			}, true)
-			let allowedTexts = ["其他网盘数据转入", "同步空间", "回收站", "下载客户端"];
+			let disallowTexts = ["同步空间", "其他网盘数据转入", "下载客户端"];
 			base.waitForKeyElements(`.ant-menu.ant-menu-root.ant-menu-inline[role="menu"]`, (tag) => {
 				tag.find(`[role="menuitem"]`).each(function () {
 					let menuText = $(this).text().trim();
-					if (!allowedTexts.includes(menuText) || $(this).is(":hidden")) return;
-					$(this).hide();
+					console.log(menuText);
+					if ($(this).is(":hidden")) return;
+					if (disallowTexts.includes(menuText)) $(this).hide();
 				});
 			}, true)
 			base.waitForKeyElements(".special-menu-item-container", (tag) => {
 				tag.find(".special-menu-item-container-migration").each(function () {
 					let menuText = $(this).text().trim();
-					if (!allowedTexts.includes(menuText) || $(this).is(":hidden")) return;
-					$(this).hide();
+					console.log(menuText);
+					if ($(this).is(":hidden")) return;
+					console.log(menuText);
+					if (disallowTexts.includes(menuText)) $(this).hide();
 				});
 			}, true)
 			base.waitForKeyElements(`.header-btn-list > .btn-item`, (tag) => {
 				let menuText = tag.text().trim();
+				console.log(menuText);
 				if (menuText === "消息" && tag.next().text().trim() !== "公告") {
 					let notice = tag.clone(true);
 					notice.find('.item-text').html("公告");
@@ -7273,8 +7277,8 @@
 					});
 					tag.after(notice);
 				}
-				if (!allowedTexts.includes(menuText) || tag.is(":hidden")) return;
-				tag.hide();
+				if (tag.is(":hidden")) return;
+				if (disallowTexts.includes(menuText)) tag.hide();
 			}, true)
 			base.waitForKeyElements(`.rightInfo .register:not(.pl-button, .pl-button-init),
 				.homeClass > div > .ant-dropdown-trigger:not(.pl-button, .pl-button-init),
