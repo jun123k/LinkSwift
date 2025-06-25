@@ -48,7 +48,7 @@
 #### 卑微的小标题
 
 这个脚本只有一个人在修改\~如果喜欢的话还请留个 Star 哦\~   
-- 如有 bug 等问题请在这发[议题反馈](https://github.com/hmjz100/Online-disk-direct-link-download-assistant/issues)
+- 如有 bug 等问题请在这发[议题反馈](https://github.com/hmjz100/LinkSwift/issues)
 
 ## 版本号
 V. 1.1.1.3（改自 6.2.7 版本）  
