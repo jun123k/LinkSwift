@@ -251,7 +251,34 @@
 						title: "比特彗星下载",
 						footer: `<div>适用于 <a href="https://www.youxiaohou.com/zh-cn/bitcomet.html" target="_blank" class="pl-a" data-no-instant="1"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-link"></use></svg>比特彗星</a></div>`
 					}
-				}
+				},
+				theme: [
+					{ color: '#09AAFF', name: '度盘|经典蓝' },
+					{ color: '#cc3235', name: '度盘|平安红' },
+					{ color: '#518c17', name: '度盘|盎然绿' },
+					{ color: '#ed944b', name: '度盘|周年橙' },
+					{ color: '#f969a5', name: '度盘|幸会粉' },
+					{ color: '#bca280', name: '度盘|午后棕' },
+					{ color: '#b673ab', name: '度盘|物语紫' },
+					{ color: '#574AB8', name: '度盘|星空紫' },
+					{ color: '#1d2327', name: 'OpenAI|默认黑' },
+					{ color: '#18a497', name: 'OpenAI|默认青' },
+					{ color: '#637dff', name: '度里叁|霞光紫' },
+					{ color: '#0d53ff', name: '夸克|极简蓝' },
+					{ color: '#3181f9', name: '移动|彩云蓝' },
+					{ color: '#f8d800', name: '果核|柠檬黄' },
+					{ color: '#0396ff', name: '果核|默认蓝' },
+					{ color: '#32ccbc', name: '果核|碧波绿' },
+					{ color: '#f6416c', name: '果核|玫瑰红' },
+					{ color: '#2271b1', name: '文派|默认蓝' },
+					{ color: '#59524c', name: '文派|咖啡灰' },
+					{ color: '#ff679a', name: '哔哩|少女粉' },
+					{ color: '#f44236', name: '哔哩|高能红' },
+					{ color: '#fec107', name: '哔哩|咸蛋黄' },
+					{ color: '#8bc24a', name: '哔哩|早苗绿' },
+					{ color: '#2594ed', name: '哔哩|宝石蓝' },
+					{ color: '#9c28b1', name: '哔哩|罗兰紫' }
+				]
 			}
 		},
 		$baidu: {
@@ -593,7 +620,7 @@
 				} else {
 					let index = Math.floor(Math.log(value) / Math.log(1024));
 					let size = value / Math.pow(1024, index);
-					size = size.toFixed(1);
+					size = size.toFixed(2);
 					return size + unit[index];
 				}
 			}
@@ -988,7 +1015,7 @@
 								return;
 							}
 							if (extra && extra.filename && extra.index) {
-								res.total > 0 ? temp.progress[extra.index] = (res.loaded * 100 / res.total).toFixed(2) : temp.progress[extra.index] = 0.00;
+								res.total > 0 ? temp.progress[extra.index] = (res.loaded * 100 / res.total) : temp.progress[extra.index] = 0.00;
 							}
 						},
 						onloadstart(res) {
@@ -1267,7 +1294,7 @@
 		},
 
 		/**
-		 * 批量替换 CSS 颜色值
+		 * 自适应 CSS 颜色替换
 		 * @author hmjz100
 		 * @description 支持全局样式替换和资源路径修正，处理颜色渐变过渡效果
 		 * @param {string} cssText - 原始 CSS 内容
@@ -1276,7 +1303,7 @@
 		 * @param {Array<[string, string]>} colorMap - 颜色映射表（旧颜色 → 新颜色）
 		 * @returns {string} 处理后的 CSS 内容
 		 */
-		replaceColors(cssText, baseURI, type, colorMap) {
+		adaptiveColorReplace(cssText, baseURI, type, colorMap) {
 			if (!cssText) return "";
 
 			if (baseURI) {
@@ -1294,10 +1321,9 @@
 				});
 			}
 
-			let colorList = ['#09AAFF', '#cc3235', '#518c17', '#ed944b', '#f969a5', '#bca280', '#574AB8', '#b673ab', '#1d2327', '#18a497', '#637dff', '#0d53ff', '#3181f9', '#f8d800', '#0396ff', '#32ccbc', '#f6416c', '#2271b1', '#59524c', '#ff679a', '#f44236', '#fec107', '#8bc24a', '#2594ed', '#9c28b1']
-
 			// 处理默认颜色列表
-			colorList.forEach(function (oldColor) {
+			config.base.dom.theme.forEach(item => {
+				let oldColor = item.color;
 				cssText = cssText.replace(new RegExp(base.hexToRgba(oldColor), 'ig'), base.hexToRgba(temp.color));
 				cssText = cssText.replace(new RegExp(oldColor, 'ig'), temp.color);
 			});
@@ -1344,7 +1370,7 @@
 						// 替换带属性块的情况（添加 transition）
 						uniqueVariants.forEach(variant => {
 							const regexWithBlock = new RegExp(variant + '(.*?)}', 'gi');
-							cssText = cssText.replace(regexWithBlock, newColor + '$1; transition:all .2s}');
+							cssText = cssText.replace(regexWithBlock, newColor + '$1; transition:all.2s}');
 						});
 
 						// 最后再统一替换剩下的
@@ -1364,23 +1390,24 @@
 		},
 
 		/**
-		 * 全局主题颜色设置
+		 * 自适应全局主题颜色修改器
 		 * @author hmjz100
 		 * @description 自动遍历并替换 `页面所有样式表` `SVG 元素` 的颜色值
 		 * @param {Array<[string, string]>} colorMap - 颜色映射表
 		 * @param {'default'|'other'} type - 替换模式
 		 */
-		setColors(colorMap, type) {
+		adaptiveTheme(colorMap, type) {
 			base.waitForKeyElements(`[id^="${mount}-ColorUI-"]`, function (tag) {
-				if (tag.html() === base.replaceColors(tag.text(), "", type, colorMap)) return;
-				let cssText = base.replaceColors(tag.text(), "", type, colorMap);
+				if (tag.html() === base.adaptiveColorReplace(tag.text(), "", type, colorMap)) return;
+				let cssText = base.adaptiveColorReplace(tag.text(), "", type, colorMap);
 				base.addStyle(tag.attr("id"), 'style', cssText, tag[0]);
 				return true;
 			}, true)
-			base.waitForKeyElements(`[data-pl-viewed]`, function (tag) {
+			base.waitForKeyElements(`[data-pl-colored]`, function (tag) {
+				if (tag.attr("data-pl-colored") === temp.color) return;
 				let originalStyle = tag.attr("style");
 				if (!originalStyle) return;
-				let newStyle = base.replaceColors(originalStyle, "", type, colorMap);
+				let newStyle = base.adaptiveColorReplace(originalStyle, "", type, colorMap);
 				if (newStyle !== originalStyle) {
 					tag.attr("style", newStyle);
 				}
@@ -1400,9 +1427,8 @@
 						.then(response => response.text())
 						.then(responseText => {
 							let id = `${mount}-ColorUI-` + href.replace(/[^\w]/g, "_");
-							console.log(href)
-							let cssText = base.replaceColors(responseText, href, type, colorMap);
-							if (responseText === base.replaceColors(responseText, href, type, colorMap)) return;
+							let cssText = base.adaptiveColorReplace(responseText, href, type, colorMap);
+							if (responseText === base.adaptiveColorReplace(responseText, href, type, colorMap)) return;
 							base.addStyle(id, 'style', cssText, tag[0], "after");
 						})
 				}, true);
@@ -1412,7 +1438,7 @@
 					if (tag.data("styles") === text) return;
 					tag.data("styles", text);
 					// 替换颜色并添加样式
-					let cssText = base.replaceColors(text, "", type, colorMap);
+					let cssText = base.adaptiveColorReplace(text, "", type, colorMap);
 					if (text === cssText) return;
 					id = id ? id : `${mount}-ColorUI-${count++}`
 					base.addStyle(id, 'style', cssText, tag[0], "after");
@@ -1422,26 +1448,27 @@
 						let fill = $(element).attr('fill');
 						let stroke = $(element).attr('stroke');
 						if (fill) {
-							let newFill = base.replaceColors(fill, "", type, colorMap);
+							let newFill = base.adaptiveColorReplace(fill, "", type, colorMap);
 							if (newFill !== fill) {
 								$(element).attr('fill', newFill);
 							}
 						}
 						if (stroke) {
-							let newStroke = base.replaceColors(stroke, "", type, colorMap);
+							let newStroke = base.adaptiveColorReplace(stroke, "", type, colorMap);
 							if (newStroke !== stroke) {
 								$(element).attr('stroke', newStroke);
 							}
 						}
 					});
 				}, true);
-				base.waitForKeyElements(`[style]:not([id^="${mount}-"],[class*="listener-"],[data-pl-viewed])`, function (element) {
+				base.waitForKeyElements(`[style]:not([id^="${mount}-"],[class*="listener-"])`, function (element) {
+					if (element.attr("data-pl-colored") === temp.color) return;
 					let originalStyle = element.attr("style");
 					if (!originalStyle) return;
-					let newStyle = base.replaceColors(originalStyle, "", type, colorMap);
+					let newStyle = base.adaptiveColorReplace(originalStyle, "", type, colorMap);
 					if (newStyle !== originalStyle) {
 						element.attr("style", newStyle);
-						element.attr("data-pl-viewed", "true");
+						element.attr("data-pl-colored", temp.color);
 					}
 				}, true);
 				temp.colored = true;
@@ -1451,6 +1478,7 @@
 		/**
 		 * 延时执行
 		 * @author 油小猴
+		 * @description 仅可于 `async` 函数中执行，否则无法倒计时。
 		 * @param {number} time - 等待时间（毫秒）
 		 * @returns {Promise<void>} 延时完成的 `Promise`
 		 */
@@ -1955,35 +1983,8 @@
 		 */
 		showBeautify() {
 			function changeColor() {
-				let colorList = [
-					{ color: '#09AAFF', name: '度盘|经典蓝' },
-					{ color: '#cc3235', name: '度盘|平安红' },
-					{ color: '#518c17', name: '度盘|盎然绿' },
-					{ color: '#ed944b', name: '度盘|周年橙' },
-					{ color: '#f969a5', name: '度盘|幸会粉' },
-					{ color: '#bca280', name: '度盘|午后棕' },
-					{ color: '#b673ab', name: '度盘|物语紫' },
-					{ color: '#574AB8', name: '度盘|星空紫' },
-					{ color: '#1d2327', name: 'OpenAI|默认黑' },
-					{ color: '#18a497', name: 'OpenAI|默认青' },
-					{ color: '#637dff', name: '度里叁|霞光紫' },
-					{ color: '#0d53ff', name: '夸克|极简蓝' },
-					{ color: '#3181f9', name: '移动|彩云蓝' },
-					{ color: '#f8d800', name: '果核|柠檬黄' },
-					{ color: '#0396ff', name: '果核|默认蓝' },
-					{ color: '#32ccbc', name: '果核|碧波绿' },
-					{ color: '#f6416c', name: '果核|玫瑰红' },
-					{ color: '#2271b1', name: '文派|默认蓝' },
-					{ color: '#59524c', name: '文派|咖啡灰' },
-					{ color: '#ff679a', name: '哔哩|少女粉' },
-					{ color: '#f44236', name: '哔哩|高能红' },
-					{ color: '#fec107', name: '哔哩|咸蛋黄' },
-					{ color: '#8bc24a', name: '哔哩|早苗绿' },
-					{ color: '#2594ed', name: '哔哩|宝石蓝' },
-					{ color: '#9c28b1', name: '哔哩|罗兰紫' }
-				];
 				temp.color = base.getValue('setting_ui_theme').color;
-				return colorList.map(item => {
+				return config.base.dom.theme.map(item => {
 					return `<div style="--color:${item.color}" class="listener-color" data-color="${item.color}">
 						<div class="mask">
 							${item.name.split('|').map(part => `<div>${part}</div>`).join("")}
@@ -2019,7 +2020,7 @@
 				<style>
 					.pl-color{display:grid!important;grid-template-columns:repeat(5, var(--pl-color-width));gap:10px;--pl-color-width:55px}
 					.pl-color > div{background-color:var(--color);width:var(--pl-color-width);height:var(--pl-color-width);box-sizing:border-box;cursor:pointer}
-					.pl-color .mask{width:calc(var(--pl-color-width) - 2px);height:calc(var(--pl-color-width) - 2px);opacity:0;transition:opacity .2s;color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center;flex-direction:column}
+					.pl-color .mask{width:calc(var(--pl-color-width) - 2px);height:calc(var(--pl-color-width) - 2px);opacity:0;transition:opacity.2s;color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center;flex-direction:column}
 					.pl-color > div:hover .mask{opacity:1}
 					.pl-checkboxies{display:grid!important;grid-template-columns:repeat(2, 98px);gap:10px}
 					.pl-input[type=checkbox]{height:20px;width:20px;padding:0!important;background-image:none!important}
@@ -2674,8 +2675,8 @@
 							<div class="pl-item-name listener-tip"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
 							<button class="pl-item-link pl-btn-primary pl-btn-default listener-api-download enhance listener-tip" data-index="${i}" data-link="${dlink}" data-filename="${filename}" data-size="${size}" data-title="建议换用 “Aria2 推送下载”，本方式若文件过大有可能不会弹出下载后窗口<br/>通过脚本跨域请求下载文件，适用于较新的浏览器，可在此显示剩余时间和速度"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>增强下载 (基于脚本跨域)</button>
 							<button class="pl-item-link pl-btn-primary pl-btn-info listener-api-download normal listener-tip" data-link="${dlink}" data-filename="${filename}" data-title="通过浏览器访问链接下载文件，适用于支持 iframe 的浏览器<br/>点击后需等待浏览器弹出提示才可点击下个下载，否则只会下载后者"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>直接下载 (基于访问链接)</button>
-							<button class="pl-item-copy pl-btn-primary pl-btn-success listener-copy filename listener-tip" data-copy='${filename}' data-title="点击复制文件名"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制名称</button>
-							<button class="pl-item-copy pl-btn-primary pl-btn-warning listener-copy copy listener-tip" data-copy='${dlink}' data-title="点击复制下载链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制链接</button>
+							<button class="pl-item-copy pl-btn-primary pl-btn-success listener-copy listener-tip" data-copy='${filename}' data-title="点击复制文件名"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制名称</button>
+							<button class="pl-item-copy pl-btn-primary pl-btn-warning listener-copy listener-tip" data-copy='${dlink}' data-title="点击复制下载链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制链接</button>
 							<div class="pl-item-progress" style="display:none">
 								<div class="pl-progress">
 									<div class="pl-progress-outer"></div>
@@ -2721,7 +2722,7 @@
 			allLink = (allLink ? allLink.join("\r\n") : "")
 			if (temp.mode === "api" && list.length >= 2) {
 				content.find(".pl-extra").append(`<button class="pl-btn-primary listener-download-all enhance listener-tip" data-title="建议换用 “Aria2 推送下载”，本方式若文件过大有可能不会弹出下载后窗口<br/>通过脚本跨域请求下载文件，适用于较新的浏览器，可在此显示剩余时间和速度"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>全部增强下载</button>
-				<button class="pl-btn-primary pl-btn-warning listener-copy copy listener-tip" data-link="${allLink}" data-title="点击复制全部下载链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部链接</button>`);
+				<button class="pl-btn-primary pl-btn-warning listener-copy listener-tip" data-copy="${allLink}" data-title="点击复制全部下载链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制全部链接</button>`);
 
 			} else if (temp.mode === "curl") {
 				content.find(".pl-extra").append(`<button class="pl-btn-primary pl-btn-warning listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>修改终端类型（${temp.terminalType[base.getValue('setting_curl_terminal')]}）</button>`);
@@ -3064,7 +3065,7 @@
 			base.addStyle('swal-pub-dark-style', 'style', `@media (prefers-color-scheme:dark){${GM_getResourceText('SwalDark').replace(/#19191a/, '#222226')}}`);
 			base.addStyle('swal-pub-custom-style', 'style', `
 			.swal2-container *{vertical-align:baseline}
-			.swal2-styled{transition:all .2s}
+			.swal2-styled{transition:all.2s}
 			.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:${temp.color} transparent }
 			.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}
 			.swal2-timer-progress-bar{width:100%;height:.25em;background:${temp.color}33 }
@@ -3073,7 +3074,7 @@
 			.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:${temp.color}}
 			.swal2-html-container{padding:1em 1.6em 0.3em;margin:0}
 
-			.swal2-close,div:where(.swal2-container) button:where(.swal2-close){position:absolute;border-radius:10px;top:0;right:0;transition:all .2s}
+			.swal2-close,div:where(.swal2-container) button:where(.swal2-close){position:absolute;border-radius:10px;top:0;right:0;transition:all.2s}
 			.swal2-close:hover,div:where(.swal2-container) button:where(.swal2-close):hover{color:${temp.color};background-color:${temp.color}30;font-size:60px}
 
 			.swal2-styled{display:flex;justify-content:center;align-items:center;gap:5px}
@@ -3092,7 +3093,7 @@
 			{border-radius:50px}
 			div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover{opacity:0.7}
 
-			.swal2-backdrop-show,.swal2-noanimation,div:where(.swal2-container).swal2-backdrop-show, div:where(.swal2-container).swal2-noanimation{background:rgba(25,25,26,.75);transition:backdrop-filter .2s;backdrop-filter:blur(1px)}
+			.swal2-backdrop-show,.swal2-noanimation,div:where(.swal2-container).swal2-backdrop-show, div:where(.swal2-container).swal2-noanimation{background:rgba(25,25,26,.75);transition:backdrop-filter.2s;backdrop-filter:blur(1px)}
 			body.swal2-toast-shown .swal2-container{backdrop-filter:none}
 			.swal2-popup,div:where(.swal2-container) div:where(.swal2-popup){padding-bottom:1em;border-radius:10px}
 			.swal2-title,div:where(.swal2-container) h2:where(.swal2-title){height:auto}
@@ -3126,13 +3127,11 @@
 			::-webkit-scrollbar{width:8px;height:8px}
 			::-webkit-scrollbar-track{border-radius:10px;background:#fff}
 			::-webkit-scrollbar-thumb,::-webkit-scrollbar-thumb:hover{border-radius:10px}
-			::-webkit-scrollbar-thumb{background-color:${temp.color}90!important,transition:background-color .2s;will-change:background-color}
+			::-webkit-scrollbar-thumb{background-color:${temp.color}90!important,transition:background-color.2s;will-change:background-color}
 			::-webkit-scrollbar-thumb:hover{background-color:${temp.color}D0!important}
 
 			.swal2-popup{font-size:16px}
 			.pl-popup{font-size:12px;min-width:70%;max-width:95%}
-			.pl-popup a:not(.pl-btn-primary){color:${temp.color}}
-			.pl-popup a:hover:not(.pl-btn-primary){color:${temp.color}90}
 			.pl-header{padding:0;align-items:flex-start;border-bottom:1px solid #eee;margin:0 0 10px;padding:0 0 5px}
 			.pl-title{font-size:18px;white-space:nowrap;text-overflow:ellipsis}
 			.pl-content{padding:0;font-size:12px}
@@ -3141,8 +3140,8 @@
 
 			.pl-main{background:${temp.color}15;border-radius:10px;display:flex;flex-direction:column;gap:8px;max-height:calc(${document.documentElement.clientHeight}px - 300px);overflow:auto;padding:8px 6px}
 
-			.pl-a{position:relative;vertical-align:baseline;color:${temp.color};border-bottom:2px solid ${temp.color};text-decoration:none;transition:color .3s,opacity .3s;will-change:color,opacity;overflow:hidden}
-			.pl-a::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:100%;background-color:${temp.color};transform:scaleY(0);transform-origin:bottom center;transition:transform .15s, opacity .3s;will-change:transform;z-index:-1}
+			.pl-a{position:relative;vertical-align:baseline;color:${temp.color};border-bottom:2px solid ${temp.color};text-decoration:none;transition:color.3s,opacity.3s;will-change:color,opacity;overflow:hidden}
+			.pl-a::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:100%;background-color:${temp.color};transform:scaleY(0);transform-origin:bottom center;transition:transform.15s,opacity.3s;will-change:transform;z-index:-1}
 			.pl-a:hover,.pl-a:focus{color:#fff}
 			.pl-a:hover::before,.pl-a:focus::before{transform:scaleY(1)}
 			.pl-a:active{color:#fff;opacity:0.8}
@@ -3152,13 +3151,14 @@
 			.pl-item-name{width:15%;text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;cursor:default}
 			.pl-item-name>*{text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 			.pl-item-link{flex:1;cursor:pointer}
-			a.pl-item-link{text-align:left;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+			a.pl-item-link{text-align:left;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;transition:color.15s;will-change:color}
+			a.pl-item-link:hover{color:#fff}
 			.pl-item-tip{display:flex;justify-content:space-between;flex:1}
 
 			.pl-item-progress{display:flex;flex:1;align-items:center}
 			.pl-progress{display:inline-block;vertical-align:middle;width:100%;box-sizing:border-box;line-height:1;position:relative;height:20px;margin:0 6px;flex:1}
-			.pl-progress-outer{height:20px;border-radius:100px;background-color:#c1c1c1a1;overflow:hidden;position:relative;vertical-align:middle}
-			.pl-progress-inner{position:absolute;left:0;top:0;background-color:${temp.color};border-radius:100px;line-height:1;white-space:nowrap;transition:width .6s;height:20px;display:inline-flex;text-align:center;align-items:center}
+			.pl-progress-outer{height:20px;border-radius:100px;background-color:#c1c1c1;overflow:hidden;position:relative;vertical-align:middle}
+			.pl-progress-inner{position:absolute;left:0;top:0;background-color:${temp.color};border-radius:100px;line-height:1;white-space:nowrap;transition:width.6s;will-change:width;height:20px;display:inline-flex;text-align:center;align-items:center}
 			.pl-progress-inner-text{display:inline-block;vertical-align:middle;cursor:default;color:#ffffff;font-size:12px;margin:0 5px;height:20px;width:100%}
 			.pl-progress-inner-text:after{display:inline-block;content:"";height:100%;vertical-align:middle}
 
@@ -3169,7 +3169,7 @@
 			.pl-extra:has(>*){margin-top:1.25em;padding:8px 6px}
 			.pl-extra>*{flex:1}
 
-			.pl-btn-primary{color:#ffffff!important;background:${temp.color};border:0;border-radius:50px;cursor:pointer;font-size:12px;outline:none;display:flex;align-items:center;justify-content:center;gap:5px;padding:0.625em 1.1em;transition:opacity .2s,box-shadow .2s;will-change:opacity,box-shadow}
+			.pl-btn-primary{color:#ffffff!important;background:${temp.color};border:0;border-radius:50px;cursor:pointer;font-size:12px;outline:none;display:flex;align-items:center;justify-content:center;gap:5px;padding:0.625em 1.1em;transition:opacity.2s,box-shadow.2s;will-change:opacity,box-shadow}
 			.pl-btn-primary:hover{opacity:0.8}
 			.pl-btn-primary:focus{box-shadow:0 0 0 3px ${temp.color}80}
 			.pl-btn-success{background:#55af28}
@@ -3184,7 +3184,7 @@
 			@keyframes easeOpacity{ from{opacity:1} 50%{opacity:0.35} to{opacity:1} }
 
 			.pl-button-mini{padding:5px 10px}
-			.pl-button,.pl-dropdown-menu{transition:all .2s}
+			.pl-button,.pl-dropdown-menu{transition:all.2s}
 			.pl-button{position:relative}
 			.pl-button .pl-dropdown-menu{opacity:0;pointer-events:none;will-change:opacity}
 			.pl-button:hover .pl-dropdown-menu{opacity:1;pointer-events:auto}
@@ -3193,13 +3193,13 @@
 
 			.pl-dropdown-menu{position:absolute;padding:5px 0;color:${temp.color};background:#fff;z-index:999;min-width:110px;border-radius:5px;box-shadow:0 1px 6px ${temp.color}33;-webkit-box-shadow:0 1px 6px ${temp.color}33;text-align:center;border:none}
 			@media (prefers-color-scheme:dark){ .pl-dropdown-menu{color:#fff;background:#222226} }
-			.pl-button-mode{height:30px;padding:0 10px!important;display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;white-space:nowrap;transition:background-color .2s;will-change:background-color}
+			.pl-button-mode{height:30px;padding:0 10px!important;display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;white-space:nowrap;transition:background-color.2s;will-change:background-color}
 			.pl-button-mode:hover{background-color:${temp.color}33!important}
 
 			header[style="display:none;"]~.pl-button{display:inline-block;position:fixed;top:0.6em;left:65%;z-index:99999}
-			.color-button{background:${temp.color}!important;border-color:${temp.color}!important;border:1px solid ${temp.color}!important;display:inline-flex;transition:background .2s,border-color .2s;will-change:background,border-color}
+			.color-button{background:${temp.color}!important;border-color:${temp.color}!important;border:1px solid ${temp.color}!important;display:inline-flex;transition:background.2s,border-color.2s;will-change:background,border-color}
 			.color-button:hover{background:${temp.color}b0!important;border-color:${temp.color}!important}
-			.ali-button{background:${temp.color};border:0 solid transparent;font-size:14px;margin-left:20px;padding:8px 16px;position:relative;height:32px;border-radius:100px;display:flex;align-items:center;justify-content:center;color:var(--basic_white);cursor:pointer;transition:background .2s;will-change:background}
+			.ali-button{background:${temp.color};border:0 solid transparent;font-size:14px;margin-left:20px;padding:8px 16px;position:relative;height:32px;border-radius:100px;display:flex;align-items:center;justify-content:center;color:var(--basic_white);cursor:pointer;transition:background.2s;will-change:background}
 			.ali-button:hover{background:${temp.color}D0}
 			.ali-btn-icon{vertical-align:-0.2em}
 			.mcloud-button{float:left;position:relative;margin:20px 24px 20px 0;width:110px;height:36px;background:${temp.color};border-radius:2px;font-size:14px;color:#fff;line-height:39px;text-align:center;cursor:pointer;will-change:background}
@@ -3209,7 +3209,7 @@
 			.mcloud-btn{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAGNQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////mkUNoAAAACF0Uk5TAAbHPP9AMRtr9PwrV8zqXfmNgDODHTLD4iJxhGJJ8Z269m0aDgAAAMZJREFUeJzd0ssOgyAQBVDUK74rWq0PFP3/ryxqTMdGqJtuvGHD5CTDTGDs3nFc17kEPcC7BH3At/Tjvk5AYbBU+NcrwghL4uQDk3gtRSF1KWCCQEpghkd+3jp/ICNQoDANU0AQCJQmWAJ3h8+q3mFdvSywQdttsGvRWGAPLReoHXrbG6WWAzBoJ+3DaCnWI39NLbcvszvLeuTB2fYoqbNBNo7sGjzk31BhMsEJitxmiKk8zSQwE8gFjBGcNuCzOmdqPrib5A2JRQ7qK9g+hQAAAABJRU5ErkJggg==");height:20px;line-height:20px;display:inline-block;background-repeat:no-repeat;background-size:20px 20px;text-indent:25px}
 			.tcloud-button{color:#fff;border:1px solid ${temp.color};background:${temp.color};position:relative;height:30px;padding:0 12px;margin-right:12px;font-size:12px;line-height:28px;cursor:pointer;will-change:background,border-color}
 			.tcloud-button:hover{border-color:${temp.color}b0;background:${temp.color}b0}
-			.xunlei-button{display:inline-flex;align-items:center;justify-content:center;border:0 solid transparent;border-radius:5px;box-shadow:0 0 0 0 transparent;width:fit-content;white-space:nowrap;flex-shrink:0;font-size:14px;line-height:1.5;outline:0;touch-action:manipulation;transition:background .2s,color .2s,border .2s,box-shadow .2s;color:#fff;background:${temp.color};margin-left:12px;padding:0px 12px;position:relative;cursor:pointer;height:36px;will-change:background}
+			.xunlei-button{display:inline-flex;align-items:center;justify-content:center;border:0 solid transparent;border-radius:5px;box-shadow:0 0 0 0 transparent;width:fit-content;white-space:nowrap;flex-shrink:0;font-size:14px;line-height:1.5;outline:0;touch-action:manipulation;transition:background.2s,color.2s,border.2s,box-shadow.2s;color:#fff;background:${temp.color};margin-left:12px;padding:0px 12px;position:relative;cursor:pointer;height:36px;will-change:background}
 			.xunlei-button:hover{background:${temp.color}b0}
 			.quark-button,.uc-button{padding:0 14px;background:${temp.color}!important;background-color:${temp.color}!important;will-change:background,background-color}
 			.quark-button:hover,.uc-button:hover{background:${temp.color}b0!important;background-color:${temp.color}b0!important}
@@ -3237,10 +3237,10 @@
 			.pl-button-save:hover{background-color:${temp.color}D0!important;color:#fff!important}
 			.swal2-container{z-index:100000}
 			body.swal2-height-auto{height:inherit}
-			[class^="swal2-"],[class*="pl-btn"]{transition:all .2s}
+			[class^="swal2-"],[class*="pl-btn"]{transition:all.2s}
 
 			/* 适配（改）百度网盘会员青春版 */
-			a.downloadSubtitle, button.downloadSubtitle{transition:all .2s;background-color:${temp.color}}
+			a.downloadSubtitle, button.downloadSubtitle{transition:all.2s;background-color:${temp.color}}
 			a.downloadSubtitle:hover, button.downloadSubtitle:hover{background-color:${temp.color}D0}
 			a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:${temp.color}D0}
 
@@ -3252,7 +3252,7 @@
 			`);
 
 			if (/(pan|yun).baidu.com/.test(location.host) && $baidu.detectPage() !== 'home' && base.getValue('setting_ui_theme').custom.$baidu === true) {
-				base.setColors([
+				base.adaptiveTheme([
 					['#717fff', temp.color],
 					['#717FFF', temp.color],
 					['#06a8ff', temp.color],
@@ -3394,7 +3394,7 @@
 					height:auto;
 				}
 				a{
-					transition:all .2s!important;
+					transition:all.2s!important;
 				}
 				#bd-main .bd-left{
 					margin:auto!important;
@@ -3422,7 +3422,7 @@
 					border-bottom:10px solid #d29633!important;
 				}
 				`, `.${mount}`);
-				base.setColors([
+				base.adaptiveTheme([
 					['#717fff', temp.color],
 					['#717FFF', temp.color],
 					['#06a8ff', temp.color],
@@ -3515,7 +3515,7 @@
 				], "other");
 			};
 			if (/www.(aliyundrive|alipan).com/.test(location.host) && base.getValue('setting_ui_theme').custom.$aliyun === true) {
-				base.setColors([
+				base.adaptiveTheme([
 					['#3763ff', temp.color],
 					['#8664ff', `${temp.color}D0`],
 					['99, 125, 255', base.hexToRgba(temp.color)],
@@ -3530,7 +3530,7 @@
 				]);
 			};
 			if (/(yun|caiyun).139.com/.test(location.host) && base.getValue('setting_ui_theme').custom.$mcloud === true) {
-				base.setColors([
+				base.adaptiveTheme([
 					['#3181f9', temp.color],
 					['#5a9afa', temp.color],
 					['#98c0fc', `${temp.color}D0`],
@@ -3539,7 +3539,7 @@
 				]);
 			};
 			if (/cloud.189.cn/.test(location.host) && base.getValue('setting_ui_theme').custom.$tcloud === true) {
-				base.setColors([
+				base.adaptiveTheme([
 					['#2b89ea', temp.color],
 					['#1874d3', `${temp.color}F0`],
 					['#1890ff', temp.color],
@@ -3554,7 +3554,7 @@
 				], "other");
 			}
 			if (/pan.xunlei.com/.test(location.host) && base.getValue('setting_ui_theme').custom.$xunlei === true) {
-				base.setColors([
+				base.adaptiveTheme([
 					['#3f85ff', temp.color],
 					['63,133,255,.1', base.hexToRgba(`${temp.color}20`)],
 					['#2670ea', `${temp.color}D0`],
@@ -3573,7 +3573,7 @@
 				`);
 			};
 			if (/pan.quark.cn/.test(location.host) && base.getValue('setting_ui_theme').custom.$quark === true) {
-				base.setColors([
+				base.adaptiveTheme([
 					['#0d53ff', temp.color],
 					['#e6f1ff', `${temp.color}20`],
 					['#f0faff', `${temp.color}20`],
@@ -3595,7 +3595,7 @@
 				`);
 			};
 			if (/drive.uc.cn/.test(location.host) && base.getValue('setting_ui_theme').custom.$uc === true) {
-				base.setColors([
+				base.adaptiveTheme([
 					['#12161a', temp.color],
 					['#e6f1ff', `${temp.color}20`],
 					['#f0faff', `${temp.color}20`],
@@ -3613,7 +3613,7 @@
 				`);
 			};
 			if (/www.(123(pan|684|865|952|912).com|123pan.cn)/.test(location.host) && base.getValue('setting_ui_theme').custom.$123pan === true) {
-				base.setColors([
+				base.adaptiveTheme([
 					['#597dfc', temp.color],
 					['#5a7cfc', temp.color],
 					['#2A82E4', temp.color],
@@ -4086,7 +4086,7 @@
 
 					// 更新进度条
 					$width.css('width', `${prog}%`);
-					$text.text(`${prog.toFixed(1)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
+					$text.text(`${prog.toFixed(2)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
 
 					// 更新历史值
 					prevLoaded = loaded;
@@ -4841,7 +4841,7 @@
 										if (Swal.isVisible()) {
 											let timeLeft = Swal.getTimerLeft();
 											if (timeLeft !== null && timeLeft > 0) {
-												secondSpan.textContent = (timeLeft / 1000).toFixed(1);
+												secondSpan.textContent = (timeLeft / 1000).toFixed(2);
 											}
 										} else {
 											clearInterval(interval);
@@ -4985,7 +4985,7 @@
 
 					// 更新进度条
 					$width.css('width', `${prog}%`);
-					$text.text(`${prog.toFixed(1)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
+					$text.text(`${prog.toFixed(2)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
 
 					// 更新历史值
 					prevLoaded = loaded;
@@ -5349,7 +5349,7 @@
 
 					// 更新进度条
 					$width.css('width', `${prog}%`);
-					$text.text(`${prog.toFixed(1)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
+					$text.text(`${prog.toFixed(2)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
 
 					// 更新历史值
 					prevLoaded = loaded;
@@ -5784,7 +5784,7 @@
 
 					// 更新进度条
 					$width.css('width', `${prog}%`);
-					$text.text(`${prog.toFixed(1)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
+					$text.text(`${prog.toFixed(2)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
 
 					// 更新历史值
 					prevLoaded = loaded;
@@ -6148,7 +6148,7 @@
 
 					// 更新进度条
 					$width.css('width', `${prog}%`);
-					$text.text(`${prog.toFixed(1)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
+					$text.text(`${prog.toFixed(2)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
 
 					// 更新历史值
 					prevLoaded = loaded;
@@ -6500,7 +6500,7 @@
 
 					// 更新进度条
 					$width.css('width', `${prog}%`);
-					$text.text(`${prog.toFixed(1)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
+					$text.text(`${prog.toFixed(2)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
 
 					// 更新历史值
 					prevLoaded = loaded;
@@ -6860,7 +6860,7 @@
 
 					// 更新进度条
 					$width.css('width', `${prog}%`);
-					$text.text(`${prog.toFixed(1)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
+					$text.text(`${prog.toFixed(2)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
 
 					// 更新历史值
 					prevLoaded = loaded;
@@ -7179,7 +7179,7 @@
 
 					// 更新进度条
 					$width.css('width', `${prog}%`);
-					$text.text(`${prog.toFixed(1)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
+					$text.text(`${prog.toFixed(2)}% | 速度:${base.sizeFormat(speed)} | 剩余:${base.rtimeFormat(remainingTime)}`);
 
 					// 更新历史值
 					prevLoaded = loaded;
