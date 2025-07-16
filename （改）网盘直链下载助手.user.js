@@ -2092,7 +2092,8 @@
 				<div class="block">
 					<name>V1.1.1.3</name>
 					<div>
-					<div>1、修复夸克网盘无法获取下载链接的 Bug。</div>
+					<div>1、修复夸克网盘无法获取下载链接的 Bug；</div>
+					<div>2、修复 API 下载无法复制全部链接。</div>
 					</div>
 				</div>
 				<div class="block">
