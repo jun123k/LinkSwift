@@ -1,4 +1,4 @@
-// ==UserScript==
+﻿// ==UserScript==
 // @name              LinkSwift
 // @namespace         github.com/hmjz100
 // @version           1.1.1.3
@@ -405,7 +405,7 @@
 				getShareLink: "https://www.123pan.com/api/share/download/info"
 			},
 			mount: {
-				home: "main.ant-layout-content .site-layout-background .homeClass .wenserh",
+				home: "main .homeClass .home-operator .home-operator-button-group",
 				share: ".conter .rightInfo .qrcode_btn"
 			},
 			dom: {
@@ -1216,7 +1216,7 @@
 					rel: 'stylesheet',
 					id: id
 				});
-				tag === 'style' ? $style.html(css) : $style.attr('href', css);
+				tag === 'style' ? $style.html(css.trim().replace(/\t/g, '').replace(/\r\n|\n\r|\n|\r/g, '\n').replace(/\n+/g, '\n')) : $style.attr('href', css);
 				if ($styleDom.length) {
 					$styleDom.replaceWith($style);
 					return true;
@@ -2089,6 +2089,12 @@
 					</blockquote>
 				</div>
 				<div class="block">(ﾉ◕ヮ◕)ﾉ 遇到 Bug 要记得去 <a class="pl-a" href="https://github.com/hmjz100/LinkSwift/issues" target="_blank">Github 议题</a> 向我报告哦~</div>
+				<div class="block">
+					<name>V1.1.1.4</name>
+					<div>
+					<div>1、适配 123 云盘新版页面。</div>
+					</div>
+				</div>
 				<div class="block">
 					<name>V1.1.1.3</name>
 					<div>
@@ -3152,7 +3158,7 @@
 			.pl-item-name{width:15%;text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;cursor:default}
 			.pl-item-name>*{text-align:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 			.pl-item-link{flex:1;cursor:pointer}
-			a.pl-item-link{text-align:left;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;transition:color.15s;will-change:color}
+			a.pl-item-link{color:${temp.color};text-align:left;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;transition:color.15s;will-change:color}
 			a.pl-item-link:hover{color:#fff}
 			.pl-item-tip{display:flex;justify-content:space-between;flex:1}
 
@@ -3196,6 +3202,7 @@
 			@media (prefers-color-scheme:dark){ .pl-dropdown-menu{color:#fff;background:#222226} }
 			.pl-button-mode{height:30px;padding:0 10px!important;display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;white-space:nowrap;transition:background-color.2s;will-change:background-color}
 			.pl-button-mode:hover{background-color:${temp.color}33!important}
+			@media (prefers-color-scheme:dark){ .pl-button-mode:hover{color:#fff;background:${temp.color}!important} }
 
 			header[style="display:none;"]~.pl-button{display:inline-block;position:fixed;top:0.6em;left:65%;z-index:99999}
 			.color-button{background:${temp.color}!important;border-color:${temp.color}!important;border:1px solid ${temp.color}!important;display:inline-flex;transition:background.2s,border-color.2s;will-change:background,border-color}
@@ -3213,8 +3220,7 @@
 			.xunlei-button{display:inline-flex;align-items:center;justify-content:center;border:0 solid transparent;border-radius:5px;box-shadow:0 0 0 0 transparent;width:fit-content;white-space:nowrap;flex-shrink:0;font-size:14px;line-height:1.5;outline:0;touch-action:manipulation;transition:background.2s,color.2s,border.2s,box-shadow.2s;color:#fff;background:${temp.color};margin-left:12px;padding:0px 12px;position:relative;cursor:pointer;height:36px;will-change:background}
 			.xunlei-button:hover{background:${temp.color}b0}
 			.quark-button,.uc-button{padding:0 14px;background:${temp.color}!important;background-color:${temp.color}!important;will-change:background,background-color}
-			.quark-button:hover,.uc-button:hover{background:${temp.color}b0!important;background-color:${temp.color}b0!important}
-			.quark-btn-icon,.uc-btn-icon{width:20px;height:20px;vertical-align:-0.3em}
+			.uc-btn-icon{width:20px;height:20px;vertical-align:-0.3em}
 			.uc-button{padding:10px 20px!important}
 
 			.pl-setting-item{display:flex;align-items:center;justify-content:space-between;margin-top:1em}
@@ -3251,387 +3257,6 @@
 			/* Webkit, Opera, IE9, Chrome*/
 			::selection, ::-webkit-selection, ::-moz-selection, ::-ms-selection{background-color:${temp.color}!important;background:${temp.color}!important;color:white!important}
 			`);
-
-			if (/(pan|yun).baidu.com/.test(location.host) && $baidu.detectPage() !== 'home' && base.getValue('setting_ui_theme').custom.$baidu === true) {
-				base.adaptiveTheme([
-					['#717fff', temp.color],
-					['#717FFF', temp.color],
-					['#06a8ff', temp.color],
-					['#06A8FF', temp.color],
-					['#06a7ff', temp.color],
-					['#06A7FF', temp.color],
-					['#dcdfe6', temp.color],
-					['#DCDFE6', temp.color],
-					['#0095ff', temp.color],
-					['#0095FF', temp.color],
-					['#09aaff', temp.color],
-					['#09AAFF', temp.color],
-					['#0ca6ff', temp.color],
-					['#0CA6FF', temp.color],
-					['#5040ff', temp.color],
-					['#5040FF', temp.color],
-					['#454d5a', temp.color],
-					['#454D5A', temp.color],
-					['#a2abbd', temp.color],
-					['#A2ABBD', temp.color],
-					['#030b1a', temp.color],
-					['#030B1A', temp.color],
-					['#afb3bf', temp.color],
-					['#AFB3BF', temp.color],
-					['#ff436a', temp.color],
-					['#FF436A', temp.color],
-					['#03081a', temp.color],
-					['#03081A', temp.color],
-					['#2974b6', temp.color],
-					['#2974B6', temp.color],
-					['#0596e6', temp.color],
-					['#0596E6', temp.color],
-
-					['#C3EAFF', temp.color],
-					['#c0d9fe', `${temp.color}50`],
-					['#0098EA', `${temp.color}D0`],
-
-					['#38b9ff', `${temp.color}D0`],
-					['#38B9FF', `${temp.color}D0`],
-					['#42d8ff', `${temp.color}D0`],
-					['#42D8FF', `${temp.color}D0`],
-					['#a48dff', `${temp.color}D0`],
-					['#A48DFF', `${temp.color}D0`],
-					['#6b79f2', `${temp.color}D0`],
-					['#6B79F2', `${temp.color}D0`],
-
-					['#9c86f2', `${temp.color}90`],
-					['#9C86F2', `${temp.color}90`],
-					['#83d3ff', `${temp.color}90`],
-					['#83D3FF', `${temp.color}90`],
-					['#C4D8F4', `${temp.color}90`],
-
-					['#fafafc', `${temp.color}20`],
-					['#FAFAFC', `${temp.color}20`],
-					['#f5fbff', `${temp.color}20`],
-					['#F5FBFF', `${temp.color}20`],
-					['#b4e5ff', `${temp.color}20`],
-					['#B4E5FF', `${temp.color}20`],
-					['#f0faff', `${temp.color}20`],
-					['#F0FAFF', `${temp.color}20`],
-					['#c4d8f4', `${temp.color}20`],
-
-					['#f1f3f8', `${temp.color}15`],
-					['#F1F3F8', `${temp.color}15`],
-
-					['#f2faff', `${temp.color}10`],
-					['#F2FAFF', `${temp.color}10`],
-					['#eef9fe', `${temp.color}10`],
-					['#EEF9FE', `${temp.color}10`],
-					['#f7f9fc', `${temp.color}10`],
-					['#F7F9FC', `${temp.color}10`],
-					['#f5f6fa', `${temp.color}10`],
-					['#F5F6FA', `${temp.color}10`],
-					['#b4e5ff', `${temp.color}10`],
-					['#B4E5FF', `${temp.color}10`],
-					['#e6f6ff', `${temp.color}10`],
-					['#E6F6FF', `${temp.color}10`],
-
-					['0,149,255', base.hexToRgba(temp.color)],
-					['30, 175, 255', base.hexToRgba(temp.color)],
-					['6, 167, 255, 0.1', base.hexToRgba(`${temp.color}1a`)],
-					['6,167,255,.1', base.hexToRgba(`${temp.color}1a`)],
-					['6,167,255,.23', base.hexToRgba(`${temp.color}3b`)],
-					['164,141,255,.2', base.hexToRgba(`${temp.color}30`)],
-					['196,182,255,.2', base.hexToRgba(`${temp.color}20`)],
-					['113,127,255,.2', base.hexToRgba(`${temp.color}40`)],
-					['3,8,26,.6', base.hexToRgba(`${temp.color}D0`)],
-					['255,32,102,.4', base.hexToRgba(`${temp.color}66`)],
-					['72,166,248,.7', base.hexToRgba(`${temp.color}66`)],
-				]);
-			};
-			if (/(pan|yun).baidu.com/.test(location.host) && base.getValue('setting_ui_theme').custom.$baidu === true) {
-				base.addStyle(`${mount}-baidu`, 'style', `
-				#layoutMain,
-				.DxdbeCb{
-					border-radius:10px;
-					border-bottom-left-radius:0;
-					border-bottom-right-radius:0;
-					background:#ffffffA0!important
-				}
-				.KPDwCE,
-				.DxdbeCb .OFaPaO .tanwePYr,
-				.xGLMIab .fufHyA:hover,
-				.module-search-timeline .form-box{
-					background:#ffffffA0!important;
-				}
-				.KPDwCE .JDeHdxb,
-				.NHcGw .AuPKyz,
-				.xGLMIab .tvPMvPb,
-				.xGLMIab .FcQMwt,
-				.cazEfA .yfHIsP,
-				.hscjZ4QL .bbxnZ0Bq .ehnyLxWZ span,
-				.module-topToolBar,
-				.module-timeline-view .timeline-title-curday{
-					background:transparent!important;
-					border-bottom:0;
-				}
-				.MdLxwM{
-					background :#fff!important;
-				}
-				.aside-absolute-container{
-					position:absolute!important;
-				}
-				.aside-absolute-container .QGOvsxb .remainingSpaceUi_span{
-					background:#8af248!important;
-					border-radius:10px 0 0 10px;
-					border-right:#fff 1px solid;
-					border-bottom:#fff 1px solid;
-				}
-				.xtJbHcb .CDaavKb .KQcHyA{
-					background:rgb(244,207,0)!important;
-					padding:8px 15px;
-				}
-				.xtJbHcb .web-header-nav-new-version-inner{
-					background:${temp.color}!important;
-					padding:8px 15px;
-					line-height:15px;
-					width:auto;
-					height:auto;
-				}
-				a{
-					transition:all.2s!important;
-				}
-				#bd-main .bd-left{
-					margin:auto!important;
-				}
-				.verify-input input{
-					padding-left:0!important;
-					text-align:center!important;
-				}
-				.verify-input input:focus{
-					border:2px solid ${temp.color}!important;
-				}
-				[data-theme=light] .vp-video-page-card .vp-video-page-card__video-detail{
-					color:#030b1a;
-				}
-				dt.level-1{
-					background:#fd6d65!important;
-				}
-				dt.level-2{
-					background:#f3a723!important;
-				}
-				dt.level-1 i.desc-arrow{
-					border-bottom:10px solid #dd6966!important;
-				}
-				dt.level-2 i.desc-arrow{
-					border-bottom:10px solid #d29633!important;
-				}
-				`, `.${mount}`);
-				base.adaptiveTheme([
-					['#717fff', temp.color],
-					['#717FFF', temp.color],
-					['#06a8ff', temp.color],
-					['#06A8FF', temp.color],
-					['#06a7ff', temp.color],
-					['#06A7FF', temp.color],
-					['#dcdfe6', temp.color],
-					['#DCDFE6', temp.color],
-					['#0095ff', temp.color],
-					['#0095FF', temp.color],
-					['#09aaff', temp.color],
-					['#09AAFF', temp.color],
-					['#0ca6ff', temp.color],
-					['#0CA6FF', temp.color],
-					['#5040ff', temp.color],
-					['#5040FF', temp.color],
-					['#454d5a', temp.color],
-					['#454D5A', temp.color],
-					['#a2abbd', temp.color],
-					['#A2ABBD', temp.color],
-					['#030b1a', temp.color],
-					['#030B1A', temp.color],
-					['#afb3bf', temp.color],
-					['#AFB3BF', temp.color],
-					['#ff436a', temp.color],
-					['#FF436A', temp.color],
-					['#03081a', temp.color],
-					['#03081A', temp.color],
-					['#2974b6', temp.color],
-					['#2974B6', temp.color],
-					['#0596e6', temp.color],
-					['#0596E6', temp.color],
-
-					['#C3EAFF', temp.color],
-					['#c0d9fe', `${temp.color}50`],
-					['#0098EA', `${temp.color}D0`],
-
-					['#38b9ff', `${temp.color}D0`],
-					['#38B9FF', `${temp.color}D0`],
-					['#42d8ff', `${temp.color}D0`],
-					['#42D8FF', `${temp.color}D0`],
-					['#a48dff', `${temp.color}D0`],
-					['#A48DFF', `${temp.color}D0`],
-					['#6b79f2', `${temp.color}D0`],
-					['#6B79F2', `${temp.color}D0`],
-
-					['#9c86f2', `${temp.color}90`],
-					['#9C86F2', `${temp.color}90`],
-					['#83d3ff', `${temp.color}90`],
-					['#83D3FF', `${temp.color}90`],
-					['#C4D8F4', `${temp.color}90`],
-
-					['#fafafc', `${temp.color}20`],
-					['#FAFAFC', `${temp.color}20`],
-					['#f5fbff', `${temp.color}20`],
-					['#F5FBFF', `${temp.color}20`],
-					['#b4e5ff', `${temp.color}20`],
-					['#B4E5FF', `${temp.color}20`],
-					['#f0faff', `${temp.color}20`],
-					['#F0FAFF', `${temp.color}20`],
-					['#c4d8f4', `${temp.color}20`],
-
-					['#f1f3f8', `${temp.color}15`],
-					['#F1F3F8', `${temp.color}15`],
-
-					['#f2faff', `${temp.color}10`],
-					['#F2FAFF', `${temp.color}10`],
-					['#eef9fe', `${temp.color}10`],
-					['#EEF9FE', `${temp.color}10`],
-					['#f7f9fc', `${temp.color}10`],
-					['#F7F9FC', `${temp.color}10`],
-					['#f5f6fa', `${temp.color}10`],
-					['#F5F6FA', `${temp.color}10`],
-					['#b4e5ff', `${temp.color}10`],
-					['#B4E5FF', `${temp.color}10`],
-					['#e6f6ff', `${temp.color}10`],
-					['#E6F6FF', `${temp.color}10`],
-
-					['0,149,255', base.hexToRgba(temp.color)],
-					['30, 175, 255', base.hexToRgba(temp.color)],
-					['6, 167, 255, 0.1', base.hexToRgba(`${temp.color}1a`)],
-					['6,167,255,.1', base.hexToRgba(`${temp.color}1a`)],
-					['6,167,255,.23', base.hexToRgba(`${temp.color}3b`)],
-					['164,141,255,.2', base.hexToRgba(`${temp.color}30`)],
-					['196,182,255,.2', base.hexToRgba(`${temp.color}20`)],
-					['113,127,255,.2', base.hexToRgba(`${temp.color}40`)],
-					['3,8,26,.6', base.hexToRgba(`${temp.color}D0`)],
-					['255,32,102,.4', base.hexToRgba(`${temp.color}66`)],
-					['72,166,248,.7', base.hexToRgba(`${temp.color}66`)],
-				], "other");
-			};
-			if (/www.(aliyundrive|alipan).com/.test(location.host) && base.getValue('setting_ui_theme').custom.$aliyun === true) {
-				base.adaptiveTheme([
-					['#3763ff', temp.color],
-					['#8664ff', `${temp.color}D0`],
-					['99, 125, 255', base.hexToRgba(temp.color)],
-					['132, 133, 141', base.hexToRgba(temp.color)],
-					['112, 136, 255', base.hexToRgba(temp.color)],
-					['97, 122, 250', base.hexToRgba(temp.color)],
-					['68, 109, 255', base.hexToRgba(temp.color)],
-					['82, 110, 250', base.hexToRgba(`${temp.color}20`)],
-					['122, 144, 255', base.hexToRgba(`${temp.color}D0`)],
-					['138, 157, 255', base.hexToRgba(`${temp.color}D0`)],
-					//['49, 49, 54', base.hexToRgba(color)],
-				]);
-			};
-			if (/(yun|caiyun).139.com/.test(location.host) && base.getValue('setting_ui_theme').custom.$mcloud === true) {
-				base.adaptiveTheme([
-					['#3181f9', temp.color],
-					['#5a9afa', temp.color],
-					['#98c0fc', `${temp.color}D0`],
-					['#2d76e5', `${temp.color}D0`],
-					['49,129,249,.08', base.hexToRgba(`${temp.color}20`)],
-				]);
-			};
-			if (/cloud.189.cn/.test(location.host) && base.getValue('setting_ui_theme').custom.$tcloud === true) {
-				base.adaptiveTheme([
-					['#2b89ea', temp.color],
-					['#1874d3', `${temp.color}F0`],
-					['#1890ff', temp.color],
-					['#388fc9', temp.color],
-					['#0087ff', temp.color],
-					['#255697', temp.color],
-					['#3ea6ff', `${temp.color}80`],
-					['#1d52f2', temp.color],
-					['#3699ff', `${temp.color}D0`],
-					['#f4f9fe', `${temp.color}10`],
-					['#eaf5ff', `${temp.color}20`],
-				], "other");
-			}
-			if (/pan.xunlei.com/.test(location.host) && base.getValue('setting_ui_theme').custom.$xunlei === true) {
-				base.adaptiveTheme([
-					['#3f85ff', temp.color],
-					['63,133,255,.1', base.hexToRgba(`${temp.color}20`)],
-					['#2670ea', `${temp.color}D0`],
-					['#619bff', `${temp.color}D0`],
-					['#ecf3ff', `${temp.color}10`],
-					['#f6faff', `${temp.color}10`],
-					['#1a2845', `${temp.color}20`],
-					['#0f2035', `${temp.color}20`],
-					['#308bfd', `${temp.color}20`],
-					['#eee', `${temp.color}20`],
-				], "other");
-				base.addStyle(`${mount}-xunlei`, 'style', `
-					.web-header{
-						background:linear-gradient(0deg,${temp.color}D0,${temp.color})
-					}
-				`);
-			};
-			if (/pan.quark.cn/.test(location.host) && base.getValue('setting_ui_theme').custom.$quark === true) {
-				base.adaptiveTheme([
-					['#0d53ff', temp.color],
-					['#e6f1ff', `${temp.color}20`],
-					['#f0faff', `${temp.color}20`],
-					['#7da3ff', `${temp.color}D0`],
-					['#ddd', `${temp.color}D0`],
-					['17,17,17,.9', base.hexToRgba(`${temp.color}D0`)],
-					['40,40,255,.04', base.hexToRgba(`${temp.color}20`)],
-					['#f7f7ff', 'transparent'],
-					['238,247,255,0', base.hexToRgba(`${temp.color}00`)],
-				]);
-				base.addStyle(`${mount}-quark`, 'style', `
-				.file-list .hover-oper .hover-transparent-bg{
-					background:transparent!important;
-				}
-				.ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner,
-				.ant-checkbox-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner:after{
-					background-color:${temp.color}!important;
-				}
-				`);
-			};
-			if (/drive.uc.cn/.test(location.host) && base.getValue('setting_ui_theme').custom.$uc === true) {
-				base.adaptiveTheme([
-					['#12161a', temp.color],
-					['#e6f1ff', `${temp.color}20`],
-					['#f0faff', `${temp.color}20`],
-					['#7da3ff', `${temp.color}D0`],
-					['#ddd', `${temp.color}D0`],
-					['17,17,17,.9', base.hexToRgba(`${temp.color}D0`)],
-					['40,40,255,.04', base.hexToRgba(`${temp.color}20`)],
-					['#f7f7ff', 'transparent'],
-					['238,247,255,0', base.hexToRgba(`${temp.color}00`)],
-				]);
-				base.addStyle(`${mount}-uc`, 'style', `
-				.file-list .hover-oper .hover-transparent-bg{
-					background:transparent!important;
-				}
-				`);
-			};
-			if (/www.(123(pan|684|865|952|912).com|123pan.cn)/.test(location.host) && base.getValue('setting_ui_theme').custom.$123pan === true) {
-				base.adaptiveTheme([
-					['#597dfc', temp.color],
-					['#5a7cfc', temp.color],
-					['#2A82E4', temp.color],
-					['#51a1f0', temp.color],
-					['#597DFC', temp.color],
-					['#40a9ff', temp.color],
-					['#3c80ff', temp.color],
-					['#3C80FF', temp.color],
-					['#1890ff', temp.color],
-					['#f0f9ff', `${temp.color}20`],
-					['#F2F5FF', `${temp.color}20`],
-					['#325cf0', `${temp.color}D0`],
-					['60, 128, 255', base.hexToRgba(temp.color)],
-					['42, 130, 228', base.hexToRgba(temp.color)],
-					['89, 125, 252', base.hexToRgba(temp.color)],
-				]);
-			}
 		},
 
 		/**
@@ -4318,7 +3943,226 @@
 				}, true)
 			}
 		},
+		beautifyPage() {
+			if ($baidu.detectPage() !== 'home') {
+				base.adaptiveTheme([
+					['#717fff', temp.color],
+					['#717FFF', temp.color],
+					['#06a8ff', temp.color],
+					['#06A8FF', temp.color],
+					['#06a7ff', temp.color],
+					['#06A7FF', temp.color],
+					['#dcdfe6', temp.color],
+					['#DCDFE6', temp.color],
+					['#0095ff', temp.color],
+					['#0095FF', temp.color],
+					['#09aaff', temp.color],
+					['#09AAFF', temp.color],
+					['#0ca6ff', temp.color],
+					['#0CA6FF', temp.color],
+					['#5040ff', temp.color],
+					['#5040FF', temp.color],
+					['#454d5a', temp.color],
+					['#454D5A', temp.color],
+					['#a2abbd', temp.color],
+					['#A2ABBD', temp.color],
+					['#030b1a', temp.color],
+					['#030B1A', temp.color],
+					['#afb3bf', temp.color],
+					['#AFB3BF', temp.color],
+					['#ff436a', temp.color],
+					['#FF436A', temp.color],
+					['#03081a', temp.color],
+					['#03081A', temp.color],
+					['#2974b6', temp.color],
+					['#2974B6', temp.color],
+					['#0596e6', temp.color],
+					['#0596E6', temp.color],
 
+					['#C3EAFF', temp.color],
+					['#c0d9fe', `${temp.color}50`],
+					['#0098EA', `${temp.color}D0`],
+
+					['#38b9ff', `${temp.color}D0`],
+					['#38B9FF', `${temp.color}D0`],
+					['#42d8ff', `${temp.color}D0`],
+					['#42D8FF', `${temp.color}D0`],
+					['#a48dff', `${temp.color}D0`],
+					['#A48DFF', `${temp.color}D0`],
+					['#6b79f2', `${temp.color}D0`],
+					['#6B79F2', `${temp.color}D0`],
+
+					['#9c86f2', `${temp.color}90`],
+					['#9C86F2', `${temp.color}90`],
+					['#83d3ff', `${temp.color}90`],
+					['#83D3FF', `${temp.color}90`],
+					['#C4D8F4', `${temp.color}90`],
+
+					['#fafafc', `${temp.color}20`],
+					['#FAFAFC', `${temp.color}20`],
+					['#f5fbff', `${temp.color}20`],
+					['#F5FBFF', `${temp.color}20`],
+					['#b4e5ff', `${temp.color}20`],
+					['#B4E5FF', `${temp.color}20`],
+					['#f0faff', `${temp.color}20`],
+					['#F0FAFF', `${temp.color}20`],
+					['#c4d8f4', `${temp.color}20`],
+
+					['#f1f3f8', `${temp.color}15`],
+					['#F1F3F8', `${temp.color}15`],
+
+					['#f2faff', `${temp.color}10`],
+					['#F2FAFF', `${temp.color}10`],
+					['#eef9fe', `${temp.color}10`],
+					['#EEF9FE', `${temp.color}10`],
+					['#f7f9fc', `${temp.color}10`],
+					['#F7F9FC', `${temp.color}10`],
+					['#f5f6fa', `${temp.color}10`],
+					['#F5F6FA', `${temp.color}10`],
+					['#b4e5ff', `${temp.color}10`],
+					['#B4E5FF', `${temp.color}10`],
+					['#e6f6ff', `${temp.color}10`],
+					['#E6F6FF', `${temp.color}10`],
+
+					['0,149,255', base.hexToRgba(temp.color)],
+					['30, 175, 255', base.hexToRgba(temp.color)],
+					['6, 167, 255, 0.1', base.hexToRgba(`${temp.color}1a`)],
+					['6,167,255,.1', base.hexToRgba(`${temp.color}1a`)],
+					['6,167,255,.23', base.hexToRgba(`${temp.color}3b`)],
+					['164,141,255,.2', base.hexToRgba(`${temp.color}30`)],
+					['196,182,255,.2', base.hexToRgba(`${temp.color}20`)],
+					['113,127,255,.2', base.hexToRgba(`${temp.color}40`)],
+					['3,8,26,.6', base.hexToRgba(`${temp.color}D0`)],
+					['255,32,102,.4', base.hexToRgba(`${temp.color}66`)],
+					['72,166,248,.7', base.hexToRgba(`${temp.color}66`)],
+				]);
+			};
+			base.addStyle(`${mount}-baidu`, 'style', `
+				#layoutMain,.DxdbeCb{border-radius:10px;border-bottom-left-radius:0;border-bottom-right-radius:0;background:#ffffffA0!important}
+
+				.KPDwCE,
+				.DxdbeCb .OFaPaO .tanwePYr,
+				.xGLMIab .fufHyA:hover,
+				.module-search-timeline .form-box
+				{background:#ffffffA0!important}
+
+				.KPDwCE .JDeHdxb,
+				.NHcGw .AuPKyz,
+				.xGLMIab .tvPMvPb,
+				.xGLMIab .FcQMwt,
+				.cazEfA .yfHIsP,
+				.hscjZ4QL .bbxnZ0Bq .ehnyLxWZ span,
+				.module-topToolBar,
+				.module-timeline-view .timeline-title-curday
+				{background:transparent!important;border-bottom:0}
+
+				.MdLxwM{background :#fff!important}
+				.aside-absolute-container{position:absolute!important}
+				.aside-absolute-container .QGOvsxb .remainingSpaceUi_span{background:#8af248!important;border-radius:10px 0 0 10px;border-right:#fff 1px solid;border-bottom:#fff 1px solid}
+				.xtJbHcb .CDaavKb .KQcHyA{background:rgb(244,207,0)!important;padding:8px 15px}
+				.xtJbHcb .web-header-nav-new-version-inner{background:${temp.color}!important;padding:8px 15px;line-height:15px;width:auto;height:auto}
+				a{transition:all.2s!important}
+				#bd-main .bd-left{margin:auto!important}
+				.verify-input input{padding-left:0!important;text-align:center!important}
+				.verify-input input:focus{border:2px solid ${temp.color}!important}
+				[data-theme=light] .vp-video-page-card .vp-video-page-card__video-detail{color:#030b1a}
+				dt.level-1{background:#fd6d65!important}
+				dt.level-2{background:#f3a723!important}
+				dt.level-1 i.desc-arrow{border-bottom:10px solid #dd6966!important}
+				dt.level-2 i.desc-arrow{border-bottom:10px solid #d29633!important}
+				`, `.${mount}`);
+			base.adaptiveTheme([
+				['#717fff', temp.color],
+				['#717FFF', temp.color],
+				['#06a8ff', temp.color],
+				['#06A8FF', temp.color],
+				['#06a7ff', temp.color],
+				['#06A7FF', temp.color],
+				['#dcdfe6', temp.color],
+				['#DCDFE6', temp.color],
+				['#0095ff', temp.color],
+				['#0095FF', temp.color],
+				['#09aaff', temp.color],
+				['#09AAFF', temp.color],
+				['#0ca6ff', temp.color],
+				['#0CA6FF', temp.color],
+				['#5040ff', temp.color],
+				['#5040FF', temp.color],
+				['#454d5a', temp.color],
+				['#454D5A', temp.color],
+				['#a2abbd', temp.color],
+				['#A2ABBD', temp.color],
+				['#030b1a', temp.color],
+				['#030B1A', temp.color],
+				['#afb3bf', temp.color],
+				['#AFB3BF', temp.color],
+				['#ff436a', temp.color],
+				['#FF436A', temp.color],
+				['#03081a', temp.color],
+				['#03081A', temp.color],
+				['#2974b6', temp.color],
+				['#2974B6', temp.color],
+				['#0596e6', temp.color],
+				['#0596E6', temp.color],
+
+				['#C3EAFF', temp.color],
+				['#c0d9fe', `${temp.color}50`],
+				['#0098EA', `${temp.color}D0`],
+
+				['#38b9ff', `${temp.color}D0`],
+				['#38B9FF', `${temp.color}D0`],
+				['#42d8ff', `${temp.color}D0`],
+				['#42D8FF', `${temp.color}D0`],
+				['#a48dff', `${temp.color}D0`],
+				['#A48DFF', `${temp.color}D0`],
+				['#6b79f2', `${temp.color}D0`],
+				['#6B79F2', `${temp.color}D0`],
+
+				['#9c86f2', `${temp.color}90`],
+				['#9C86F2', `${temp.color}90`],
+				['#83d3ff', `${temp.color}90`],
+				['#83D3FF', `${temp.color}90`],
+				['#C4D8F4', `${temp.color}90`],
+
+				['#fafafc', `${temp.color}20`],
+				['#FAFAFC', `${temp.color}20`],
+				['#f5fbff', `${temp.color}20`],
+				['#F5FBFF', `${temp.color}20`],
+				['#b4e5ff', `${temp.color}20`],
+				['#B4E5FF', `${temp.color}20`],
+				['#f0faff', `${temp.color}20`],
+				['#F0FAFF', `${temp.color}20`],
+				['#c4d8f4', `${temp.color}20`],
+
+				['#f1f3f8', `${temp.color}15`],
+				['#F1F3F8', `${temp.color}15`],
+
+				['#f2faff', `${temp.color}10`],
+				['#F2FAFF', `${temp.color}10`],
+				['#eef9fe', `${temp.color}10`],
+				['#EEF9FE', `${temp.color}10`],
+				['#f7f9fc', `${temp.color}10`],
+				['#F7F9FC', `${temp.color}10`],
+				['#f5f6fa', `${temp.color}10`],
+				['#F5F6FA', `${temp.color}10`],
+				['#b4e5ff', `${temp.color}10`],
+				['#B4E5FF', `${temp.color}10`],
+				['#e6f6ff', `${temp.color}10`],
+				['#E6F6FF', `${temp.color}10`],
+
+				['0,149,255', base.hexToRgba(temp.color)],
+				['30, 175, 255', base.hexToRgba(temp.color)],
+				['6, 167, 255, 0.1', base.hexToRgba(`${temp.color}1a`)],
+				['6,167,255,.1', base.hexToRgba(`${temp.color}1a`)],
+				['6,167,255,.23', base.hexToRgba(`${temp.color}3b`)],
+				['164,141,255,.2', base.hexToRgba(`${temp.color}30`)],
+				['196,182,255,.2', base.hexToRgba(`${temp.color}20`)],
+				['113,127,255,.2', base.hexToRgba(`${temp.color}40`)],
+				['3,8,26,.6', base.hexToRgba(`${temp.color}D0`)],
+				['255,32,102,.4', base.hexToRgba(`${temp.color}66`)],
+				['72,166,248,.7', base.hexToRgba(`${temp.color}66`)],
+			], "other");
+		},
 		addButton() {
 			base.waitForKeyElements(config.$baidu.mount.home, (element) => {
 				temp.pege = $baidu.detectPage();
@@ -4406,7 +4250,7 @@
 				temp.pege = $baidu.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
 				let $button = $(`<div class="g-dropdown-button pl-button-init" style="opacity:0.5"><div style="color:#fff;" class="g-button g-button-blue color-button"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width:60px;">点我点亮</span></span></div></div>`);
-				$button.click(() => { base.showInitDialog() });
+				$button.click(base.showInitDialog);
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$baidu.mount.main, (element) => {
@@ -4420,7 +4264,7 @@
 						</button>
 					</div>
 				</div>`);
-				$button.click(() => { base.showInitDialog() });
+				$button.click(base.showInitDialog);
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$baidu.mount.share, (element) => {
@@ -4432,7 +4276,7 @@
 						<span class="text" style="width:auto;">点我点亮</span>
 					</span>
 				</a>`)
-				$button.click(() => { base.showInitDialog() });
+				$button.click(base.showInitDialog);
 				element.after($button);
 			})
 		},
@@ -5075,6 +4919,20 @@
 				tag[0].click();
 			}, true);
 		},
+		beautifyPage() {
+			base.adaptiveTheme([
+				['#3763ff', temp.color],
+				['#8664ff', `${temp.color}D0`],
+				['99, 125, 255', base.hexToRgba(temp.color)],
+				['132, 133, 141', base.hexToRgba(temp.color)],
+				['112, 136, 255', base.hexToRgba(temp.color)],
+				['97, 122, 250', base.hexToRgba(temp.color)],
+				['68, 109, 255', base.hexToRgba(temp.color)],
+				['82, 110, 250', base.hexToRgba(`${temp.color}20`)],
+				['122, 144, 255', base.hexToRgba(`${temp.color}D0`)],
+				['138, 157, 255', base.hexToRgba(`${temp.color}D0`)],
+			]);
+		},
 		svg: `<svg class="ali-btn-icon" style="margin-right:3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>`,
 		addButton() {
 			base.waitForKeyElements(config.$aliyun.mount.home, (element) => {
@@ -5112,7 +4970,7 @@
 		},
 		addInitButton() {
 			let $button = $(`<div class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon">${$aliyun.svg}点我点亮</span></div>`);
-			$button.click(() => { base.showInitDialog() });
+			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$aliyun.mount.home, (element) => {
 				temp.pege = $aliyun.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
@@ -5444,6 +5302,16 @@
 			}, true);
 		},
 
+		beautifyPage() {
+			base.adaptiveTheme([
+				['#3181f9', temp.color],
+				['#5a9afa', temp.color],
+				['#98c0fc', `${temp.color}D0`],
+				['#2d76e5', `${temp.color}D0`],
+				['49,129,249,.08', base.hexToRgba(`${temp.color}20`)],
+			]);
+		},
+
 		addButton() {
 			base.waitForKeyElements(config.$mcloud.mount.home, (element) => {
 				temp.pege = $mcloud.detectPage();
@@ -5480,7 +5348,7 @@
 
 		addInitButton() {
 			let $button = $(`<div class="pl-button-init"><span class="mcloud-btn">点我点亮</span></div>`);
-			$button.click(() => { base.showInitDialog() });
+			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$mcloud.mount.home, (element) => {
 				temp.pege = $mcloud.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
@@ -5859,6 +5727,22 @@
 			}, true);
 		},
 
+		beautifyPage() {
+			base.adaptiveTheme([
+				['#2b89ea', temp.color],
+				['#1874d3', `${temp.color}F0`],
+				['#1890ff', temp.color],
+				['#388fc9', temp.color],
+				['#0087ff', temp.color],
+				['#255697', temp.color],
+				['#3ea6ff', `${temp.color}80`],
+				['#1d52f2', temp.color],
+				['#3699ff', `${temp.color}D0`],
+				['#f4f9fe', `${temp.color}10`],
+				['#eaf5ff', `${temp.color}20`],
+			], "other");
+		},
+
 		addButton() {
 			let $button = $(`<div class="pl-button tcloud-button">
 				下载助手&nbsp;
@@ -5895,7 +5779,7 @@
 
 		addInitButton() {
 			let $button = $(`<div class="tcloud-button pl-button-init">点我点亮</div>`);
-			$button.click(() => { base.showInitDialog() });
+			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$tcloud.mount.home, (element) => {
 				temp.pege = $tcloud.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
@@ -6214,6 +6098,22 @@
 			});
 		},
 
+		beautifyPage() {
+			base.adaptiveTheme([
+				['#3f85ff', temp.color],
+				['63,133,255,.1', base.hexToRgba(`${temp.color}20`)],
+				['#2670ea', `${temp.color}D0`],
+				['#619bff', `${temp.color}D0`],
+				['#ecf3ff', `${temp.color}10`],
+				['#f6faff', `${temp.color}10`],
+				['#1a2845', `${temp.color}20`],
+				['#0f2035', `${temp.color}20`],
+				['#308bfd', `${temp.color}20`],
+				['#eee', `${temp.color}20`],
+			], "other");
+			base.addStyle(`${mount}-xunlei`, 'style', `.web-header{background:linear-gradient(0deg,${temp.color}D0,${temp.color})}`);
+		},
+
 		addButton() {
 			base.waitForKeyElements(config.$xunlei.mount.home, (element) => {
 				temp.pege = $xunlei.detectPage();
@@ -6250,7 +6150,7 @@
 
 		addInitButton() {
 			let $button = $(`<div class="xunlei-button pl-button-init"><i class="xlpfont xlp-download"></i><span style="font-size:13px;margin-left:6px;">点我点亮</span></div>`);
-			$button.click(() => { base.showInitDialog() });
+			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$xunlei.mount.home, (element) => {
 				temp.pege = $xunlei.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
@@ -6609,32 +6509,49 @@
 				tag[0].click();
 			}, true);
 		},
-		svg: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSAxMmwyIDIgMi0yeiIvPjxwYXRoIGQ9Ik0xNCA4aDEuNTUzYy44NSAwIDEuMTYuMDkzIDEuNDcuMjY3LjMxMS4xNzQuNTU2LjQzLjcyMi43NTYuMTY2LjMyNi4yNTUuNjUuMjU1IDEuNTR2NC44NzNjMCAuODkyLS4wODkgMS4yMTUtLjI1NSAxLjU0LS4xNjYuMzI3LS40MS41ODMtLjcyMi43NTctLjMxLjE3NC0uNjIuMjY3LTEuNDcuMjY3SDYuNDQ3Yy0uODUgMC0xLjE2LS4wOTMtMS40Ny0uMjY3YTEuNzc4IDEuNzc4IDAgMDEtLjcyMi0uNzU2Yy0uMTY2LS4zMjYtLjI1NS0uNjUtLjI1NS0xLjU0di00Ljg3M2MwLS44OTIuMDg5LTEuMjE1LjI1NS0xLjU0LjE2Ni0uMzI3LjQxLS41ODMuNzIyLS43NTcuMzEtLjE3NC42Mi0uMjY3IDEuNDctLjI2N0gxMSIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTExIDN2MTAiLz48L2c+PC9zdmc+',
+		beautifyPage() {
+			base.adaptiveTheme([
+				['#0d53ff', temp.color],
+				['#e6f1ff', `${temp.color}20`],
+				['#f0faff', `${temp.color}20`],
+				['#7da3ff', `${temp.color}D0`],
+				['#ddd', `${temp.color}D0`],
+				['17,17,17,.9', base.hexToRgba(`${temp.color}D0`)],
+				['40,40,255,.04', base.hexToRgba(`${temp.color}20`)],
+				['#f7f7ff', 'transparent'],
+				['238,247,255,0', base.hexToRgba(`${temp.color}00`)],
+			]);
+			base.addStyle(`${mount}-quark`, 'style', `.file-list .hover-oper .hover-transparent-bg{background:transparent!important} .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner,.ant-checkbox-wrapper .ant-checkbox-indeterminate .ant-checkbox-inner:after{background-color:${temp.color}!important}`);
+		},
+		svg: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNNiA5bDIgMiAyLTJ6Ii8+PHBhdGggZD0iTTExIDVoMS41NTNjLjg1IDAgMS4xNi4wOTMgMS40Ny4yNjcuMzExLjE3NC41NTYuNDMuNzIyLjc1Ni4xNjYuMzI2LjI1NS42NS4yNTUgMS41NHY0Ljg3M2MwIC44OTItLjA4OSAxLjIxNS0uMjU1IDEuNTQtLjE2Ni4zMjctLjQxLjU4My0uNzIyLjc1Ny0uMzEuMTc0LS42Mi4yNjctMS40Ny4yNjdIMy40NDdjLS44NSAwLTEuMTYtLjA5My0xLjQ3LS4yNjdhMS43NzggMS43NzggMCAwMS0uNzIyLS43NTZjLS4xNjYtLjMyNi0uMjU1LS42NS0uMjU1LTEuNTRWNy41NjNjMC0uODkyLjA4OS0xLjIxNS4yNTUtMS41NC4xNjYtLjMyNy40MS0uNTgzLjcyMi0uNzU3LjMxLS4xNzQuNjItLjI2NyAxLjQ3LS4yNjdIOCIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTggMXY5Ii8+PC9nPjwvc3ZnPg==',
 		addButton() {
 			base.waitForKeyElements(config.$quark.mount.home, (element) => {
 				temp.pege = $quark.detectPage();
 				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
-				let $button = $(`<div class="ant-dropdown-trigger pl-button">
-					<button type="button" class="quark-button ant-btn btn-file ant-btn-primary">
-						<img class="quark-btn-icon" src="${$quark.svg}"><span>下载助手</span>
-					</button>
-					<ul class="pl-dropdown-menu">
-						<li class="pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
-						<li class="pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg>cURL 下载</li>
-						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
-						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
-						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
-						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
-						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
-					</ul>
+				let $button = $(`<div class="ant-dropdown-trigger pl-button" style="display: inline-block;">
+					<div class="ant-upload ant-upload-select ant-upload-select-text">
+						<ul class="pl-dropdown-menu" style="top:35px">
+							<li class="pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
+							<li class="pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg>cURL 下载</li>
+							<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
+							<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
+							<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
+							<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
+							<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
+						</ul>
+						<button type="button" class="ant-btn ant-btn-primary quark-button">
+							<img class="btn-icon" src="${$quark.svg}">
+							<span>下载助手</span>
+						</button>
+					</div>
 				</div>`);
-				$button.css({ "margin-right": "10px", "display": "inline-block" });
+				$button.css({ "margin-right": "16px" });
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$quark.mount.share, (element) => {
 				temp.pege = $quark.detectPage();
 				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
-				let $button = $(`<button type="button" class="ant-btn btn-file ant-btn-primary pl-button quark-button"><img class="quark-btn-icon" src="${$quark.svg}"><span>下载助手</span><ul class="pl-dropdown-menu" style="bottom:20px;left:0"><li class="pl-button-mode pl-button-save"><span class="share-save-ico"></span>保存后下载</li><li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li><li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li><li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li></ul></button>`);
+				let $button = $(`<button type="button" class="ant-btn btn-file ant-btn-primary pl-button quark-button"><img class="btn-icon" src="${$quark.svg}"><span>下载助手</span><ul class="pl-dropdown-menu" style="bottom:22px;left:0"><li class="pl-button-mode pl-button-save"><span class="share-save-ico"></span>保存后下载</li><li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li><li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li><li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li></ul></button>`);
 				$button.css({ "height": "36px", "margin-left": "16px", "border-radius": "6px", "display": "inline-block" });
 				element.append($button);
 			})
@@ -6644,17 +6561,17 @@
 			base.waitForKeyElements(config.$quark.mount.home, (element) => {
 				temp.pege = $quark.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
-				let $button = $(`<div class="ant-dropdown-trigger pl-button-init"><button type="button" class="quark-button ant-btn btn-file ant-btn-primary"><img class="quark-btn-icon" src="${$quark.svg}"><span>点我点亮</span></button></div>`);
-				$button.css({ "margin-right": "10px", "display": "inline-block" });
-				$button.click(() => { base.showInitDialog() });
+				let $button = $(`<button type="button" class="ant-btn ant-btn-primary quark-button pl-button-init"><img class="btn-icon" src="${$quark.svg}"><span>点我点亮</span></button>`);
+				$button.css({ "margin-right": "16px", "display": "inline-block" });
+				$button.click(base.showInitDialog);
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$quark.mount.share, (element) => {
 				temp.pege = $quark.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
-				let $button = $(`<button type="button" class="ant-btn btn-file ant-btn-primary pl-button-init quark-button"><img class="quark-btn-icon" src="${$quark.svg}"><span>点我点亮</span></button>`);
+				let $button = $(`<button type="button" class="ant-btn btn-file ant-btn-primary pl-button-init quark-button"><img class="btn-icon" src="${$quark.svg}"><span>点我点亮</span></button>`);
 				$button.css({ "height": "36px", "margin-left": "16px", "border-radius": "6px", "display": "inline-block" });
-				$button.click(() => { base.showInitDialog() });
+				$button.click(base.showInitDialog);
 				element.append($button);
 			})
 		},
@@ -6940,6 +6857,21 @@
 			}, true);
 		},
 
+		beautifyPage() {
+			base.adaptiveTheme([
+				['#12161a', temp.color],
+				['#e6f1ff', `${temp.color}20`],
+				['#f0faff', `${temp.color}20`],
+				['#7da3ff', `${temp.color}D0`],
+				['#ddd', `${temp.color}D0`],
+				['17,17,17,.9', base.hexToRgba(`${temp.color}D0`)],
+				['40,40,255,.04', base.hexToRgba(`${temp.color}20`)],
+				['#f7f7ff', 'transparent'],
+				['238,247,255,0', base.hexToRgba(`${temp.color}00`)],
+			]);
+			base.addStyle(`${mount}-uc`, 'style', `.file-list .hover-oper .hover-transparent-bg{background:transparent!important}`);
+		},
+
 		svg: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSAxMmwyIDIgMi0yeiIvPjxwYXRoIGQ9Ik0xNCA4aDEuNTUzYy44NSAwIDEuMTYuMDkzIDEuNDcuMjY3LjMxMS4xNzQuNTU2LjQzLjcyMi43NTYuMTY2LjMyNi4yNTUuNjUuMjU1IDEuNTR2NC44NzNjMCAuODkyLS4wODkgMS4yMTUtLjI1NSAxLjU0LS4xNjYuMzI3LS40MS41ODMtLjcyMi43NTctLjMxLjE3NC0uNjIuMjY3LTEuNDcuMjY3SDYuNDQ3Yy0uODUgMC0xLjE2LS4wOTMtMS40Ny0uMjY3YTEuNzc4IDEuNzc4IDAgMDEtLjcyMi0uNzU2Yy0uMTY2LS4zMjYtLjI1NS0uNjUtLjI1NS0xLjU0di00Ljg3M2MwLS44OTIuMDg5LTEuMjE1LjI1NS0xLjU0LjE2Ni0uMzI3LjQxLS41ODMuNzIyLS43NTcuMzEtLjE3NC42Mi0uMjY3IDEuNDctLjI2N0gxMSIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTExIDN2MTAiLz48L2c+PC9zdmc+',
 		addButton() {
 			base.waitForKeyElements(config.$uc.mount.home, (element) => {
@@ -6973,7 +6905,7 @@
 
 		addInitButton() {
 			let $button = $(`<div class="ant-dropdown-trigger pl-button-init"><button type="button" class="uc-button ant-btn btn-file ant-btn-primary" style="height:40px;"><img class="uc-btn-icon" src="${$uc.svg}"><span>点我点亮</span></button></div>`);
-			$button.click(() => { base.showInitDialog() });
+			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$uc.mount.home, (element) => {
 				temp.pege = $uc.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
@@ -7150,6 +7082,7 @@
 				let originalHtml = o.link.html();
 
 				base._resetData(index);
+				let token = $123pan.getToken();
 				base.get(e.currentTarget.dataset.link, undefined, 'blob', { filename, index });
 
 				let startTime = Date.now();
@@ -7246,42 +7179,41 @@
 		},
 
 		greenerPage() {
+			base.waitForKeyElements(".cent > .cent-not-login > .ant-btn", (tag) => {
+				if (tag.hasClass("reg") || tag.hasClass("log")) return;
+				tag.addClass("reg");
+				tag.removeClass("loginRight");
+				tag.find("span").text("注册");
+				if (tag.next().hasClass("log")) return;
+				let button = $(`<button type="button" class="ant-btn ant-btn-default ant-btn-two-chinese-chars log loginRight" style="width:auto!important;height:auto!important;margin-left:10px!important"><span>登录</span></button>`);
+				button.on("click", () => {
+					let login = new URL(`https://login.123pan.com/centerlogin`);
+					login.searchParams.set("redirect_url", location.href);
+					location.href = login;
+				});
+				tag.after(button);
+			});
+
 			base.waitForKeyElements(".new-menu-item-image, .special-menu-item-container-migration--label, .sider-member-btn, .video-new-user-tips", (tag) => {
 				if (tag.is(":hidden")) return;
 				tag.hide();
-			}, true)
+			}, true);
+
+			base.waitForKeyElements('.frontend-layout-header-right > span > [alt^="buttonMall"]', (tag) => {
+				if (tag.parent().is(":hidden")) return;
+				tag.parent().hide();
+				let button = $(`<div class="frontend-layout-header-right-button-invite-new">会员中心</div>`);
+				button.on("click", () => { tag.click() });
+				tag.parent().after(button);
+			}, true);
+
 			let disallowTexts = ["同步空间", "其他网盘数据转入", "下载客户端"];
-			base.waitForKeyElements(`.ant-menu.ant-menu-root.ant-menu-inline[role="menu"]`, (tag) => {
-				tag.find(`[role="menuitem"]`).each(function () {
-					let menuText = $(this).text().trim();
-					console.log(menuText);
-					if ($(this).is(":hidden")) return;
-					if (disallowTexts.includes(menuText)) $(this).hide();
-				});
-			}, true)
-			base.waitForKeyElements(".special-menu-item-container", (tag) => {
-				tag.find(".special-menu-item-container-migration").each(function () {
-					let menuText = $(this).text().trim();
-					console.log(menuText);
-					if ($(this).is(":hidden")) return;
-					console.log(menuText);
-					if (disallowTexts.includes(menuText)) $(this).hide();
-				});
-			}, true)
-			base.waitForKeyElements(`.header-btn-list > .btn-item`, (tag) => {
+			base.waitForKeyElements('ul[role="menu"] li[role="menuitem"]', (tag) => {
 				let menuText = tag.text().trim();
-				console.log(menuText);
-				if (menuText === "消息" && tag.next().text().trim() !== "公告") {
-					let notice = tag.clone(true);
-					notice.find('.item-text').html("公告");
-					notice.on('click', (event) => {
-						GM_openInTab('https://www.123pan.com/Notice', { active: true });
-					});
-					tag.after(notice);
-				}
 				if (tag.is(":hidden")) return;
 				if (disallowTexts.includes(menuText)) tag.hide();
-			}, true)
+			}, true);
+
 			base.waitForKeyElements(`.rightInfo .register:not(.pl-button, .pl-button-init),
 				.homeClass > div > .ant-dropdown-trigger:not(.pl-button, .pl-button-init),
 				.homeClass > div > .sysbut`, function (tag) {
@@ -7304,6 +7236,31 @@
 			base.waitForKeyElements('.rightInfo .qrcode_btn', function (tag) {
 				tag.hide();
 			}, true);
+		},
+
+		beautifyPage() {
+			base.adaptiveTheme([
+				['#597dfc', temp.color],
+				['#5a7cfc', temp.color],
+				['#2A82E4', temp.color],
+				['#51a1f0', temp.color],
+				['#597DFC', temp.color],
+				['#40a9ff', temp.color],
+				['#3c80ff', temp.color],
+				['#3C80FF', temp.color],
+				['#1890ff', temp.color],
+				['#F0F8FF', `${temp.color}10`],
+				['#f0f9ff', `${temp.color}20`],
+				['#F2F5FF', `${temp.color}20`],
+				['#C5E1FF', `${temp.color}20`],
+				['#2961D9', `${temp.color}20`],
+				['#b8d8ff', `${temp.color}20`],
+				['#325cf0', `${temp.color}D0`],
+				['#66A1FF', `${temp.color}D0`],
+				['60, 128, 255', base.hexToRgba(temp.color)],
+				['42, 130, 228', base.hexToRgba(temp.color)],
+				['89, 125, 252', base.hexToRgba(temp.color)],
+			]);
 		},
 
 		getToken() {
@@ -7422,18 +7379,8 @@
 		},
 
 		async getFileUrlByOnce(item, index, token, ShareKey) {
-			if (item.DownloadUrl) return {
-				index,
-				downloadUrl: item.DownloadUrl
-			};
-			let res = null;
-			if (ShareKey) {
-				res = await base.post(config.$123pan.api.getShareLink, { "ShareKey": ShareKey, "FileID": item.FileId, "S3keyFlag": item.S3KeyFlag, "Size": item.Size, "Etag": item.Etag }, { "Authorization": `Bearer ${token}`, "Platform": "ios" });
-			} else {
-				res = await base.post(config.$123pan.api.getLink, { "driveId": 0, "etag": item.Etag, "fileId": item.FileId, "s3keyFlag": item.S3KeyFlag, "type": item.Type, "fileName": item.FileName, "size": item.Size }, { "Authorization": `Bearer ${token}`, "Platform": "ios" });
-			}
-			if (res.data?.DownloadUrl) {
-				let url = res.data.DownloadUrl;
+			if (item.DownloadUrl || item.DownloadURL) {
+				let url = item.DownloadUrl ? item.DownloadUrl : item.DownloadURL;
 				let surl = new URL(url).searchParams.get("params");
 				if (surl) url = base.decodeBase(surl);
 				url = await base.getFinalUrl(url);
@@ -7441,8 +7388,15 @@
 					index,
 					downloadUrl: url
 				};
-			} else if (res.data?.DownloadURL) {
-				let url = res.data.DownloadURL;
+			}
+			let res = null;
+			if (ShareKey) {
+				res = await base.post(config.$123pan.api.getShareLink, { "ShareKey": ShareKey, "FileID": item.FileId, "S3keyFlag": item.S3KeyFlag, "Size": item.Size, "Etag": item.Etag }, { "Authorization": `Bearer ${token}`, "Platform": "ios" });
+			} else {
+				res = await base.post(config.$123pan.api.getLink, { "driveId": 0, "etag": item.Etag, "fileId": item.FileId, "s3keyFlag": item.S3KeyFlag, "type": item.Type, "fileName": item.FileName, "size": item.Size }, { "Authorization": `Bearer ${token}`, "Platform": "ios" });
+			}
+			if (res.data?.DownloadUrl || res.data?.DownloadURL) {
+				let url = res.data.DownloadUrl ? res.data.DownloadUrl : res.data?.DownloadURL;
 				let surl = new URL(url).searchParams.get("params");
 				if (surl) url = base.decodeBase(surl);
 				url = await base.getFinalUrl(url);
@@ -7463,11 +7417,11 @@
 		getSelectedList() {
 			try {
 				let selectedList = [];
-				let reactDom = $(".ant-table-body, .tiled-list-content, .file-list")[0];
+				let reactDom = $(".ant-table-wrapper, .tiled-list, .file-list")[0];
 				let reactObj = base.findReact(reactDom);
-				let props = reactObj.memoizedProps;
+				let props = reactObj.pendingProps;
 				if (props) {
-					let fileList = props?.props?.data || props?.loadedFileList || props?.files || [];
+					let fileList = props?.dataSource || props?.loadedFileList || props?.files || [];
 					fileList.forEach(function (val) {
 						if (val?.checked === true) {
 							selectedList.push(val);
@@ -7489,12 +7443,12 @@
 
 		addButton() {
 			base.waitForKeyElements(config.$123pan.mount.home, (element) => {
-				element = element.parent();
 				temp.pege = $123pan.detectPage();
 				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
-				let $button = $(`<div class="ant-dropdown-trigger sysdiv parmiryButton pl-button color-button">
-					<svg class="icon" aria-hidden="true" style="font-size:22px; color:rgb(255, 255, 255);"><use xlink:href="#top_btn_download2"></use></svg>下载助手
-					<ul class="pl-dropdown-menu" style="top:37px">
+				let $button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="css-dev-only-do-not-override-"]').classList].find(c => /^css-dev-only-do-not-override-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-dropdown-trigger mfy-button upload-button pl-button color-button" style="user-select: text !important;">
+					<svg class="icon home-operator-icon-upload" aria-hidden="true"><use xlink:href="#general_download_16_1"></use></svg>
+					<span>下载助手</span>
+					<ul class="pl-dropdown-menu" style="top:23px">
 						<li class="pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
 						<li class="pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg>cURL 下载</li>
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
@@ -7503,8 +7457,7 @@
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 					</ul>
-				</div>`);
-				$button.css({ "margin-right": "22px", "width": "110px" })
+				</button>`);
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$123pan.mount.share, (element) => {
@@ -7530,14 +7483,13 @@
 
 		addInitButton() {
 			base.waitForKeyElements(config.$123pan.mount.home, (element) => {
-				element = element.parent();
 				temp.pege = $123pan.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
-				let $button = $(`<div class="ant-dropdown-trigger sysdiv parmiryButton pl-button-init color-button">
-					<svg class="icon" aria-hidden="true" style="font-size:22px; color:rgb(255, 255, 255);"><use xlink:href="#top_btn_download2"></use></svg>点我点亮
-				</div>`);
-				$button.click(() => { base.showInitDialog() });
-				$button.css({ "margin-right": "22px", "width": "110px" })
+				let $button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="css-dev-only-do-not-override-"]').classList].find(c => /^css-dev-only-do-not-override-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-dropdown-trigger mfy-button upload-button pl-button-init color-button" style="user-select: text !important;">
+					<svg class="icon home-operator-icon-upload" aria-hidden="true"><use xlink:href="#general_download_16_1"></use></svg>
+					<span>点我点亮</span>
+				</button>`);
+				$button.click(base.showInitDialog);
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$123pan.mount.share, (element) => {
@@ -7547,7 +7499,7 @@
 				let $button = $(`<div class="register pl-button-init color-button">
 					<svg class="icon" aria-hidden="true" style="color:rgb(255, 255, 255);margin-right:5px;"><use xlink:href="#top_btn_download2"></use></svg>点我点亮
 				</div>`);
-				$button.click(() => { base.showInitDialog() });
+				$button.click(base.showInitDialog);
 				$button.css({ "width": "100px" })
 				element.append($button);
 			})
@@ -7662,6 +7614,7 @@
 
 			// 最后判断页面地址并加载对应的initPanLinker
 			if (/(pan|yun).baidu.com/.test(location.host)) {
+				base.getValue('setting_ui_theme').custom.$baidu === true && $baidu.beautifyPage();
 				$baidu.initPanLinker();
 				$baidu.greenerPage();
 			}
@@ -7669,29 +7622,36 @@
 				$baidu.initAuthorize()
 			}
 			if (/www.(aliyundrive|alipan).com/.test(location.host)) {
+				base.getValue('setting_ui_theme').custom.$aliyun === true && $aliyun.beautifyPage();
 				$aliyun.initPanLinker();
 				$aliyun.greenerPage();
 			}
 			if (/(yun|caiyun).139.com/.test(location.host)) {
+				base.getValue('setting_ui_theme').custom.$mcloud === true && $mcloud.beautifyPage();
 				$mcloud.initPanLinker();
 				$mcloud.greenerPage();
 			}
 			if (/cloud.189.cn/.test(location.host)) {
+				base.getValue('setting_ui_theme').custom.$tcloud === true && $tcloud.beautifyPage();
 				$tcloud.initPanLinker();
 				$tcloud.greenerPage();
 			}
 			if (/pan.xunlei.com/.test(location.host)) {
+				base.getValue('setting_ui_theme').custom.$xunlei === true && $xunlei.beautifyPage();
 				$xunlei.initPanLinker();
 			}
 			if (/pan.quark.cn/.test(location.host)) {
+				base.getValue('setting_ui_theme').custom.$quark === true && $quark.beautifyPage();
 				$quark.initPanLinker();
 				$quark.greenerPage();
 			}
 			if (/drive.uc.cn/.test(location.host)) {
+				base.getValue('setting_ui_theme').custom.$uc === true && $uc.beautifyPage();
 				$uc.initPanLinker();
 				$uc.greenerPage();
 			}
 			if (/(www|login).(123(pan|684|865|952|912).com|123pan.cn)/.test(location.host)) {
+				base.getValue('setting_ui_theme').custom.$123pan === true && $123pan.beautifyPage();
 				$123pan.initPanLinker();
 				$123pan.greenerPage();
 			}
