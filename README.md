@@ -29,6 +29,7 @@
   https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
   https://gitee.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
 - 123 云盘会员青春版
+  https://github.com/hmjz100/123panYouthMember
   https://github.com/hmjz100/123panYouthMember/raw/main/123%20%E4%BA%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
 
 ## 说明
@@ -55,13 +56,14 @@
 - 如有 bug 等问题请在这发[议题反馈](https://github.com/hmjz100/LinkSwift/issues)
 
 ## 版本号
-V. 1.1.1.3（改自 6.2.7 版本）  
+V. 1.1.1.4（改自 6.2.7 版本）  
 本脚本目前仅在 Github 与 GreasyFork 及脚本猫脚本站发布，如果您是在其他渠道获取到本脚本的，请不要安装。
 
 ## 更新日志
 
 | 版本号 | 创建日期 | 更新日志 |
 | -------- | -------- | -------- |
+| 1.1.1.4 | 2025年07月19日 | 1、适配 123 云盘新版页面。 |
 | 1.1.1.3 | 2025年06月19日 | 1、修复夸克网盘无法获取下载链接的 Bug；<br/>2、修复 API 下载无法复制全部链接。 |
 | 1.1.1.2 | 2025年06月08日 | 1、修复无法删除第一项远程配置的 Bug。 |
 | 1.1.1.1 | 2025年06月02日 | 1、修复推送到 Aria2 时推送成功但报错的 Bug。 |
