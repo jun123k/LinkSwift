@@ -1892,7 +1892,7 @@
 				didOpen: (toast) => {
 					let element = $(toast);
 					if (event && Object.keys($(event.currentTarget).data()).some(key => key.startsWith('backTo'))) element.find('.swal2-close').addClass('listener-tip').attr('data-title', '返回上页').css({ "left": "0", "right": "auto" }).text("◃");
-					if (event && $(event.currentTarget).data("back-to-downloads")) element.find(".aria2, .bitcomet, .other").hide();
+					if (event && $(event.currentTarget).data("back-to-downloads")) element.find(".aria2, .bitcomet, .abdm, .other").hide();
 				},
 				willClose: () => {
 					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
