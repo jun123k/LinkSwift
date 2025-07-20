@@ -974,7 +974,8 @@
 						},
 						onload: function (res) {
 							console.log('【LinkSwift】Post(load)\n请求地址：' + url, '\n请求结果：', res);
-							type === 'blob' ? resolve(res) : resolve(res.response || res.responseText);
+							try { res.decodeResponse = JSON.parse(res.response) } catch { }
+							type === 'blob' ? resolve(res) : resolve(res.decodeResponse || res.response || res.responseText);
 						},
 						onerror: async function (err) {
 							console.error('【LinkSwift】Post(error)\n请求出现错误，可能是网络问题。', err);
@@ -1009,6 +1010,7 @@
 						method: "GET", url, headers,
 						responseType: type || 'json',
 						onload: function (res) {
+							try { res.decodeResponse = JSON.parse(res.response) } catch { }
 							if (res.status === 204) {
 								console.log('【LinkSwift】Get(load)\n\x1B[31m该请求已被某个下载工具捕获。' + (res.statusText ? ("\n\x1B[0m工具提示：\x1B[31m" + res.statusText) : "") + '\x1B[0m\n请求地址：' + url + '\n请求头部：', headers, '\n请求结果：', res);
 								requestObj.abort();
@@ -1021,7 +1023,7 @@
 								resolve(res);
 							} else {
 								console.log('【LinkSwift】Get(load)\n请求地址：' + url + '\n请求头部：', headers, '\n请求结果：', res);
-								resolve(res.response || res.responseText);
+								resolve(res.decodeResponse || res.response || res.responseText);
 							}
 						},
 						onprogress: function (res) {
