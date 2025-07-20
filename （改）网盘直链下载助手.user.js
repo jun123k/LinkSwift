@@ -875,7 +875,7 @@
 			for (let key in headers) {
 				newHeaders[key.toLowerCase().split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('-')] = headers[key];
 			}
-			headers = { "User-Agent": navigator.userAgent, "Origin": location.origin, "Referer": location.origin, "DNT": "1", ...newHeaders };
+			headers = { "User-Agent": navigator.userAgent, "Origin": location.origin, "Referer": `${location.origin}/`, "DNT": "1", ...newHeaders };
 
 			let list = base.getValue('setting_abdm_rpc');
 			let selected = list.find(i => i.default);
@@ -962,7 +962,7 @@
 			for (let key in headers) {
 				newHeaders[key.toLowerCase().split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('-')] = headers[key];
 			}
-			headers = { "Content-Type": "application/json;charset=utf-8", "User-Agent": navigator.userAgent, "Origin": location.origin, "Referer": location.origin, "DNT": "1", ...newHeaders };
+			headers = { "Content-Type": "application/json;charset=utf-8", "User-Agent": navigator.userAgent, "Origin": location.origin, "Referer": `${location.origin}/`, "DNT": "1", ...newHeaders };
 
 			return new Promise((resolve, reject) => {
 				let sendRequest = () => {
