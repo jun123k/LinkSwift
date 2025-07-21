@@ -1804,31 +1804,13 @@
 								result[i] = cloneDeep(template);
 							}
 						}
-						// 找到第一个 default:true
-						let firstDefaultIndex = -1;
-						for (let i = 0; i < result.length; i++) {
-							let item = result[i];
-							if (base.isType(item === 'object' && item !== null && item.default) === true) {
-								firstDefaultIndex = i;
-								break;
-							}
-						}
-						// 删除所有其他项的 default
-						for (let i = 0; i < result.length; i++) {
-							let item = result[i];
-							if (base.isType(item) === 'object' && item !== null) {
-								if (i !== firstDefaultIndex && 'default' in item) {
-									let { default: _, ...rest } = item;
-									result[i] = rest;
-								}
-							}
-						}
-						// 如果没有任何 default:true，则在第一个元素中添加
-						if (firstDefaultIndex === -1 && result.length > 0) {
-							result[0] = {
-								...result[0],
-								default: true
-							};
+						// 自动补充 default: true
+						if (
+							template.default === true &&
+							!result.some(item => item && item.default === true) &&
+							result.length > 0
+						) {
+							result[0].default = true;
 						}
 					}
 					return result;
