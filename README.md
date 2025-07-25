@@ -28,15 +28,15 @@
 </p>
 
 ## 安装
-- LinkSwift
-  https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js
-  https://gitee.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js
-- （改）百度网盘会员青春版
-  https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
-  https://gitee.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
-- 123 云盘会员青春版
-  https://github.com/hmjz100/123panYouthMember
-  https://github.com/hmjz100/123panYouthMember/raw/main/123%20%E4%BA%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
+- LinkSwift - 直链获取、UI 美化
+  - Github 国际: https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js
+  - Gitee 国内: https://gitee.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%BD%91%E7%9B%98%E7%9B%B4%E9%93%BE%E4%B8%8B%E8%BD%BD%E5%8A%A9%E6%89%8B.user.js
+- （改）百度网盘会员青春版 - 使用 "netfilter" 进一步优化/修改 UI
+  - Github 国际: https://github.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
+  - Gitee 国内: https://gitee.com/hmjz100/LinkSwift/raw/main/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
+- 123 云盘会员青春版 - 使用 "netfilter" 进一步优化/修改 UI
+  - Github 仓库: https://github.com/hmjz100/123panYouthMember
+  - Github: https://github.com/hmjz100/123panYouthMember/raw/main/123%20%E4%BA%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js
 
 ## 说明
 
