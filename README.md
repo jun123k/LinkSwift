@@ -39,8 +39,8 @@
 基于[【网盘直链下载助手】](https://www.baiduyun.wiki/install.html)修改
 - 原作者：[油小猴](https://www.youxiaohou.com/)  
 - 原仓库：[https://github.com/syhyz1990/baiduyun](https://github.com/syhyz1990/baiduyun)
-- 本脚本发布至 GreasyFork：[https://greasyfork.org/scripts/449291](https://greasyfork.org/scripts/449291)
-  - 还有脚本猫：[https://scriptcat.org/script-show-page/1604](https://scriptcat.org/script-show-page/1604)
+- 本脚本发布至脚本猫：[https://scriptcat.org/script-show-page/1604](https://scriptcat.org/script-show-page/1604)
+  - GreasyFork 因刷子猖狂以及管理员的不作为暂不上架
 
 ## 简介
 
