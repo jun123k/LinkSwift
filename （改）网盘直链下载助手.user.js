@@ -3340,7 +3340,7 @@
 			.pl-dropdown-menu{position:absolute;padding:5px 0;color:${temp.color};background:#fff;z-index:999;min-width:110px;border-radius:5px;box-shadow:0 1px 6px ${temp.color}33;-webkit-box-shadow:0 1px 6px ${temp.color}33;text-align:center;border:none}
 			@media (prefers-color-scheme:dark){ .pl-dropdown-menu{color:#fff;background:#222226} }
 			.pl-button-mode{color:${temp.color}!important;height:30px;padding:0 10px!important;display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;white-space:nowrap;transition:background-color.2s;will-change:background-color}
-			@media (prefers-color-scheme:dark){ .pl-button-mode{color:#fff!important} }
+			@media (prefers-color-scheme:dark){ .pl-dropdown-menu .pl-button-mode{color:#fff!important} }
 			.pl-button-mode:hover{background-color:${temp.color}33!important}
 			@media (prefers-color-scheme:dark){ .pl-button-mode:hover{color:#fff!important;background:${temp.color}!important} }
 
