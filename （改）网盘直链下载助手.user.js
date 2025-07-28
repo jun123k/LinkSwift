@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name              LinkSwift
 // @namespace         github.com/hmjz100
-// @version           1.1.1.5
+// @version           1.1.1.6
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       (｡>ᴗ•)✧《也许同类型中最好用？》系列 - 一个基于 JavaScript 的网盘文件下载地址获取工具✨，基于【网盘直链下载助手】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 开源・自用・去广 | 改界面・添功能・修Bug | 既超越原版，亦是同类中最好用版本！👋
@@ -56,6 +56,7 @@
 // @match             *://*.123865.com/*
 // @match             *://*.123952.com/*
 // @match             *://*.123912.com/*
+// @connect           localhost
 // @connect           baidu.com
 // @connect           baidupcs.com
 // @connect           aliyundrive.com
@@ -63,6 +64,8 @@
 // @connect           alipan.com
 // @connect           alicloudccp.com
 // @connect           aliyundrive.cloud
+// @connect           139.com
+// @connect           cmecloud.cn
 // @connect           189.cn
 // @connect           xunlei.com
 // @connect           quark.cn
@@ -74,12 +77,9 @@
 // @connect           123952.com
 // @connect           123912.com
 // @connect           cjjd19.com
-// @connect           localhost
-// @connect           *
 // @grant             unsafeWindow
 // @grant             window.close
 // @grant             GM_xmlhttpRequest
-// @grant             GM.xmlhttpRequest
 // @grant             GM_setClipboard
 // @grant             GM_setValue
 // @grant             GM_getValue
@@ -87,7 +87,6 @@
 // @grant             GM_openInTab
 // @grant             GM_info
 // @grant             GM_registerMenuCommand
-// @grant             GM_cookie
 // @grant             GM_getResourceText
 // @compatible	      Chrome
 // @compatible	      Edge
@@ -104,7 +103,7 @@
  * @namespace github.com/hmjz100
  * @description  一个基于 JavaScript 盘的文件下载地址获取工具
  * 支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘
- * @version 1.1.1.5
+ * @version 1.1.1.6
  * @license AGPL-3.0-or-later
  * @see{@link https://github.com/hmjz100/LinkSwift/ Github 仓库}
  */
@@ -113,9 +112,7 @@
 	'use strict';
 
 	// unsafeWindow 检测
-	if (typeof (unsafeWindow) === 'undefined') {
-		window.unsafeWindow = window;
-	}
+	if (typeof (unsafeWindow) === 'undefined') window.unsafeWindow = window;
 
 	/*
 	防止代码因其他原因被执行多次
@@ -135,23 +132,23 @@
 	let info = {
 		author: GM_info.script?.author,
 		name: GM_info.script?.name,
-		version: (GM_info.script?.version?.toString() || "1.1.1.5"),
+		version: (GM_info.script?.version?.toString() || "1.1.1.6"),
 		icon: (GM_info.script?.icon || "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="),
 		mhandler: GM_info.scriptHandler,
 		mversion: GM_info.version,
 	};
+	let $doc = $(document);
 	let temp = {
 		pege: "",
-		selectList: [],
 		shareParams: {},
 		mode: [],
-		html: "",
+		links: [],
 		color: "",
-		doc: $(document),
 		progress: {},
 		request: {},
 		ins: {},
 		idm: {},
+		selectList: [],
 		colored: false,
 		swalDefault: {
 			position: 'center',
@@ -159,14 +156,14 @@
 			scrollbarPadding: false,
 			confirmButtonText: `<svg class="pl-icon"><use xlink:href="#pl-icon-fa-check"/></svg> 确认`,
 			denyButtonText: `<svg class="pl-icon"><use xlink:href="#pl-icon-fa-x-mark"/></svg> 拒绝`,
-			cancelButtonText: `<svg class="pl-icon"><use xlink:href="#pl-icon-fa-x-mark"/></svg> 取消`,
+			cancelButtonText: `<svg class="pl-icon"><use xlink:href="#pl-icon-fa-x-mark"/></svg> 取消`
 		},
 		terminalType: {
 			wc: "Microsoft Windows 命令提示符",
 			wp: "Microsoft Windows PowerShell",
 			lt: "Linux 终端",
 			ls: "Linux Shell",
-			mt: "Apple MacOS 终端",
+			mt: "Apple MacOS 终端"
 		}
 	};
 
@@ -709,22 +706,6 @@
 		},
 
 		/**
-		 * 获取 Cookie 值
-		 * @author 油小猴
-		 * @param {string} name - Cookie名称
-		 * @returns {string} 对应的 Cookie 值
-		 */
-		getCookie(name) {
-			let cname = name + "=";
-			let ca = document.cookie.split(';');
-			for (let i = 0; i < ca.length; i++) {
-				let c = ca[i].trim();
-				if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
-			}
-			return "";
-		},
-
-		/**
 		 * 生成 cURL 下载命令
 		 * @author 油小猴
 		 * @author hmjz100
@@ -933,10 +914,8 @@
 		 * @returns {XMLHttpRequest} 请求对象实例
 		 */
 		xmlHttpRequest(option) {
-			let request = (typeof GM_xmlhttpRequest !== "undefined") ? GM_xmlhttpRequest : GM.xmlHttpRequest;
-			if (request && base.isType(request) === 'function') {
-				return request(option);
-			}
+			let request = (base.isType(GM_xmlhttpRequest) !== "undefined") ? GM_xmlhttpRequest : GM.xmlHttpRequest;
+			if (request && base.isType(request) === 'function') return request(option);
 		},
 
 		/**
@@ -1686,49 +1665,49 @@
 			// 设置新结构的默认值（仅当未设置时）
 			let defaults = [
 				{
-					name: 'setting_aria2_rpc',
+					name: "setting_aria2_rpc",
 					value: [
 						{
-							domain: 'http://localhost',
-							port: '16800',
-							path: '/jsonrpc',
+							domain: "http://localhost",
+							port: "16800",
+							path: "/jsonrpc",
 							token: "",
-							dir: 'D:\\Downloads\\',
+							dir: "",
 							default: true
 						}
 					]
 				},
 				{
-					name: 'setting_bitcomet_rpc',
+					name: "setting_bitcomet_rpc",
 					value: [
 						{
-							domain: 'http://localhost',
-							port: '8080',
-							path: '/panel/task_add_httpftp_result',
+							domain: "http://localhost",
+							port: "8080",
+							path: "/panel/task_add_httpftp_result",
 							authName: "",
 							authPass: "",
-							dir: 'D:\\Downloads\\',
+							dir: "",
 							default: true
 						}
 					]
 				},
 				{
-					name: 'setting_abdm_rpc',
+					name: "setting_abdm_rpc",
 					value: [
 						{
-							domain: 'http://localhost',
-							port: '15151',
-							dir: 'D:\\Downloads\\',
+							domain: "http://localhost",
+							port: "15151",
+							dir: "",
 							default: true
 						}
 					]
 				},
 				{
-					name: 'setting_curl_terminal',
-					value: 'wc'
+					name: "setting_curl_terminal",
+					value: "wc"
 				},
 				{
-					name: 'setting_init',
+					name: "setting_init",
 					value: {
 						code: "",
 						license: "",
@@ -1736,9 +1715,9 @@
 					}
 				},
 				{
-					name: 'setting_ui_theme',
+					name: "setting_ui_theme",
 					value: {
-						color: '#574AB8',
+						color: "#574AB8",
 						custom: {
 							$baidu: false,
 							$aliyun: false,
@@ -1752,8 +1731,8 @@
 					}
 				},
 				{
-					name: 'setting_config_version',
-					value: '1'
+					name: "setting_config_version",
+					value: "1"
 				}
 			];
 
@@ -1879,7 +1858,7 @@
 					if (event && $(event.currentTarget).data("back-to-downloads")) element.find(".aria2, .bitcomet, .abdm, .other").hide();
 				},
 				willClose: () => {
-					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 				},
 			});
 		},
@@ -1953,7 +1932,7 @@
 				},
 				willClose: () => {
 					if (event && $(event.currentTarget).data("back-to-setting")) base.showSetting();
-					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 				},
 			});
 		},
@@ -2029,7 +2008,7 @@
 				},
 				willClose: () => {
 					if (event && $(event.currentTarget).data("back-to-setting")) base.showSetting();
-					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 				},
 			});
 		},
@@ -2094,7 +2073,7 @@
 				},
 				willClose: () => {
 					if (event && $(event.currentTarget).data("back-to-setting")) base.showSetting();
-					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+					if (event && $(event.currentTarget).data("back-to-downloads")) base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 				},
 			});
 		},
@@ -2201,8 +2180,8 @@
 		 * @author hmjz100
 		 * @description 按时间倒序展示所有历史版本更新内容
 		 */
-		showUpdate() {
-			Swal.fire({
+		async showUpdate() {
+			await Swal.fire({
 				...temp.swalDefault,
 				icon: 'info',
 				title: '更新日志',
@@ -2215,10 +2194,18 @@
 				</div>
 				<div class="block">(ﾉ◕ヮ◕)ﾉ 遇到 Bug 要记得去 <a class="pl-a" href="https://github.com/hmjz100/LinkSwift/issues" target="_blank">Github 议题</a> 向我报告哦~</div>
 				<div class="block">
+					<name>V1.1.1.6</name>
+					<div>
+					<div>1、<span style="color:#fff;background:${temp.color}">废弃 - 百度网盘 BDUSS Cookie 相关代码，转向使用更安全的 AccessToken</span>；</div>
+					<div>2、废弃 - 百度网盘分享页面下载相关代码；</div>
+					<div>3、优化 - 下载窗口可在设置改变后动态修改界面。</div>
+					</div>
+				</div>
+				<div class="block">
 					<name>V1.1.1.5</name>
 					<div>
-					<div>1、增加 AB Download Manager 下载方式；</div>
-					<div>2、支持从设置页面一键返回下载窗口，无需重复获取链接。</div>
+					<div>1、新增 - AB Download Manager 下载方式；</div>
+					<div>2、优化 - 支持从设置页面一键返回下载窗口，无需重复获取链接。</div>
 					</div>
 				</div>
 				<div class="block">
@@ -2715,7 +2702,7 @@
 			};
 
 			// 鼠标/触摸移动时更新位置
-			temp.doc.on('mousemove touchmove', '.listener-tip', function (e) {
+			$doc.on('mousemove touchmove', '.listener-tip', function (e) {
 				const isTouch = e.type.startsWith('touch');
 				const pageX = isTouch ? e.originalEvent.touches[0].pageX : e.pageX;
 				const pageY = isTouch ? e.originalEvent.touches[0].pageY : e.pageY;
@@ -2723,7 +2710,7 @@
 			});
 
 			// 触摸开始时立即显示
-			temp.doc.on('touchstart', '.listener-tip', function (e) {
+			$doc.on('touchstart', '.listener-tip', function (e) {
 				// 阻止滚动避免干扰
 				e.preventDefault();
 				const touch = e.originalEvent.touches[0];
@@ -2731,12 +2718,12 @@
 			});
 
 			// 统一隐藏逻辑
-			temp.doc.on('mouseleave touchend touchcancel', '.listener-tip, .pl-tooltip', function (e) {
+			$doc.on('mouseleave touchend touchcancel', '.listener-tip, .pl-tooltip', function (e) {
 				tooltip.css({ display: '' });
 			});
 
 			// 增强跨事件类型检测
-			temp.doc.on('mousemove touchmove', function (e) {
+			$doc.on('mousemove touchmove', function (e) {
 				const $tooltip = tooltip;
 				if (!$tooltip.is(':visible')) return;
 
@@ -2778,12 +2765,15 @@
 		 * 创建用于下载页面的 HTML
 		 * @author 油小猴
 		 * @author hmjz100
+		 * @param {Array} configs - 用于配置生成 HTML 的参数
+		 * @returns {string} 生成的 HTML 内容
 		 * @description 详见代码
 		 */
-		generateDom(list, config) {
-			if (!list) {
-				return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~');
-			}
+		generateDom(configs) {
+			if (base.isType(configs) !== "array" && configs.length !== 2) return message.error('提示：<br/>配置解析失败~');
+			let list = (Array.isArray(configs[0]) ? configs[0] : []);
+			if (!list.length) return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~');
+
 			let {
 				isFolder,
 				getFileName,
@@ -2792,7 +2782,7 @@
 				getFileMirror,
 				convert = {},
 				tooltip = {}
-			} = config;
+			} = (base.isType(configs[1]) === 'object' ? configs[1] : {});
 
 			let content = $(`<div><div class="pl-main"></div><div class="pl-extra"></div></div>`);
 			let allLink = [];
@@ -2850,7 +2840,7 @@
 						allLink.push(finalink);
 						content.find(".pl-main").append(`<div class="pl-item">
 							<div class="pl-item-name listener-tip" data-size="${size}"><div class="name">${filename}</div><div class="size">${base.sizeFormat(size)}</div></div>
-							<a class="pl-item-link pl-btn-primary pl-btn-default listener-tip" href="${finalink}" data-title="点击打开 BC 链接以手动调起比特彗星下载"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>使用 BC 链接下载</a>
+							<a class="pl-item-link pl-btn-primary pl-btn-default listener-tip" href="${finalink}" data-title="点击打开 BC 链接以手动调起比特彗星下载，右键可复制 BC 链接"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>使用 BC 链接下载</a>
 							${mirror ? `<button class="pl-btn-primary pl-btn-success listener-copy listener-tip" data-copy='${mirror}' data-title="点击复制镜像地址"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-copy"/></svg>复制镜像</a>` : ""}
 							<button class="pl-btn-primary pl-btn-info listener-bitcomet-download listener-tip" data-filename="${filename}" data-link="${dlink}" data-title="除非 BC 链接无法调起比特彗星，否则不建议使用此方式<br/><br/>由于比特彗星内置的远程下载 Web API 服务代码存在缺陷，请求可能会随机出现“发送失败 - 服务器返回空请求”错误，实际上客户端已成功开始下载<br/>由于脚本无法准确判断请求是否真正成功，即使出现错误，也会提示“成功”"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-up"/></svg><span>推送到下载器</span></button>
 						</div>`);
@@ -2956,39 +2946,38 @@
 		 * @description 详见代码
 		 */
 		addPageListener() {
-			temp.doc.on('click', '.listener-open-setting', (e) => {
+			$doc.on('click', '.listener-open-setting', (e) => {
 				base.showSetting(e);
 			});
-			temp.doc.on('click', '.listener-open-aria2-setting', (e) => {
+			$doc.on('click', '.listener-open-aria2-setting', (e) => {
 				base.showAria2Setting(e);
 			});
-			temp.doc.on('click', '.listener-open-bitcomet-setting', (e) => {
+			$doc.on('click', '.listener-open-bitcomet-setting', (e) => {
 				base.showBitcometSetting(e);
 			});
-			temp.doc.on('click', '.listener-open-abdm-setting', (e) => {
+			$doc.on('click', '.listener-open-abdm-setting', (e) => {
 				base.showABDMSetting(e);
 			});
-			temp.doc.on('click', '.listener-open-updatelog', () => {
+			$doc.on('click', '.listener-open-updatelog', () => {
 				base.showUpdate();
 			});
-			temp.doc.on('click', '.listener-open-beautify', () => {
+			$doc.on('click', '.listener-open-beautify', () => {
 				base.showBeautify();
 			});
 
-			temp.doc.on('click', '.listener-unregister', async function (e) {
+			$doc.on('click', '.listener-unregister', async function (e) {
 				message.warning("正在“注入”设置项目...");
 				let list = base.getValue("setting_init");
 				list.code = "";
 				list.license = "";
 				base.setValue('setting_init', list);
 				base.delValue('baidu_access_token');
-				if (location.host.includes("baidu")) base.delStorage('baiduyunPlugin_BDUSS');
 				location.reload();
 			});
-			temp.doc.on('change', '.listener-terminal', async function (e) {
+			$doc.on('change', '.listener-terminal', async function (e) {
 				base.setValue('setting_curl_terminal', e.currentTarget.value);
 			});
-			temp.doc.on('click', '.listener-color', async function (e) {
+			$doc.on('click', '.listener-color', async function (e) {
 				let element = $(e.currentTarget).closest('.listener-color').length > 0 ? $(e.currentTarget).closest('.listener-color') : $(e.currentTarget);
 				let parent = element.closest('.pl-color');
 				let mask = element.find(".mask");
@@ -3002,27 +2991,27 @@
 					base.addPanLinkerStyle();
 				}
 			});
-			temp.doc.on('change', '.listener-theme', async function (e) {
+			$doc.on('change', '.listener-theme', async function (e) {
 				let list = base.getValue("setting_ui_theme");
 				list.custom[e.currentTarget.dataset.type] = e.currentTarget.checked;
 				base.setValue("setting_ui_theme", list);
 			});
 
-			temp.doc.on('click', '.listener-api-download.normal', async function (e) {
+			$doc.on('click', '.listener-api-download.normal', async function (e) {
 				e.preventDefault();
 				let dataset = e.currentTarget.dataset;
 				let href = dataset.link;
 				$('#downloadIframe').attr('src', href);
 			});
 
-			temp.doc.on('click', '.listener-retry', async function (e) {
+			$doc.on('click', '.listener-retry', async function (e) {
 				let o = base._EventFactory(e);
 				o.tip.hide();
 				o.link.show();
 				o.directLink.show();
 			});
 
-			temp.doc.on('click', '.listener-stop', async function (e) {
+			$doc.on('click', '.listener-stop', async function (e) {
 				let o = base._EventFactory(e);
 				let index = o.link[0].dataset.index;
 				if (temp.request[index]) {
@@ -3041,7 +3030,7 @@
 				}
 			});
 
-			temp.doc.on('click', '.listener-back', async function (e) {
+			$doc.on('click', '.listener-back', async function (e) {
 				let o = base._EventFactory(e);
 				o.progress.hide();
 				o.tip.hide();
@@ -3052,7 +3041,7 @@
 				o.back.hide();
 			});
 
-			temp.doc.on('click', '.listener-download-all', async function (e) {
+			$doc.on('click', '.listener-download-all', async function (e) {
 				let target = $(e.currentTarget);
 				let originalHtml = target.html();
 				$('.pl-item-link.enhance').each((index, element) => {
@@ -3065,7 +3054,7 @@
 				target.css('opacity', "");
 				target.html(originalHtml);
 			});
-			temp.doc.on('click', '.listener-send-rpc', async function (e) {
+			$doc.on('click', '.listener-send-rpc', async function (e) {
 				let target = $(e.currentTarget);
 				let originalHtml = target.html();
 				$(`.listener-${target.data("type")}-download`).each((index, element) => {
@@ -3078,7 +3067,7 @@
 				target.css('opacity', "");
 				target.html(originalHtml);
 			});
-			temp.doc.on('click', '.listener-copy', async function (e) {
+			$doc.on('click', '.listener-copy', async function (e) {
 				e.preventDefault();
 				let target = $(e.currentTarget);
 				let originalHtml = target.html();
@@ -3092,13 +3081,13 @@
 				}
 			});
 
-			temp.doc.on('click', '.listener-rpc-task', function () {
+			$doc.on('click', '.listener-rpc-task', function () {
 				let rpc = base.getValue("setting_aria2_rpc").find(i => i.default);
 				let url = `${config.base.service.rpc}/?rpc=${base.encodeBase(JSON.stringify({ domain: rpc.domain, port: rpc.port }))}#${rpc.token}`;
 				GM_openInTab(url, { active: true, insert: true, setParent: true });
 			});
 
-			temp.doc.on('change', '.listener-rpc-select', async function (e) {
+			$doc.on('change', '.listener-rpc-select', async function (e) {
 				let element = $(this);
 				let selectedIndex = element.val();
 				let type = element.data("type");
@@ -3119,7 +3108,7 @@
 					});
 				}
 			});
-			temp.doc.on('input', '.listener-rpc-input', async function (e) {
+			$doc.on('input', '.listener-rpc-input', async function (e) {
 				let type = $(this).data("type");
 				if (!type) return;
 				type = type.split(".")
@@ -3149,7 +3138,7 @@
 				}).join("");
 				select.html(`${options}<option value="new">+ 创建新项目</option>`);
 			});
-			temp.doc.on('click', '.listener-rpc-delete', async function (e) {
+			$doc.on('click', '.listener-rpc-delete', async function (e) {
 				let type = $(this).data("type");
 				let list = base.getValue(`setting_${type}_rpc`);
 				let selectedIndex = parseInt($('.listener-rpc-select option:selected').val(), 10);
@@ -3169,7 +3158,7 @@
 					$(this).val(list[newDefaultIndex][key] || "");
 				});
 			});
-			temp.doc.on('click', '.listener-rpc-test', async function (e) {
+			$doc.on('click', '.listener-rpc-test', async function (e) {
 				let element = $(this);
 				let type = element.data("type");
 				let selectedIndex = $('.listener-rpc-select option:selected').val();
@@ -3298,7 +3287,7 @@
 
 			.pl-main{background:${temp.color}15;border-radius:10px;display:flex;flex-direction:column;gap:8px;max-height:calc(${document.documentElement.clientHeight}px - 300px);overflow:auto;padding:8px 6px}
 
-			.pl-a{position:relative;vertical-align:baseline;color:${temp.color};border-bottom:2px solid ${temp.color};text-decoration:none;transition:color.3s,opacity.3s;will-change:color,opacity;overflow:hidden}
+			.pl-a{position:relative;vertical-align:baseline;color:${temp.color};border-bottom:2px solid ${temp.color};text-decoration:none!important;transition:color.3s,opacity.3s;will-change:color,opacity;overflow:hidden}
 			.pl-a::before{content:'';position:absolute;left:0;bottom:0;width:100%;height:100%;background-color:${temp.color};transform:scaleY(0);transform-origin:bottom center;transition:transform.15s,opacity.3s;will-change:transform;z-index:-1}
 			.pl-a:hover,.pl-a:focus{color:#fff}
 			.pl-a:hover::before,.pl-a:focus::before{transform:scaleY(1)}
@@ -3351,9 +3340,9 @@
 
 			.pl-dropdown-menu{position:absolute;padding:5px 0;color:${temp.color};background:#fff;z-index:999;min-width:110px;border-radius:5px;box-shadow:0 1px 6px ${temp.color}33;-webkit-box-shadow:0 1px 6px ${temp.color}33;text-align:center;border:none}
 			@media (prefers-color-scheme:dark){ .pl-dropdown-menu{color:#fff;background:#222226} }
-			.pl-button-mode{height:30px;padding:0 10px!important;display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;white-space:nowrap;transition:background-color.2s;will-change:background-color}
+			.pl-button-mode{color:${temp.color}!important;height:30px;padding:0 10px!important;display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer;white-space:nowrap;transition:background-color.2s;will-change:background-color}
 			.pl-button-mode:hover{background-color:${temp.color}33!important}
-			@media (prefers-color-scheme:dark){ .pl-button-mode:hover{color:#fff;background:${temp.color}!important} }
+			@media (prefers-color-scheme:dark){ .pl-button-mode:hover{color:#fff!important;background:${temp.color}!important} }
 
 			header[style="display:none;"]~.pl-button{display:inline-block;position:fixed;top:0.6em;left:65%;z-index:99999}
 			.color-button{background:${temp.color}!important;border-color:${temp.color}!important;border:1px solid ${temp.color}!important;display:inline-flex;transition:background.2s,border-color.2s;will-change:background,border-color}
@@ -3448,7 +3437,6 @@
 				allowOutsideClick: false,
 			});
 			if (dialog.isDenied) {
-				console.log("【LinkSwift】\n正在“注入”点亮按钮设置项目...");
 				message.warning("正在“注入”设置项目...");
 				await base.sleep(2500);
 				let list = base.getValue("setting_init");
@@ -3494,7 +3482,6 @@
 					await base.sleep(1500)
 					location.reload();
 				} else {
-					console.log("【LinkSwift】\n暗号错误")
 					await this.showInitDialog();
 					return;
 				};
@@ -3649,68 +3636,21 @@
 	 * @author hmjz100
 	 */
 	let $baidu = {
-		_getExtra() {
-			let seKey = decodeURIComponent(base.getCookie('BDCLND'));
-			return '{' + '"sekey":"' + seKey + '"' + "}";
-		},
-
-		_getSurl() {
-			let reg = /(?<=s\/|surl=)([a-zA-Z0-9_-]+)/g;
-			if (reg.test(location.href)) {
-				return location.href.match(reg)[0];
-			}
-			return "";
-		},
-
-		setBDUSS(custom) {
-			if (custom) {
-				base.setStorage("baiduyunPlugin_BDUSS", { BDUSS: custom });
-				return;
-			}
-			try {
-				GM_cookie('list', { name: 'BDUSS' }, (cookies, error) => {
-					if (!error) {
-						let BDUSS = cookies?.[0]?.value;
-						if (BDUSS) {
-							base.setStorage("baiduyunPlugin_BDUSS", { BDUSS });
-						}
-					} else {
-						throw new Error(error)
-					}
-				});
-			} catch (e) {
-				console.error("【LinkSwift】\nsetBDUSS\n错误信息：", e)
-				try {
-					let BDUSS = document.cookie.match(/BDUSS=(.*?)(;|$)/);
-					if (!!BDUSS || BDUSS === null) throw new Error("document.cookie dosen't had cookie")
-					base.setStorage("baiduyunPlugin_BDUSS", { BDUSS: BDUSS });
-				} catch (e) {
-					console.error("【LinkSwift】\nsetBDUSS\n错误信息：", e)
-				}
-			}
-		},
-
-		getBDUSS() {
-			temp.doc.find('.loading-popup .loading-title').html(`凭证获取中`);
-			temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取当前账号凭证~</div>`);
-			let baiduyunPlugin_BDUSS = base.getStorage('baiduyunPlugin_BDUSS') ? base.getStorage('baiduyunPlugin_BDUSS') : { BDUSS: "" };
-			return baiduyunPlugin_BDUSS.BDUSS || "";
-		},
-
 		async getToken() {
 			try {
-				temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-				temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取授权状态~</div>`);
+				$doc.find('.loading-popup .loading-title').html(`令牌获取中`);
+				$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取授权状态~</div>`);
 
 				// 获取授权状态
 				let authorize = await base.getFinalUrl(config.$baidu.api.getAccessToken, undefined, true);
+				let accessToken = "";
 
 				// 判断授权情况
 				if (authorize.includes('authorize')) {
-					// 没授权，先获取授权的页面
-					temp.doc.find('.loading-popup .loading-title').html(`授权获取中`);
-					temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取授权页面~</div>`);
+					$doc.find('.loading-popup .loading-title').html(`授权获取中`);
+					$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取授权页面~</div>`);
 
+					// 没授权，先获取授权的页面
 					let html = await base.get(config.$baidu.api.getAccessToken, undefined, 'text');
 
 					// 提取页面的发送确认授权的参数
@@ -3725,39 +3665,24 @@
 						grant_permissions: "basic,netdisk"
 					};
 
-					temp.doc.find('.loading-popup .loading-title').html(`授权获取中`);
-					temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在自动确认授权~</div>`);
+					$doc.find('.loading-popup .swal2-html-container').html(`<div>正在自动确认授权~</div>`);
 					// 发送请求达到自动进行授权
 					await base.post(config.$baidu.api.getAccessToken, base.stringify(data), { "Content-Type": "application/x-www-form-urlencoded" });
 
 					// 再次获取授权状态
 					let res2 = await base.getFinalUrl(config.$baidu.api.getAccessToken, undefined, true);
-					let accessToken = res2.match(/access_token=([^&]+)/)?.[1];
-					if (!!accessToken) {
-						temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-						temp.doc.find('.loading-popup .swal2-html-container').html(`<div>授权成功，令牌已缓存~</div>`);
-						base.setValue('baidu_access_token', accessToken);
-						return accessToken;
-					} else {
-						temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-						temp.doc.find('.loading-popup .swal2-html-container').html(`<div>授权失败，等待下一步操作~</div>`);
-						return "";
-					}
+					accessToken = res2.match(/access_token=([^&]+)/)?.[1];
 				} else if (authorize.includes('access_token=')) {
-					let accessToken = authorize.match(/access_token=([^&]+)/)?.[1];
-					if (!!accessToken) {
-						temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-						temp.doc.find('.loading-popup .swal2-html-container').html(`<div>授权成功，令牌已缓存~</div>`);
-						base.setValue('baidu_access_token', accessToken);
-						return accessToken;
-					} else {
-						temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-						temp.doc.find('.loading-popup .swal2-html-container').html(`<div>授权失败，等待下一步操作~</div>`);
-						return "";
-					}
-				} else {
-					return "";
+					accessToken = authorize.match(/access_token=([^&]+)/)?.[1];
 				}
+
+				// 统一处理令牌结果
+				$doc.find('.loading-popup .loading-title').html(`令牌获取中`);
+				if (!!accessToken) {
+					$doc.find('.loading-popup .swal2-html-container').html(`<div>授权成功，令牌已缓存~</div>`);
+					base.setValue('baidu_access_token', accessToken);
+					return accessToken;
+				} else return "";
 			} catch (error) {
 				return "";
 			}
@@ -3772,7 +3697,7 @@
 			if (window[key]) return;
 			window[key] = true;
 
-			temp.doc.on('mouseenter mouseleave click', '.pl-button.g-dropdown-button', function (e) {
+			$doc.on('mouseenter mouseleave click', '.pl-button.g-dropdown-button', function (e) {
 				if (e.type === 'mouseleave') {
 					$(e.currentTarget).removeClass('button-open');
 				} else {
@@ -3780,20 +3705,20 @@
 					$(e.currentTarget).find('.pl-dropdown-menu').show();
 				}
 			});
-			temp.doc.on('mouseleave', '.pl-button.g-dropdown-button .pl-dropdown-menu', function (e) {
+			$doc.on('mouseleave', '.pl-button.g-dropdown-button .pl-dropdown-menu', function (e) {
 				$(e.currentTarget).hide();
 			});
 
-			temp.doc.on('click', '.pl-button-mode', async function (e) {
+			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
 				$baidu.getLink();
 			});
 
-			temp.doc.on('click', '.pl-button-save', async function (e) {
+			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				temp.selectList = $baidu.getSelectedList();
-				if (temp.selectList.length === 0) {
+				let selectList = $baidu.getSelectedList();
+				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
 				message.info('提示：<br/>因网盘限制，请保存到自己网盘后再去下载哦~');
@@ -3801,7 +3726,7 @@
 				document.querySelector('.tools-share-save-hb').click();
 			});
 
-			temp.doc.on('click', '.listener-api-download.enhance', async function (e) {
+			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
 
 				let o = base._EventFactory(e);
@@ -3883,7 +3808,7 @@
 				}, 500);
 			});
 
-			temp.doc.on('click', '.listener-aria2-download', async function (e) {
+			$doc.on('click', '.listener-aria2-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -3894,8 +3819,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let BDUSS = $baidu.getBDUSS();
-				let res = await base.sendLinkToAria2(target.data("link"), target.data("filename"), [`User-Agent:${config.$baidu.api.ua.downloadLink}`, `Cookie:BDUSS=${BDUSS}`]);
+				let res = await base.sendLinkToAria2(target.data("link"), target.data("filename"), [`User-Agent:${config.$baidu.api.ua.downloadLink}`]);
 				if (res === 'success') {
 					target.removeClass('pl-btn-danger').html('发送成功啦!快去看看吧~').animate({ opacity: '0.5' }, "slow");
 				} else {
@@ -3906,7 +3830,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-bitcomet-download', async function (e) {
+			$doc.on('click', '.listener-bitcomet-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -3917,8 +3841,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let BDUSS = $baidu.getBDUSS();
-				let res = await base.sendLinkToBitcomet(target.data("link"), target.data("filename"), { "user_agent": config.$baidu.api.ua.downloadLink, "cookie": `BDUSS=${BDUSS}` });
+				let res = await base.sendLinkToBitcomet(target.data("link"), target.data("filename"), { "user_agent": config.$baidu.api.ua.downloadLink });
 				if (res === 'success') {
 					target.removeClass('pl-btn-danger').html('发送成功啦!快去看看吧~').animate({ opacity: '0.5' }, "slow");
 				} else {
@@ -3929,7 +3852,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-abdm-download', async function (e) {
+			$doc.on('click', '.listener-abdm-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -3940,8 +3863,7 @@
 				target.find('.pl-loading').remove();
 				target.prepend(base.createLoading());
 
-				let BDUSS = $baidu.getBDUSS();
-				let res = await base.sendLinkToABDM(target.data("link"), target.data("filename"), { "User-Agent": config.$baidu.api.ua.downloadLink, "Cookie": `BDUSS=${BDUSS}` });
+				let res = await base.sendLinkToABDM(target.data("link"), target.data("filename"), { "User-Agent": config.$baidu.api.ua.downloadLink });
 				if (res === 'success') {
 					target.removeClass('pl-btn-danger').html('发送成功啦!快去看看吧~').animate({ opacity: '0.5' }, "slow");
 				} else {
@@ -4345,14 +4267,14 @@
 					<div class="g-dropdown-button pl-button">
 						<div class="g-button g-button-blue color-button"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width:60px;">下载助手</span></span></div>
 						<div class="menu" style="color:${temp.color};border-color:${temp.color};width:auto;z-index:41;">
-							<div class="g-button-menu pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</div>
-							<div class="g-button-menu pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg>cURL 下载</div>
-							<div class="g-button-menu pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</div>
-							<div class="g-button-menu pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</div>
-							<div class="g-button-menu pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</div>
-							<div class="g-button-menu pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</div>
-							<div class="g-button-menu pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</div>
-							<div class="g-button-menu pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</div>
+							<div class="g-button-menu pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg> API 下载</div>
+							<div class="g-button-menu pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg> cURL 下载</div>
+							<div class="g-button-menu pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> Aria2 下载</div>
+							<div class="g-button-menu pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> 彗星下载</div>
+							<div class="g-button-menu pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg> ABDM 下载</div>
+							<div class="g-button-menu pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg> 助手设置</div>
+							<div class="g-button-menu pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg> 助手美化</div>
+							<div class="g-button-menu pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg> 更新日志</div>
 						</div>
 					</div>
 				`);
@@ -4418,7 +4340,6 @@
 				</a>`)
 				element.after($button);
 			})
-			this.setBDUSS();
 		},
 
 		addInitButton() {
@@ -4480,8 +4401,8 @@
 				},
 			});
 			// 获取选择的文件列表
-			temp.selectList = this.getSelectedList();
-			let BDUSS = this.getBDUSS(), accessToken = (base.getValue('baidu_access_token') || await $baidu.getToken());
+			let selectList = this.getSelectedList();
+			let accessToken = (base.getValue('baidu_access_token') || await $baidu.getToken());
 
 			if (!accessToken) {
 				message.info('提示：<br/>稍后请在新标签页中授权助手哦~');
@@ -4503,111 +4424,17 @@
 				return;
 			}
 
-			if (!BDUSS) {
-				async function getBDUSS() {
-					let dialog = await Swal.fire({
-						...temp.swalDefault,
-						icon: 'info',
-						title: `提示`,
-						html: '你好呀，为了获取百度网盘文件的下载直链<br/>我们需要您安装原作者的辅助扩展<br/>来让 “下载助手” 读取您的网盘账号凭证 (BDUSS)<br/>获取到的凭证仅用于生成直链，请放心安装\\(≧▽≦*)o<br/><br/>不知道如何安装第三方扩展？<a class="pl-a" target="_blank" href="https://www.youxiaohou.com/zh-cn/crx.html ">点此查看详情</a><br/>如果给浏览器开启了“开发者模式”后频繁提示<br/>“关闭开发者模式”，请使用<a class="pl-a" target="_blank" href="https://wws.lanzoub.com/b00vgnrha ">此补丁</a>隐藏提示。<a class="pl-a" target="_blank" href="https://ooo.0x0.ooo/2022/05/04/zrNGX.png ">界面汉化</a><br/>扩展安装后请刷新本页，以应用最新更改',
-						showConfirmButton: true,
-						showDenyButton: true,
-						showCancelButton: true,
-						showCloseButton: true,
-						allowOutsideClick: false,
-						allowEscapeKey: false,
-						allowEnterKey: false,
-						confirmButtonText: '前往 Chrome（Crx搜搜）',
-						denyButtonText: '前往 Firefox（Crx搜搜）',
-						cancelButtonText: '装不了扩展，我要手动输入'
-					});
-
-					if (dialog.isConfirmed) {
-						GM_openInTab('https://www.crxsoso.com/addon/detail/mphijdmblaalbakceeadippfkbgfgaaa ', { active: true, insert: true, setParent: true });
-					}
-					if (dialog.isDenied) {
-						GM_openInTab('https://www.crxsoso.com/firefox/detail/baidunetdiskisasb ', { active: true, insert: true, setParent: true });
-					}
-					if (dialog.isDismissed && dialog.dismiss === Swal.DismissReason.cancel) {
-						while (true) {
-							let idialog = await Swal.fire({
-								...temp.swalDefault,
-								title: '手动输入凭证',
-								html: `<div class="bduss-box">
-									<h3>Via 浏览器获取方法</h3>
-									<p>打开任意百度网盘页面 →</p>
-									<p>点击地址栏左侧的安全图标 →</p>
-									<p>查看 Cookies →</p>
-									<p>找到 "BDUSS=" 字段 →</p>
-									<p>复制等于号后面的内容直到分号 (不含分号) →</p>
-									<p>然后粘贴到这里</p>
-									<hr/>
-									<h3>桌面端浏览器获取方法</h3>
-									<p>打开任意百度网盘页面 →</p>
-									<p>F12 打开开发者工具 →</p>
-									<p>转到 应用(Application) 标签 →</p>
-									<p>Cookies →</p>
-									<p>找到 "BDUSS" 字段 →</p>
-									<p>复制其值粘贴到这里</p>
-									<div class="input-box">
-										<input type="text" autocomplete="off" class="swal2-input init-input" id="init" type="text" style="margin-bottom:0" placeholder="输入凭证...">
-									</div>
-								</div>
-								<style>
-									.bduss-box > .input-box{
-										display:flex;flex-direction:column;align-items:center
-									}
-									.bduss-box > hr{
-										margin-top:10px;
-									}
-									.bduss-box > hr{
-										border-style:inset;
-										border-width:1px;
-									}
-								</style>`,
-								showConfirmButton: true,
-								showDenyButton: true,
-								allowOutsideClick: false,
-								allowEscapeKey: false,
-								allowEnterKey: false,
-								focusConfirm: false,
-							});
-							if (idialog.isConfirmed) {
-								let BDUSS = $('#init').val().trim();
-								if (BDUSS && BDUSS.length >= 192) {
-									$baidu.setBDUSS(BDUSS);
-									return message.success('提示：<br/>凭证设置成功<br/>请再获取一次下载链接吧~');
-								} else {
-									await Swal.fire({
-										...temp.swalDefault,
-										icon: 'error',
-										title: '格式错误',
-										text: '请输入有效的 BDUSS（通常长度 ≥ 192 位）',
-									});
-									continue;
-								}
-							} else if (idialog.isDenied) {
-								return await getBDUSS();
-							}
-						}
-					}
-				}
-				return await getBDUSS();
-			}
+			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
 
 			if (temp.pege === 'home' || temp.pege === 'main') {
-				if (!temp.selectList.length) {
-					return message.error('提示：<br/>先勾选要下载的文件哦~');
-				}
-
 				let cnt = 0;
-				let processed = temp.selectList.filter(f => !f.isdir).length;
+				let processed = selectList.filter(f => !f.isdir).length;
 
 				async function fetchFiles(dirs) {
 					let files = [];
 
 					for (let dir of dirs) {
-						temp.doc.find('.loading-popup .loading-title').html(`文件获取中`);
+						$doc.find('.loading-popup .loading-title').html(`文件获取中`);
 						let url = `${config.$baidu.api.getFiles}&dir=${encodeURIComponent(dir.path)}&access_token=${accessToken}`;
 						let res = await base.get(url, { "User-Agent": config.$baidu.api.ua.downloadLink });
 						cnt++;
@@ -4616,7 +4443,7 @@
 							let subFiles = res.list.filter(f => !f.isdir);
 
 							processed += subFiles.length;
-							temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} 个文件~</div><div>${dir.path}</div>`);
+							$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} 个文件~</div><div>${dir.path}</div>`);
 
 							files = files.concat(subFiles);
 							if (res.list.some(f => f.isdir)) {
@@ -4624,7 +4451,7 @@
 							}
 						}
 						if (cnt >= 50) {
-							temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} 个文件~</div><div>休息 3 秒...</div>`);
+							$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} 个文件~</div><div>休息 3 秒...</div>`);
 							await base.sleep(3000);
 							cnt = 0;
 						}
@@ -4632,17 +4459,17 @@
 					return files;
 				}
 
-				let files = temp.selectList.filter(f => !f.isdir);
+				let files = selectList.filter(f => !f.isdir);
 
-				if (temp.selectList.some(f => f.isdir)) {
-					files = files.concat(await fetchFiles(temp.selectList.filter(f => f.isdir)));
+				if (selectList.some(f => f.isdir)) {
+					files = files.concat(await fetchFiles(selectList.filter(f => f.isdir)));
 				}
 				if (!files.length) {
 					return message.error('提示：<br/>文件夹是空的哦~');
 				}
 
-				temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-				temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
+				$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+				$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 
 				let fidList = files.map(f => f.fs_id);
 				let batchSize = 100;
@@ -4651,12 +4478,12 @@
 					let url = `${config.$baidu.api.getLink}&fsids=${encodeURIComponent(JSON.stringify(fidList.slice(i, i + batchSize)))}&access_token=${accessToken}`;
 					let res = await base.get(url, { "User-Agent": config.$baidu.api.ua.downloadLink });
 
-					if (res?.list?.length && (res.errno === 0 || res.errmsg === "succ")) {
+					if (res.list && res.list.length !== 0 && res.errno === 0) {
 						linkList = linkList.concat(res.list);
-						temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${linkList.length} / ${fidList.length} 个链接~</div>`);
+						$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${linkList.length} / ${fidList.length} 个链接~</div>`);
 
 					} else {
-						if (res?.errno) {
+						if (res.errno) {
 							if (res.errno === 112) {
 								return message.error('提示：<br/>页面过期了，刷新重试下吧~<br/>代码：' + res.errno);
 							}
@@ -4676,19 +4503,23 @@
 				}
 
 				if (linkList.length) {
-					temp.html = base.generateDom(linkList, {
+					temp.links = [linkList, {
 						isFolder: v => v.isdir === 1,
 						getFileName: v => (v.server_filename || v.filename),
 						getFileSize: v => v.size,
-						getFileLink: v => v.dlink,
+						getFileLink: v => {
+							let url = new URL(v.dlink);
+							url.searchParams.set("access_token", accessToken);
+							return url.href;
+						},
 						convert: {
-							aria2: `--header "User-Agent:${config.$baidu.api.ua.downloadLink}" --header "Cookie:BDUSS=${BDUSS}"`,
-							curl: `-A "${config.$baidu.api.ua.downloadLink}" -b "BDUSS=${BDUSS}"`,
-							bitcomet: `cookie=${encodeURIComponent("BDUSS=" + BDUSS)}&user_agent=${encodeURIComponent(config.$baidu.api.ua.downloadLink)}`
+							aria2: `--header "User-Agent:${config.$baidu.api.ua.downloadLink}""`,
+							curl: `-A "${config.$baidu.api.ua.downloadLink}"`,
+							bitcomet: `user_agent=${encodeURIComponent(config.$baidu.api.ua.downloadLink)}`
 						},
 						tooltip: config.$baidu.dom
-					});
-					base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+					}];
+					base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 				} else {
 					return message.error('提示：<br/>获取下载链接失败，刷新网页后再试试吧~');
 				}
@@ -4702,9 +4533,6 @@
 			try {
 				List = require("system-core:context/context.js").instanceForSystem.list;
 				selectList = List.getSelected();
-				/*if (!selectList.length){
-					selectList = List.getCurrentList();
-				}*/
 				return selectList;
 			} catch (e) { }
 			try {
@@ -4721,30 +4549,6 @@
 					return selectList;
 				}
 			} catch (e) { }
-		},
-
-		getLogid() {
-			let ut = require("system-core:context/context.js").instanceForSystem.tools.baseService;
-			return ut.base64Encode(base.getCookie("BAIDUID"));
-		},
-
-		getShareData() {
-			let res = unsafeWindow.locals.dump();
-			temp.shareParams.shareType = 'secret';
-			temp.shareParams.sign = "";
-			temp.shareParams.timestamp = "";
-			temp.shareParams.bdstoken = res.bdstoken.value;
-			temp.shareParams.channel = 'chunlei';
-			temp.shareParams.clienttype = 0;
-			temp.shareParams.web = 1;
-			temp.shareParams.app_id = 250528;
-			temp.shareParams.encrypt = 0;
-			temp.shareParams.product = 'share';
-			temp.shareParams.logid = this.getLogid();
-			temp.shareParams.shareid = res.shareid.value;
-			temp.shareParams.uk = res.share_uk.value;
-			temp.shareParams.shareType === 'secret' && (temp.shareParams.extra = this._getExtra());
-			temp.shareParams.surl = this._getSurl();
 		},
 
 		detectPage() {
@@ -4794,7 +4598,6 @@
 					'iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v', // Alist
 					'IlLqBbU3GjQ0t46TRwFateTprHWl39zF',  // 百度手机助手
 				];
-				// https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=&scope=basic,netdisk,mobile&display=page&redirect_uri=
 				if (
 					/openapi.baidu.com\/oauth\/2.0\/authorize/.test(location.href) &&
 					url.searchParams.get("response_type").includes("token") &&
@@ -4807,7 +4610,7 @@
 						title: `提示`,
 						html: `<p>(◍•ᴗ•◍) 你好呀，为了获取百度网盘文件的下载直链<br/>“下载助手” 需要你的授权，以获取网盘文件的访问令牌</p><br/>
 						<p>由于在百度 OAuth 页面使用了其他应用的 Client ID<br/>所以显示的应用名称可能会有所不同，敬请理解</p><br/>
-						<p>获取到的令牌仅用于调用百度官方 API 生成直链<br/>不会用于其他用途，请放心授权</p>`,
+						<p>获取到的令牌仅用于调用百度网盘 API 生成直链<br/>不会用于其他用途，请放心授权</p>`,
 						showConfirmButton: true,
 						showDenyButton: true,
 						allowOutsideClick: false,
@@ -4877,9 +4680,7 @@
 										Swal.resumeTimer();
 									});
 								},
-								willClose: () => {
-									window.close();
-								}
+								willClose: () => window.close()
 							});
 							return window.close();
 						} else {
@@ -4911,7 +4712,7 @@
 			if (window[key]) return;
 			window[key] = true;
 
-			temp.doc.on('click', '.pl-button-save', async function (e) {
+			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
 				let reactDomGrid = document.querySelector(config.$aliyun.mount.grid);
 				if (reactDomGrid) {
@@ -4931,8 +4732,8 @@
 					}
 					return false;
 				}
-				temp.selectList = $aliyun.getSelectedList();
-				if (temp.selectList.length === 0) {
+				let selectList = $aliyun.getSelectedList();
+				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
 				message.info('提示：<br/>因网盘限制，请保存到自己网盘后再去下载哦~');
@@ -4940,7 +4741,7 @@
 				document.querySelector('[class*="btn-save--"]').click();
 			});
 
-			temp.doc.on('click', '.pl-button-mode', async function (e) {
+			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
 				let reactDomGrid = document.querySelector(config.$aliyun.mount.grid);
@@ -4964,7 +4765,7 @@
 				$aliyun.getLink();
 			});
 
-			temp.doc.on('click', '.listener-api-download.enhance', async function (e) {
+			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
 
 				let o = base._EventFactory(e);
@@ -5026,7 +4827,7 @@
 				}, 500);
 			});
 
-			temp.doc.on('click', '.listener-aria2-download', async function (e) {
+			$doc.on('click', '.listener-aria2-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -5048,7 +4849,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-bitcomet-download', async function (e) {
+			$doc.on('click', '.listener-bitcomet-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -5070,7 +4871,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-abdm-download', async function (e) {
+			$doc.on('click', '.listener-abdm-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -5102,10 +4903,6 @@
 			}, true);
 			base.waitForKeyElements('[class*="btn-mobile-save"]', function (tag) {
 				tag.fadeOut();
-			}, true);
-			base.waitForKeyElements('div[class*="text"]', function (tag) {
-				if (tag[0].innerHTML.match("SVIP"))
-					tag.fadeOut();
 			}, true);
 			base.waitForKeyElements('[class*="SplashScreenImg--close"]', function (tag) {
 				tag[0].click();
@@ -5146,7 +4943,7 @@
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
-						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>更新日志</li>
+						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 					</ul>
 				</div>`);
 				element.append($button);
@@ -5206,23 +5003,19 @@
 					Swal.showLoading();
 				},
 			});
-			temp.selectList = this.getSelectedList();
-			if (temp.selectList.length === 0) {
-				return message.error('提示：<br/>请勾选要下载的文件哦~');
-			}
-			if (this.isOnlyFolder()) {
-				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			}
+			let selectList = this.getSelectedList();
+			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
+			if (selectList.every(item => item.type !== 'file')) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			if (temp.pege === 'home') {
-				temp.selectList = temp.selectList.filter(item => item.type === 'file')
+				selectList = selectList.filter(item => item.type === 'file')
 				let batchSize = 15;
 				let processed = 0;
 
-				temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-				temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
-				for (let i = 0; i < temp.selectList.length; i += batchSize) {
+				$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+				$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
+				for (let i = 0; i < selectList.length; i += batchSize) {
 					// 当前批次文件
-					let batch = temp.selectList.slice(i, i + batchSize);
+					let batch = selectList.slice(i, i + batchSize);
 
 					// 过滤掉已有 URL 的文件
 					let noUrlSelectList = batch.filter(v => !Boolean(v.url));
@@ -5234,14 +5027,14 @@
 						queue.push(this.getFileUrlByOnce(item.driveId, item.fileId)
 							.then(val => {
 								processed++;
-								temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+								$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 								return val;
 							}));
 					});
 
 					hasUrlSelectList.forEach((item) => {
 						processed++;
-						temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+						$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 					});
 
 					// 等待本批次的请求结果
@@ -5257,7 +5050,7 @@
 				return message.error('提示：<br/>页面错误~');
 			}
 
-			temp.html = base.generateDom(temp.selectList, {
+			temp.links = [selectList, {
 				isFolder: v => v.type === 'folder',
 				getFileName: v => v.name,
 				getFileSize: v => v.size,
@@ -5268,8 +5061,8 @@
 					bitcomet: `&refer=${encodeURIComponent(`https://${location.host}/`)}`
 				},
 				tooltip: config.$aliyun.dom
-			});
-			base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+			}];
+			base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 		},
 
 		async getFileUrlByOnce(d, f) {
@@ -5311,13 +5104,6 @@
 			return "";
 		},
 
-		isOnlyFolder() {
-			for (let i = 0; i < temp.selectList.length; i++) {
-				if (temp.selectList[i].type === 'file') return false;
-			}
-			return true;
-		},
-
 		async initPanLinker() {
 			base.createTip();
 			base.registerMenuCommand();
@@ -5345,27 +5131,23 @@
 			if (window[key]) return;
 			window[key] = true;
 
-			temp.doc.on('click', '.pl-button-mode', async function (e) {
+			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
 				$mcloud.getLink();
 			});
 
-			temp.doc.on('click', '.pl-button-save', async function (e) {
+			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				temp.selectList = $mcloud.getSelectedList();
-				if (temp.selectList.length === 0) {
-					return message.error('提示：<br/>请勾选要直接下载的文件哦~');
-				}
-				if ($mcloud.isOnlyFolder()) {
-					return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-				}
+				let selectList = $mcloud.getSelectedList();
+				if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
+				if (selectList.every(item => !item.contentID && !item.contentName)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 				message.info('提示：<br/>因网盘限制，只能够通过页面直接下载哦~');
 				await base.sleep(500);
 				document.querySelector('.btn-top.btn-top_dl').click();
 			});
 
-			temp.doc.on('click', '.listener-api-download.enhance', async function (e) {
+			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
 
 				let o = base._EventFactory(e);
@@ -5427,7 +5209,7 @@
 				}, 500);
 			});
 
-			temp.doc.on('click', '.listener-aria2-download', async function (e) {
+			$doc.on('click', '.listener-aria2-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -5449,7 +5231,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-bitcomet-download', async function (e) {
+			$doc.on('click', '.listener-bitcomet-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -5471,7 +5253,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-abdm-download', async function (e) {
+			$doc.on('click', '.listener-abdm-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -5547,7 +5329,7 @@
 						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
-						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>更新日志</li>
+						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 					</ul>
 				</div>`);
 				element.prepend($button);
@@ -5561,7 +5343,7 @@
 						<li class="pl-button-mode pl-button-save"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>直接下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
-						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>更新日志</li>
+						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 					</ul>
 				</div>`);
 				element.prepend($button);
@@ -5640,8 +5422,17 @@
 					let key = this.getRandomString(16);
 					let sign = this.getSign(undefined, body, time, key);
 
+					let getCookie = (name) => {
+						let cname = name + "=";
+						let ca = document.cookie.split(';');
+						for (let i = 0; i < ca.length; i++) {
+							let c = ca[i].trim();
+							if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
+						}
+						return "";
+					}
 					let res = await base.post(config.$mcloud.api.getLink, body, {
-						"Authorization": base.getCookie("authorization"),
+						"Authorization": getCookie("authorization"),
 						"Caller": "web",
 						"CMS-DEVICE": "default",
 						"Mcloud-Channel": "1000101",
@@ -5719,22 +5510,18 @@
 					Swal.showLoading();
 				},
 			});
-			temp.selectList = this.getSelectedList();
-			if (temp.selectList.length === 0) {
-				return message.error('提示：<br/>请勾选要下载的文件哦~');
-			}
-			if (this.isOnlyFolder()) {
-				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			}
+			let selectList = this.getSelectedList();
+			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
+			if (selectList.every(item => !item.contentID && !item.contentName)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 
 			if (temp.pege === 'home') {
-				temp.selectList = temp.selectList.filter(item => item.contentID && item.contentName && item.contentSuffix);
+				selectList = selectList.filter(item => item.contentID && item.contentName && item.contentSuffix);
 				let batchSize = 15;
 				let processed = 0;
-				temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-				temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
-				for (let i = 0; i < temp.selectList.length; i += batchSize) {
-					let batch = temp.selectList.slice(i, i + batchSize);
+				$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+				$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
+				for (let i = 0; i < selectList.length; i += batchSize) {
+					let batch = selectList.slice(i, i + batchSize);
 					let queue = [];
 
 					batch.forEach((item, localIndex) => {
@@ -5742,14 +5529,14 @@
 						queue.push(this.getFileUrlByOnce(item, globalIndex)
 							.then(val => {
 								processed++;
-								temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+								$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 								return val;
 							}));
 					});
 
 					let res = await Promise.all(queue);
 					res.forEach(val => {
-						temp.selectList[val.index].downloadUrl = val.downloadUrl;
+						selectList[val.index].downloadUrl = val.downloadUrl;
 					});
 
 					await base.sleep(1000);
@@ -5758,14 +5545,14 @@
 				return message.error('提示：<br/>页面错误~');
 			}
 
-			temp.html = base.generateDom(temp.selectList, {
+			temp.links = [selectList, {
 				isFolder: v => (v.dirEtag || v.caName),
 				getFileName: v => (v.contentName || v.coName),
 				getFileSize: v => (v.contentSize || v.coSize),
 				getFileLink: v => v.downloadUrl,
 				tooltip: config.$mcloud.dom
-			});
-			base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+			}];
+			base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 		},
 
 		getSelectedList() {
@@ -5794,13 +5581,6 @@
 			return "";
 		},
 
-		isOnlyFolder() {
-			for (let i = 0; i < temp.selectList.length; i++) {
-				if (temp.selectList[i].contentID || temp.selectList[i].contentName) return false;
-			}
-			return true;
-		},
-
 		async initPanLinker() {
 			base.createTip();
 			base.registerMenuCommand();
@@ -5827,13 +5607,13 @@
 			let key = encodeURIComponent('LinkSwift:天翼云盘');
 			if (window[key]) return;
 			window[key] = true;
-			temp.doc.on('click', '.pl-button-mode', async function (e) {
+			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
 				$tcloud.getLink();
 			});
 
-			temp.doc.on('click', '.listener-api-download.enhance', async function (e) {
+			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
 
 				let o = base._EventFactory(e);
@@ -5895,7 +5675,7 @@
 				}, 500);
 			});
 
-			temp.doc.on('click', '.listener-aria2-download', async function (e) {
+			$doc.on('click', '.listener-aria2-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -5917,7 +5697,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-bitcomet-download', async function (e) {
+			$doc.on('click', '.listener-bitcomet-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -5939,7 +5719,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-abdm-download', async function (e) {
+			$doc.on('click', '.listener-abdm-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -6003,7 +5783,7 @@
 					<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
 					<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
 					<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
-					<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>更新日志</li>
+					<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 				</ul>
 			</div>`);
 			$button.find(".pl-dropdown-menu").css({ 'position': 'absolute', 'left': '-1px' })
@@ -6039,13 +5819,13 @@
 		},
 
 		async getToken() {
-			temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-			temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取状态~</div>`);
+			$doc.find('.loading-popup .loading-title').html(`令牌获取中`);
+			$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取状态~</div>`);
 			let res = await base.getFinalUrl(config.$tcloud.api.getAccessToken, undefined, true);
 			let accessToken = res.match(/accessToken=(\w+)/)?.[1];
 			accessToken && base.setStorage('accessToken', accessToken);
-			temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-			temp.doc.find('.loading-popup .swal2-html-container').html(`<div>获取成功，令牌已缓存~</div>`);
+			$doc.find('.loading-popup .loading-title').html(`令牌获取中`);
+			$doc.find('.loading-popup .swal2-html-container').html(`<div>获取成功，令牌已缓存~</div>`);
 			return accessToken;
 		},
 
@@ -6118,29 +5898,25 @@
 					Swal.showLoading();
 				},
 			});
-			temp.selectList = this.getSelectedList();
-			if (temp.selectList.length === 0) {
-				return message.error('提示：<br/>请勾选要下载的文件哦~');
-			}
-			if (this.isOnlyFolder()) {
-				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			}
-			temp.selectList = temp.selectList.filter(item => !item.isFolder)
-			temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-			temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取状态~</div>`);
+			let selectList = this.getSelectedList();
+			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
+			if (selectList.every(item => item.isFolder)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
+			selectList = selectList.filter(item => !item.isFolder)
+			$doc.find('.loading-popup .loading-title').html(`令牌获取中`);
+			$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取状态~</div>`);
 			let token = base.getStorage('accessToken') || await this.getToken();
 			if (!token) {
 				return message.error('提示：<br/>请先登录网盘~');
 			}
-			temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-			temp.doc.find('.loading-popup .swal2-html-container').html(`<div>获取缓存成功~</div>`);
+			$doc.find('.loading-popup .loading-title').html(`令牌获取中`);
+			$doc.find('.loading-popup .swal2-html-container').html(`<div>获取缓存成功~</div>`);
 
 			let batchSize = 15;
 			let processed = 0;
-			temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-			temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
-			for (let i = 0; i < temp.selectList.length; i += batchSize) {
-				let batch = temp.selectList.slice(i, i + batchSize);
+			$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+			$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
+			for (let i = 0; i < selectList.length; i += batchSize) {
+				let batch = selectList.slice(i, i + batchSize);
 				let queue = [];
 
 				batch.forEach((item, localIndex) => {
@@ -6148,27 +5924,27 @@
 					queue.push(this.getFileUrlByOnce(item, globalIndex, token)
 						.then(val => {
 							processed++;
-							temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+							$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 							return val;
 						}));
 				});
 
 				let res = await Promise.all(queue);
 				res.forEach(val => {
-					temp.selectList[val.index].downloadUrl = val.downloadUrl;
+					selectList[val.index].downloadUrl = val.downloadUrl;
 				});
 
 				await base.sleep(1000);
 			}
 
-			temp.html = base.generateDom(temp.selectList, {
+			temp.links = [selectList, {
 				isFolder: v => v.isFolder,
 				getFileName: v => v.fileName,
 				getFileSize: v => v.size,
 				getFileLink: v => v.downloadUrl,
 				tooltip: config.$mcloud.dom
-			});
-			base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+			}];
+			base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 		},
 
 		getSelectedList() {
@@ -6184,13 +5960,6 @@
 			if (/^\/web\/main/.test(path)) return 'home';
 			if (/^\/web\/share/.test(path)) return 'share';
 			return "";
-		},
-
-		isOnlyFolder() {
-			for (let i = 0; i < temp.selectList.length; i++) {
-				if (!temp.selectList[i].isFolder) return false;
-			}
-			return true;
 		},
 
 		async initPanLinker() {
@@ -6220,15 +5989,15 @@
 			let key = encodeURIComponent('LinkSwift:迅雷云盘');
 			if (window[key]) return;
 			window[key] = true;
-			temp.doc.on('click', '.pl-button-mode', async function (e) {
+			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
 				$xunlei.getLink();
 			});
-			temp.doc.on('click', '.pl-button-save', async function (e) {
+			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				temp.selectList = $xunlei.getSelectedList();
-				if (temp.selectList.length === 0) {
+				let selectList = $xunlei.getSelectedList();
+				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
 				message.info('提示：<br/>因网盘限制，请保存到自己网盘后再去下载哦~');
@@ -6236,7 +6005,7 @@
 				document.querySelector('.saveToCloud').click();
 			});
 
-			temp.doc.on('click', '.listener-api-download.enhance', async function (e) {
+			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
 
 				let o = base._EventFactory(e);
@@ -6298,7 +6067,7 @@
 				}, 500);
 			});
 
-			temp.doc.on('click', '.listener-aria2-download', async function (e) {
+			$doc.on('click', '.listener-aria2-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -6320,7 +6089,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-bitcomet-download', async function (e) {
+			$doc.on('click', '.listener-bitcomet-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -6342,7 +6111,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-abdm-download', async function (e) {
+			$doc.on('click', '.listener-abdm-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -6433,8 +6202,8 @@
 		},
 
 		getToken() {
-			temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-			temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取状态~</div>`);
+			$doc.find('.loading-popup .loading-title').html(`令牌获取中`);
+			$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取状态~</div>`);
 			let credentials = {}, captcha = {};
 			for (let i = 0; i < localStorage.length; i++) {
 				if (/^credentials_/.test(localStorage.key(i))) {
@@ -6499,21 +6268,17 @@
 					Swal.showLoading();
 				},
 			});
-			temp.selectList = this.getSelectedList();
-			if (temp.selectList.length === 0) {
-				return message.error('提示：<br/>请勾选要下载的文件哦~');
-			}
-			if (this.isOnlyFolder()) {
-				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			}
+			let selectList = this.getSelectedList();
+			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
+			if (selectList.every(item => item.kind !== 'drive#file')) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			if (temp.pege === 'home') {
 				let token = this.getToken();
 				let batchSize = 15;
 				let processed = 0;
-				temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-				temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
-				for (let i = 0; i < temp.selectList.length; i += batchSize) {
-					let batch = temp.selectList.slice(i, i + batchSize);
+				$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+				$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
+				for (let i = 0; i < selectList.length; i += batchSize) {
+					let batch = selectList.slice(i, i + batchSize);
 					let queue = [];
 
 					batch.forEach((item, localIndex) => {
@@ -6521,14 +6286,14 @@
 						queue.push(this.getFileUrlByOnce(item, globalIndex, token)
 							.then(val => {
 								processed++;
-								temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+								$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 								return val;
 							}));
 					});
 
 					let res = await Promise.all(queue);
 					res.forEach(val => {
-						temp.selectList[val.index].downloadUrl = val.downloadUrl;
+						selectList[val.index].downloadUrl = val.downloadUrl;
 					});
 
 					await base.sleep(1000);
@@ -6536,15 +6301,15 @@
 			} else {
 				return message.error('提示：<br/>页面错误~');
 			}
-			temp.html = base.generateDom(temp.selectList, {
+			temp.links = [selectList, {
 				isFolder: v => v.kind === 'drive#folder',
 				getFileName: v => v.name,
 				getFileSize: v => v.size,
 				getFileLink: v => v.downloadUrl,
 				getFileMirror: v => base.getMirrorList(v, config.$xunlei.api.mirror),
 				tooltip: config.$xunlei.dom
-			});
-			base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+			}];
+			base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 
 		},
 
@@ -6569,13 +6334,6 @@
 			if (/^\/$/.test(path)) return 'home';
 			if (/^\/(s|share)\//.test(path)) return 'share';
 			return "";
-		},
-
-		isOnlyFolder() {
-			for (let i = 0; i < temp.selectList.length; i++) {
-				if (temp.selectList[i].kind === 'drive#file') return false;
-			}
-			return true;
 		},
 
 		async initPanLinker() {
@@ -6604,15 +6362,15 @@
 			let key = encodeURIComponent('LinkSwift:夸克网盘');
 			if (window[key]) return;
 			window[key] = true;
-			temp.doc.on('click', '.pl-button-mode', async function (e) {
+			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
 				$quark.getLink();
 			});
-			temp.doc.on('click', '.pl-button-save', async function (e) {
+			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				temp.selectList = $quark.getSelectedList();
-				if (temp.selectList.length === 0) {
+				let selectList = $quark.getSelectedList();
+				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
 				message.info('提示：<br/>因网盘限制，请保存到自己网盘后再去下载哦~');
@@ -6627,7 +6385,7 @@
 				}, true)
 			});
 
-			temp.doc.on('click', '.listener-api-download.enhance', async function (e) {
+			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
 
 				let o = base._EventFactory(e);
@@ -6689,7 +6447,7 @@
 				}, 500);
 			});
 
-			temp.doc.on('click', '.listener-aria2-download', async function (e) {
+			$doc.on('click', '.listener-aria2-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -6711,7 +6469,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-bitcomet-download', async function (e) {
+			$doc.on('click', '.listener-bitcomet-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -6733,7 +6491,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-abdm-download', async function (e) {
+			$doc.on('click', '.listener-abdm-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -6889,22 +6647,18 @@
 					Swal.showLoading();
 				},
 			});
-			temp.selectList = this.getSelectedList();
-			if (temp.selectList.length === 0) {
-				return message.error('提示：<br/>请勾选要下载的文件哦~');
-			}
-			if (this.isOnlyFolder()) {
-				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			}
+			let selectList = this.getSelectedList();
+			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
+			if (selectList.every(item => !item.file)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			if (temp.pege === 'home') {
 				let data = [];
 				let batchSize = 15;
 				let processed = 0;
-				temp.selectList = temp.selectList.filter(item => item.file === true)
+				selectList = selectList.filter(item => item.file === true)
 
-				for (let i = 0; i < temp.selectList.length; i += batchSize) {
+				for (let i = 0; i < selectList.length; i += batchSize) {
 					// 获取当前批次文件
-					let batch = temp.selectList.slice(i, i + batchSize);
+					let batch = selectList.slice(i, i + batchSize);
 					let fids = batch.map(item => item.fid);
 
 					// 发起请求获取链接
@@ -6926,13 +6680,13 @@
 					processed += batch.length;
 
 					// 更新UI显示
-					temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-					temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+					$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+					$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 
 					// 请求间隔节流
 					await base.sleep(1000);
 				}
-				temp.html = base.generateDom(data, {
+				temp.links = [data, {
 					isFolder: v => v.file === false,
 					getFileName: v => v.file_name,
 					getFileSize: v => v.size,
@@ -6943,8 +6697,8 @@
 						bitcomet: `user_agent=${encodeURIComponent(config.$quark.api.ua.downloadLink)}&refer=${encodeURIComponent(`https://${location.host}/`)}&cookie=${encodeURIComponent(document.cookie)}`
 					},
 					tooltip: config.$quark.dom
-				});
-				base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+				}];
+				base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 			} else {
 				return message.error('提示：<br/>页面错误~');
 			}
@@ -6978,13 +6732,6 @@
 			return "";
 		},
 
-		isOnlyFolder() {
-			for (let i = 0; i < temp.selectList.length; i++) {
-				if (temp.selectList[i].file) return false;
-			}
-			return true;
-		},
-
 		async initPanLinker() {
 			base.createTip();
 			base.registerMenuCommand();
@@ -7011,15 +6758,15 @@
 			let key = encodeURIComponent('LinkSwift:UC网盘');
 			if (window[key]) return;
 			window[key] = true;
-			temp.doc.on('click', '.pl-button-mode', async function (e) {
+			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
 				$uc.getLink();
 			});
-			temp.doc.on('click', '.pl-button-save', async function (e) {
+			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				temp.selectList = $uc.getSelectedList();
-				if (temp.selectList.length === 0) {
+				let selectList = $uc.getSelectedList();
+				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
 				message.info('提示：<br/>因网盘限制，请保存到自己网盘后再去下载哦~');
@@ -7027,7 +6774,7 @@
 				document.querySelector('.file-info_r').click();
 			});
 
-			temp.doc.on('click', '.listener-api-download.enhance', async function (e) {
+			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
 
 				let o = base._EventFactory(e);
@@ -7089,7 +6836,7 @@
 				}, 500);
 			});
 
-			temp.doc.on('click', '.listener-aria2-download', async function (e) {
+			$doc.on('click', '.listener-aria2-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -7111,7 +6858,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-bitcomet-download', async function (e) {
+			$doc.on('click', '.listener-bitcomet-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -7133,7 +6880,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-abdm-download', async function (e) {
+			$doc.on('click', '.listener-abdm-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -7256,22 +7003,18 @@
 					Swal.showLoading();
 				},
 			});
-			temp.selectList = this.getSelectedList();
-			if (temp.selectList.length === 0) {
-				return message.error('提示：<br/>请勾选要下载的文件哦~');
-			}
-			if (this.isOnlyFolder()) {
-				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			}
+			let selectList = this.getSelectedList();
+			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
+			if (selectList.every(item => !item.file)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			if (temp.pege === 'home') {
 				let data = [];
 				let batchSize = 15;
 				let processed = 0;
-				temp.selectList = temp.selectList.filter(item => item.file === true)
+				selectList = selectList.filter(item => item.file === true)
 
-				for (let i = 0; i < temp.selectList.length; i += batchSize) {
+				for (let i = 0; i < selectList.length; i += batchSize) {
 					// 获取当前批次文件
-					let batch = temp.selectList.slice(i, i + batchSize);
+					let batch = selectList.slice(i, i + batchSize);
 					let fids = batch.map(item => item.fid);
 
 					// 发起请求获取链接
@@ -7293,13 +7036,13 @@
 					processed += batch.length;
 
 					// 更新UI显示
-					temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-					temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+					$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+					$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 
 					// 请求间隔节流
 					await base.sleep(1000);
 				}
-				temp.html = base.generateDom(data, {
+				temp.links = [data, {
 					isFolder: v => v.file === false,
 					getFileName: v => v.file_name,
 					getFileSize: v => v.size,
@@ -7310,8 +7053,8 @@
 						bitcomet: `user_agent=${encodeURIComponent(config.$uc.api.ua.downloadLink)}&refer=${encodeURIComponent(`https://${location.host}/`)}&cookie=${encodeURIComponent(document.cookie)}`
 					},
 					tooltip: config.$uc.dom
-				});
-				base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+				}];
+				base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 			} else {
 				return message.error('提示：<br/>页面错误~');
 			}
@@ -7345,13 +7088,6 @@
 			return "";
 		},
 
-		isOnlyFolder() {
-			for (let i = 0; i < temp.selectList.length; i++) {
-				if (temp.selectList[i].file) return false;
-			}
-			return true;
-		},
-
 		async initPanLinker() {
 			base.createTip();
 			base.registerMenuCommand();
@@ -7378,13 +7114,13 @@
 			let key = encodeURIComponent('LinkSwift:123云盘');
 			if (window[key]) return;
 			window[key] = true;
-			temp.doc.on('click', '.pl-button-mode', async function (e) {
+			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
 				$123pan.getLink();
 			});
 
-			temp.doc.on('click', '.listener-api-download.enhance', async function (e) {
+			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
 
 				let o = base._EventFactory(e);
@@ -7447,7 +7183,7 @@
 				}, 500);
 			});
 
-			temp.doc.on('click', '.listener-aria2-download', async function (e) {
+			$doc.on('click', '.listener-aria2-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -7469,7 +7205,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-bitcomet-download', async function (e) {
+			$doc.on('click', '.listener-bitcomet-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -7491,7 +7227,7 @@
 				target.removeClass('pl-btn-danger').removeAttr('data-processing').html(originalHtml).css('opacity', "");
 			});
 
-			temp.doc.on('click', '.listener-abdm-download', async function (e) {
+			$doc.on('click', '.listener-abdm-download', async function (e) {
 				let target = $(e.currentTarget);
 
 				if (target.attr('data-processing') === 'true') return;
@@ -7600,8 +7336,8 @@
 		},
 
 		getToken() {
-			temp.doc.find('.loading-popup .loading-title').html(`令牌获取中`);
-			temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取令牌~</div>`);
+			$doc.find('.loading-popup .loading-title').html(`令牌获取中`);
+			$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取令牌~</div>`);
 			let token = base.getStorage("authorToken");
 			return token;
 		},
@@ -7628,87 +7364,83 @@
 					Swal.showLoading();
 				},
 			});
-			temp.selectList = this.getSelectedList();
-			if (temp.selectList.length === 0) {
-				return message.error('提示：<br/>请勾选要下载的文件哦~');
-			}
-			if (this.isOnlyFolder()) {
-				return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			}
+			let selectList = this.getSelectedList();
+			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
+			if (selectList.every(item => item.Type !== 0)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 			if (temp.pege === 'home') {
 				let token = this.getToken();
 				let batchSize = 15;
 				let processed = 0;
-				temp.selectList = temp.selectList.filter(item => item.Type === 0);
-				for (let i = 0; i < temp.selectList.length; i += batchSize) {
-					let batch = temp.selectList.slice(i, i + batchSize);
+				selectList = selectList.filter(item => item.Type === 0);
+				for (let i = 0; i < selectList.length; i += batchSize) {
+					let batch = selectList.slice(i, i + batchSize);
 					let queue = [];
 
-					temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-					temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
+					$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+					$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 					batch.forEach((item, localIndex) => {
 						let globalIndex = i + localIndex;
 						queue.push(this.getFileUrlByOnce(item, globalIndex, token)
 							.then(val => {
 								processed++;
-								temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+								$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 								return val;
 							}));
 					});
 
 					let res = await Promise.all(queue);
 					res.forEach(val => {
-						temp.selectList[val.index].DownloadUrl = val.downloadUrl;
+						selectList[val.index].DownloadUrl = val.downloadUrl;
 					});
 
 					await base.sleep(1000);
 				}
-				temp.html = base.generateDom(temp.selectList, {
+				temp.links = [selectList, {
 					isFolder: v => v.Type !== 0,
 					getFileName: v => v.FileName,
 					getFileSize: v => v.Size,
 					getFileLink: v => v.DownloadUrl || v.DownloadURL,
 					tooltip: config.$123pan.dom
-				})
-				base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+				}]
+				base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 			} else if (temp.pege === 'share') {
 				let token = this.getToken();
 				let batchSize = 15;
 				let processed = 0;
-				temp.selectList = temp.selectList.filter(item => item.Type === 0);
+				selectList = selectList.filter(item => item.Type === 0);
 				let pathSplit = location.pathname.split('/').filter(Boolean);
 				let ShareKey = pathSplit[1];
-				for (let i = 0; i < temp.selectList.length; i += batchSize) {
-					let batch = temp.selectList.slice(i, i + batchSize);
+				for (let i = 0; i < selectList.length; i += batchSize) {
+					let batch = selectList.slice(i, i + batchSize);
 					let queue = [];
 
-					temp.doc.find('.loading-popup .loading-title').html(`链接获取中`);
-					temp.doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
+					$doc.find('.loading-popup .loading-title').html(`链接获取中`);
+					$doc.find('.loading-popup .swal2-html-container').html(`<div>正在获取文件对应的下载链接~</div>`);
 					batch.forEach((item, localIndex) => {
 						let globalIndex = i + localIndex;
 						queue.push(this.getFileUrlByOnce(item, globalIndex, token, ShareKey)
 							.then(val => {
 								processed++;
-								temp.doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${temp.selectList.length} 个链接~</div>`);
+								$doc.find('.loading-popup .swal2-html-container').html(`<div>已获取 ${processed} / ${selectList.length} 个链接~</div>`);
 								return val;
 							}));
 					});
 
 					let res = await Promise.all(queue);
 					res.forEach(val => {
-						temp.selectList[val.index].DownloadUrl = val.downloadUrl;
+						selectList[val.index].DownloadUrl = val.downloadUrl;
 					});
 
 					await base.sleep(1000);
 				}
-				temp.html = base.generateDom(temp.selectList, {
+				temp.links = [selectList, {
 					isFolder: v => v.Type !== 0,
 					getFileName: v => v.FileName,
 					getFileSize: v => v.Size,
 					getFileLink: v => v.DownloadUrl || v.DownloadURL,
 					tooltip: config.$123pan.dom
-				})
-				base.showMainDialog(config.base.dom.button[temp.mode].title, temp.html, config.base.dom.button[temp.mode].footer);
+				}]
+				base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
 			} else {
 				return message.error('提示：<br/>页面错误~');
 			}
@@ -7768,13 +7500,6 @@
 			} catch (e) {
 				return [];
 			}
-		},
-
-		isOnlyFolder() {
-			for (let i = 0; i < temp.selectList.length; i++) {
-				if (temp.selectList[i].Type === 0) return false;
-			}
-			return true;
 		},
 
 		addButton() {
@@ -7867,7 +7592,7 @@
 		async init() {
 			base.waitForKeyElements(`html:not(:has(> .${mount})) head`, (element) => {
 				if ($(`.${mount}`).length > 0) return;
-				element.after(`<${mount} class="${mount}" />`)
+				element.after(`<${mount} class="${mount}" />`);
 			})
 			base.waitForKeyElements(`.${mount}`, (element) => {
 				element.append(`<svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
@@ -7921,11 +7646,13 @@
 				return true;
 			}, true)
 
-			// 先加载默认设置
+			// 智能默认设置
 			base.initDefaultConfig();
-			// 再加载网页样式
+			// 加载美化样式
 			base.addPanLinkerStyle();
+			// 加载按钮监听
 			base.addPageListener();
+			// 创建下载用 iframe
 			base.createDownloadIframe();
 
 			/**
@@ -7934,21 +7661,7 @@
 			 * @author hmjz100
 			 * @description 来自【网盘智能识别助手】，有改动
 			 */
-			console.log(
-				`%c %c LinkSwift\n一个基于 JavaScript 的网盘文件下载地址获取工具\n仓库：https://github.com/hmjz100/LinkSwift\n版本：${info.version}\n领域：${(window.self !== window.top ? "[iframe] " : "") + (document.title ? (document.title + " (" + location.origin + location.pathname + ")") : location.href)}`,
-				`background:url(${info.icon}) center center no-repeat;background-size:12px;padding:3px`, `padding:2px`
-			);
-
-			let storedVersion = base.getValue("setting_init").version;
-			if (!storedVersion || base.isNewerVersion(info.version, storedVersion)) {
-				base.waitForKeyElements("body", () => {
-					base.showUpdate();
-					let list = base.getValue("setting_init");
-					list.version = info.version;
-					base.setValue("setting_init", list);
-					return true;
-				}, true)
-			}
+			console.log(`%c %c LinkSwift\n一个基于 JavaScript 的网盘文件下载地址获取工具\n仓库：https://github.com/hmjz100/LinkSwift\n版本：${info.version}\n领域：${(window.self !== window.top ? "[iframe] " : "") + (document.title ? (document.title + " (" + location.origin + location.pathname + ")") : location.href)}`, `background:url(${info.icon}) center center no-repeat;background-size:12px;padding:3px`, `padding:2px`);
 
 			// 最后判断页面地址并加载对应的initPanLinker
 			if (/(pan|yun).baidu.com/.test(location.host)) {
@@ -7992,6 +7705,16 @@
 				base.getValue('setting_ui_theme').custom.$123pan === true && $123pan.beautifyPage();
 				$123pan.initPanLinker();
 				$123pan.greenerPage();
+			}
+			let storedVersion = base.getValue("setting_init").version;
+			if (!storedVersion || base.isNewerVersion(info.version, storedVersion)) {
+				base.waitForKeyElements("body:not(.swal2-shown)", async () => {
+					await base.showUpdate();
+					let list = base.getValue("setting_init");
+					list.version = info.version;
+					base.setValue("setting_init", list);
+					return true;
+				}, true);
 			}
 		}
 	};
