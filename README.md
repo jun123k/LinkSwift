@@ -30,12 +30,17 @@
 
 - LinkSwift - 直链获取、UI 美化
   - Github 国际: [hmjz100/LinkSwift/（改）网盘直链下载助手.user.js](https://github.com/hmjz100/LinkSwift/raw/main/（改）网盘直链下载助手.user.js)
+  - OpenUserJS 国际：[hmjz100/LinkSwift.user.js](https://openuserjs.org/install/hmjz100/LinkSwift.user.js)
   - Gitee 国内: [hmjz100/LinkSwift/（改）网盘直链下载助手.user.js](https://gitee.com/hmjz100/LinkSwift/raw/main/（改）网盘直链下载助手.user.js)
+  - 脚本猫 国内：[hmjz100/1604/LinkSwift.user.js](https://scriptcat.org/scripts/code/1604/LinkSwift.user.js)
 - （改）百度网盘会员青春版 - 使用 "netfilter" 进一步优化/修改 UI
   - Github 国际: [hmjz100/LinkSwift/（改）百度网盘会员青春版.user.js](https://github.com/hmjz100/LinkSwift/raw/main/（改）百度网盘会员青春版.user.js)
+  - OpenUserJS 国际：[hmjz100/（改）百度网盘会员青春版.user.js](https://openuserjs.org/install/hmjz100/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js)
   - Gitee 国内: [hmjz100/LinkSwift/（改）百度网盘会员青春版.user.js](https://gitee.com/hmjz100/LinkSwift/raw/main/（改）百度网盘会员青春版.user.js)
+  - 脚本猫 国内：[hmjz100/2236/（改）百度网盘会员青春版.user.js](https://scriptcat.org/scripts/code/2236/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js)
 - 123 云盘会员青春版 - [Github](https://github.com/hmjz100/123panYouthMember) - 使用 "netfilter" 进一步优化/修改 UI
   - Github 国际: [hmjz100/123panYouthMember/123 云盘会员青春版.user.js](https://github.com/hmjz100/123panYouthMember/raw/main/123%20云盘会员青春版.user.js)
+  - 脚本猫 国内：[hmjz100/2385/123 云盘会员青春版.user.js](https://scriptcat.org/scripts/code/2385/123%20%E4%BA%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js)
 
 ## 说明
 
@@ -43,7 +48,7 @@
 - 原作者：[油小猴](https://www.youxiaohou.com/)  
 - 原仓库：[https://github.com/syhyz1990/baiduyun](https://github.com/syhyz1990/baiduyun)
 - 本脚本发布至脚本猫：[https://scriptcat.org/script-show-page/1604](https://scriptcat.org/script-show-page/1604)
-  - GreasyFork 因刷子猖狂以及管理员的不作为暂不上架
+  - 还有 OpenUserJS：[https://openuserjs.org/scripts/hmjz100/LinkSwift](https://openuserjs.org/scripts/hmjz100/LinkSwift)
 
 ## 简介
 
@@ -61,13 +66,15 @@
 - 如有 bug 等问题请在这发[议题反馈](https://github.com/hmjz100/LinkSwift/issues)
 
 ## 版本号
-V. 1.1.1.6（改自 6.2.7 版本）  
-本脚本目前仅在 Github、Gitee 与脚本猫脚本站发布，如果您是在其他渠道获取到本脚本的，请不要安装。
+V. 1.1.1.7（基于 6.2.7 版本）  
+本脚本目前仅在 Github、Gitee、脚本猫脚本站 与 OpenUserJS 发布；
+如果您是在其他渠道获取到本脚本的，安装后所带来的问题概不负责。
 
 ## 更新日志
 
 | 版本号 | 创建日期 | 更新日志 |
 | -------- | -------- | -------- |
+| 1.1.1.7 | 2025年08月02日 | 1、修复 - 缺失声明 (at)connect 导致的问题。 |
 | 1.1.1.6 | 2025年07月28日 | 1、废弃 - 百度网盘 BDUSS Cookie 相关代码，转向使用更安全的 AccessToken；<br/>2、废弃 - 百度网盘分享页面下载相关代码；<br/>3、优化 - 下载窗口可在设置改变后动态修改界面。 |
 | 1.1.1.5 | 2025年07月21日 | 1、增加 AB Download Manager 下载方式；<br/>2、支持从设置页面一键返回下载窗口，无需重复获取链接。 |
 | 1.1.1.4 | 2025年07月19日 | 1、适配 123 云盘新版页面。 |
