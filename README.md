@@ -14,6 +14,8 @@
    <img alt="Github Licence" src="https://img.shields.io/github/license/hmjz100/LinkSwift?label=%e8%ae%b8%e5%8f%af&logo=github&logoColor=white&labelColor=black&color=grey&style=for-the-badge&cacheSeconds=10">
    <!--img alt="GreasyFork Licence" src="https://img.shields.io/greasyfork/l/449291?label=%e8%ae%b8%e5%8f%af&logo=greasyfork&logoColor=white&labelColor=%23670000&color=grey&style=for-the-badge&cacheSeconds=10"-->
    <br/>
+   <a href="https://trendshift.io/repositories/13630" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13630" alt="hmjz100%2FLinkSwift | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+   <br/>
    <img src="https://img.shields.io/chrome-web-store/v/gcalenpjmijncebpfijmoaglllgpjagf.svg?label=Tampermonkey%20BETA%20%E7%AF%A1%E6%94%B9%E7%8C%B4%E6%B5%8B%E8%AF%95%E7%89%88&logo=tampermonkey&logoColor=red&color=red&style=for-the-badge" alt="Tampermonkey BETA 篡改猴测试版">
    <img src="https://img.shields.io/chrome-web-store/v/dhdgffkkebhmkfjojejmpbldmpobfkfo.svg?label=Tampermonkey%20%E7%AF%A1%E6%94%B9%E7%8C%B4&logo=tampermonkey&logoColor=white&color=brightgreen&style=for-the-badge" alt="TamperMonkey 篡改猴">
    <br/>
