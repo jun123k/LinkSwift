@@ -24,6 +24,8 @@
 <p>如果你希望获得更快的下载速度，也可以尝试安装网盘官方客户端，把你的机子变成 PCDN，用上传换下载速度，为他们省点存储经费。</p>
 </details>
 <center>
+	<p>“出淤泥而不染，濯清涟而不妖”</p>
+	<hr>
 	<p>
 		搭配使用，效果更佳！👋扩展脚本
 		<br/>
@@ -36,6 +38,8 @@
 		<img alt="Github Forks" src="https://img.shields.io/github/forks/hmjz100/LinkSwift?label=复刻&logo=github&logoColor=white&labelColor=black&color=grey&style=for-the-badge&cacheSeconds=10">
 		<br/>
 		<img alt="Github Licence" src="https://img.shields.io/github/license/hmjz100/LinkSwift?label=许可&logo=github&logoColor=white&labelColor=black&color=grey&style=for-the-badge&cacheSeconds=10">
+		<br/>
+		<a href="https://trendshift.io/repositories/13630" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13630" alt="hmjz100%2FLinkSwift | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 		<br/>
 		<img src="https://img.shields.io/chrome-web-store/v/gcalenpjmijncebpfijmoaglllgpjagf.svg?label=Tampermonkey%20BETA%20篡改猴测试版&logo=tampermonkey&logoColor=red&color=red&style=for-the-badge" alt="Tampermonkey BETA 篡改猴测试版">
 		<img src="https://img.shields.io/chrome-web-store/v/dhdgffkkebhmkfjojejmpbldmpobfkfo.svg?label=Tampermonkey%20篡改猴&logo=tampermonkey&logoColor=white&color=brightgreen&style=for-the-badge" alt="TamperMonkey 篡改猴">
