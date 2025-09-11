@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name              LinkSwift
 // @namespace         github.com/hmjz100
-// @version           1.1.1.7
+// @version           1.1.1.8
 // @author            Hmjz100、油小猴
 // @icon              data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=
 // @description       (｡>ᴗ•)✧《也许同类型中最好用？》系列 - 一个基于 JavaScript 的网盘文件下载地址获取工具✨，基于【网盘直链下载助手】修改 | 支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘 | 开源・自用・去广 | 改界面・添功能・修Bug | 既超越原版，亦是同类中最好用版本！👋
@@ -10,6 +10,7 @@
 // @description:zh-HK (｡>ᴗ•)✧《也許同類型中最好用？》系列 - 一個基於 JavaScript 的網盤檔案下載地址獲取工具✨，基於【網盤直鏈下載助手】改編 | 支援 百度網盤 / 阿里雲盤 / 中國移動雲盤 / 天翼雲盤 / 迅雷雲盤 / 夸克網盤 / UC網盤 / 123雲盤 八大平台 | 開源・自用・除廣 | 改介面・擴功能・修Bug | 既超越原版，亦是同類中最好用版本！👋
 // @license           AGPL-3.0-or-later
 // @homepage          https://github.com/hmjz100/LinkSwift/
+// @homepageURL       https://github.com/hmjz100/LinkSwift/
 // @support           https://github.com/hmjz100/LinkSwift/issues
 // @supportURL        https://github.com/hmjz100/LinkSwift/issues
 // @require           https://unpkg.com/jquery@3.6.0/dist/jquery.min.js
@@ -103,7 +104,7 @@
  * @namespace github.com/hmjz100
  * @description  一个基于 JavaScript 盘的文件下载地址获取工具
  * 支持 百度网盘/阿里云盘/中国移动云盘/天翼云盘/迅雷云盘/夸克网盘/UC网盘/123云盘 八大网盘
- * @version 1.1.1.7
+ * @version 1.1.1.8
  * @license AGPL-3.0-or-later
  * @see {@link https://github.com/hmjz100/LinkSwift/ Github 仓库}
  */
@@ -129,14 +130,16 @@
 	let info = {
 		author: GM_info.script?.author,
 		name: GM_info.script?.name,
-		version: (GM_info.script?.version?.toString() || "1.1.1.7"),
+		version: (GM_info.script?.version?.toString() || "1.1.1.8"),
 		icon: (GM_info.script?.icon || "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBkPSJNMTAzLjYgMTA3LjRjMy41LTIuMiA4LjktNi4xIDEzLjgtMTIuNXM3LjMtMTIuNSA4LjUtMTYuNWMuNS0xLjcgMi4yLTcuNSAyLjItMTQuNyAwLTEwLjEtMy4zLTI1LjEtMTUuNC0zNi44LTE0LjUtMTQtMzIuMS0xNC4zLTM1LjctMTQuMy04IDAtMTUuNyAxLjktMjIuNiA1LjJDNDQgMjMgMzUuNyAzMS40IDMwLjggNDEuN2MtMS4zIDIuOC00IDQuNy03LjEgNS00IC4zLTcuNSA0LjQtOC45IDkuNi0uNSAxLjktMS42IDMuNS0zLjEgNC43QzQuNCA2Ni44IDAgNzUuNyAwIDg1YzAgNi44IDIuMyAxMy4xIDYuMSAxOC4yIDUuNSA3LjQgMTQuMiAxMi4yIDI0IDEyLjJoNDcuMWM0LjQgMCAxMS0uNSAxOC4zLTMuNSAzLjItMS40IDUuOS0zIDguMS00LjV6IiBmaWxsPSIjQTA5OUYwIi8+PHBhdGggZD0iTTExOS44IDY0LjNjLjEtMTcuMS0xMC40LTI4LTEyLjUtMzAuMUM5NSAyMi4xIDc5LjkgMjEuOCA3Ni45IDIxLjhjLTE3LjYgMC0zMy4zIDEwLjUtMzkuOSAyNi43LS42IDEuMy0xLjggMi4zLTMuNCAyLjNoLS40Yy01LjggMC0xMC42IDQuOC0xMC42IDEwLjd2LjVjMCAxLjQtLjggMi42LTEuOSAzLjNDMTMuNCA2OSA4LjggNzYuOCA4LjggODVjMCAxMi4yIDkuOSAyMi4zIDIyLjIgMjIuM2g0NS4yYzMuNi0uMSAxNy42LS45IDI5LjYtMTIgMi45LTIuOCAxMy45LTEzLjcgMTQtMzF6IiBmaWxsPSIjNTc0QUI4Ii8+PHBhdGggZD0iTTExMC44IDU3LjRsLjIgMy4zYzAgMS4zLTEuMSAyLjQtMi4zIDIuNC0xLjMgMC0yLjMtMS4xLTIuMy0yLjRsLS4xLTIuOHYtLjNjMC0xLjIuOS0yLjIgMi4xLTIuM2guM2MuNyAwIDEuMy4zIDEuNy43LS4yLjEuMy41LjQgMS40em0tMy4zLTEwLjNjMCAxLjItMSAyLjMtMi4yIDIuM2gtLjFjLS44IDAtMS42LS41LTItMS4yLTQuNi04LjMtMTMuMy0xMy41LTIyLjgtMTMuNS0xLjIgMC0yLjMtMS0yLjMtMi4ydi0uMWMwLTEuMiAxLTIuMyAyLjItMi4zaC4xYTMwLjM3IDMwLjM3IDAgMCAxIDE1LjggNC40YzQuNiAyLjggOC40IDYuOCAxMS4xIDExLjUuMS4zLjIuNy4yIDEuMXpNODguMyA3My44TDczLjUgOTMuMmMtMS41IDEuOS0zLjUgMy4xLTUuNyAzLjVoLS4yYy0uNC4xLS44LjEtMS4yLjEtLjYgMC0xLjEtLjEtMS42LS4yLTIuMi0uNC00LjItMS43LTUuNi0zLjVMNDQuMyA3My45Yy0yLTIuNi0yLjUtNS40LTEuNC03LjcuMS0uMS4xLS4yLjItLjIgMS4yLTIgMy41LTMuMiA2LjQtMy4yaDYuNnYtNS43YzAtNi44IDQuNy0xMiAxMC45LTEyIDQuOCAwIDguNSAyLjYgMTAuMyA3LjIuNSAxLjMtLjIgMi43LTEuNSAzLjJzLTIuOC0uMS0zLjMtMS40Yy0xLjEtMi43LTIuOS00LTUuNS00LTMuNSAwLTYgMy02IDd2OC4xYzAgLjUtLjIgMS0uNiAxLjQtLjYuNy0xLjcgMS4xLTIuNiAxLjFoLTguNGMtMS4zIDAtMiAuNC0yLjEuNy0uMi40IDAgMS4zLjkgMi40TDYzLjEgOTBjLjkgMS4yIDIuMSAxLjggMy4zIDEuOHMyLjMtLjYgMy4xLTEuN2wxNC44LTE5LjNjLjktMS4xIDEuMS0yIC45LTIuNC0uMi0uMy0uOS0uNy0yLjEtLjdoLTcuNmMtLjkgMC0xLjctLjUtMi4xLTEuMi0uMy0uNC0uNC0uOC0uNC0xLjMgMC0xLjQgMS4xLTIuNSAyLjUtMi41aDcuNmMzLjEgMCA1LjUgMS4zIDYuNiAzLjVsLjMuN2MuNyAyLjEuMSA0LjYtMS43IDYuOXoiIGZpbGw9IiNmZmYiLz48L3N2Zz4="),
 		mhandler: GM_info.scriptHandler,
 		mversion: GM_info.version,
 	};
 	let $doc = $(document);
 	let temp = {
-		pege: "",
+		mount: $(`.${mount}`),
+		main: {},
+		page: "",
 		mode: [],
 		links: [],
 		color: "",
@@ -294,7 +297,7 @@
 			},
 			dom: {
 				enhance: `+<br/>此方式下载有可能会被 IDM 捕获下载链接`,
-				normal: `+<br/>不支持超过 50MB 的文件，若超过点击会没有反应<br/>此方式下载有可能会被 IDM 捕获下载链接`,
+				normal: `+<br/>不允许超过 50MB 的文件，若超过点击会没有反应<br/>此方式下载有可能会被 IDM 捕获下载链接`,
 				copy: `不建议使用本功能，在百度网盘中单独复制链接并粘贴下载可能会导致服务器回报 403 错误<br/>如仍需使用，请搭配此用户代理进行下载：pan.baidu.com`
 			}
 		},
@@ -304,11 +307,11 @@
 				getShareLink: "https://api.aliyundrive.com/v2/file/get_share_link_download_url"
 			},
 			mount: {
-				home: "[class^=\"header--\"]>[class^=\"actions--\"]",
-				share: "[class^=\"banner--\"]>[class^=\"right--\"]",
-				list: "[class^=\"node-list-table-view--\"]",
-				grid: "[class^=\"node-list-grid-view--\"]",
-				switch: "[class^=\"switch-wrapper--\"]"
+				home: `[class^="header--"]>[class^="actions--"]`,
+				share: `[class^="banner--"]>[class^="right--"]`,
+				list: `[class^="node-list-table-view--"]`,
+				grid: `[class^="node-list-grid-view--"]`,
+				switch: `[class^="switch-wrapper--"]`
 			},
 			dom: {
 				enhance: `+<br/>此方式下载不会被 IDM 捕获下载链接`,
@@ -352,8 +355,8 @@
 				getLink: "https://api-pan.xunlei.com/drive/v1/files/"
 			},
 			mount: {
-				home: "[class^=\"FileMenu__menu--\"]",
-				share: "[class^=\"Share__batchActionBox--\"]"
+				home: `[class^="FileMenu__menu--"]`,
+				share: `[class^="Share__batchActionBox--"]`
 			},
 			dom: {
 				enhance: `+<br/>此方式下载不会被 IDM 捕获下载链接，但可以自动命名`,
@@ -400,7 +403,7 @@
 			},
 			mount: {
 				home: "main .homeClass .home-operator .home-operator-button-group",
-				share: ".conter .rightInfo .qrcode_btn"
+				share: ".content .content-header-container-wrap .rightInfo"
 			},
 			dom: {
 				enhance: `+<br/>此方式下载不会被 IDM 捕获下载链接`,
@@ -1183,14 +1186,16 @@
 		 */
 		addStyle(id, tag = 'style', css, element = `.${mount}`, position = "append") {
 			base.waitForKeyElements(element, (element) => {
-				let $styleDom = $(`#${id}`);
+				let $styleDom = $(`[${mount}="${id}"], #${id}`);
 				let $style = $(`<${tag}>`, {
 					rel: 'stylesheet',
-					id: id
+					id: id,
+					[mount]: id
 				});
 				tag === 'style' ? $style.html(css.trim().replace(/\t/g, "").replace(/\r\n|\n\r|\n|\r/g, '\n').replace(/\n+/g, '\n')) : $style.attr('href', css);
 				if ($styleDom.length) {
 					$styleDom.replaceWith($style);
+					console.log($style[0])
 					return true;
 				}
 				if (position === "before") {
@@ -1202,7 +1207,7 @@
 				} else {
 					element.append($style);
 				}
-				return true;
+				// return true;
 			}, true);
 		},
 		/**
@@ -1348,10 +1353,10 @@
 		 * @param {'default'|'other'} type - 替换模式
 		 */
 		adaptiveThemeOverride(colorMap, type) {
-			base.waitForKeyElements(`[id^="${mount}-ColorUI-"]`, function (tag) {
+			base.waitForKeyElements(`[${mount}^="${mount}-ColorUI-"], [id^="${mount}-ColorUI-"]`, function (tag) {
 				if (tag.html() === base.adaptiveStyleOverride(tag.text(), "", type, colorMap)) return;
 				let cssText = base.adaptiveStyleOverride(tag.text(), "", type, colorMap);
-				base.addStyle(tag.attr("id"), 'style', cssText, tag[0]);
+				base.addStyle(tag.attr(mount), 'style', cssText, tag[0]);
 				return true;
 			}, true)
 			base.waitForKeyElements(`[data-pl-colored]`, function (tag) {
@@ -1383,8 +1388,8 @@
 							base.addStyle(id, 'style', cssText, tag[0], "after");
 						})
 				}, true);
-				base.waitForKeyElements(`style:not([id^="${mount}-"],[id^="swal-pub"],[class^="darkreader"])`, function (tag) {
-					let id = tag.attr("id");
+				base.waitForKeyElements(`style:not([${mount}^="${mount}-"],[id^="swal-pub"],[class^="darkreader"])`, function (tag) {
+					let id = tag.attr(mount);
 					let text = tag.html()
 					if (tag.data("styles") === text) return;
 					tag.data("styles", text);
@@ -1412,7 +1417,7 @@
 						}
 					});
 				}, true);
-				base.waitForKeyElements(`[style]:not([id^="${mount}-"],[class*="listener-"])`, function (element) {
+				base.waitForKeyElements(`[style]:not([${mount}^="${mount}-"],[class*="listener-"])`, function (element) {
 					if (element.attr("data-pl-colored") === temp.color) return;
 					let originalStyle = element.attr("style");
 					if (!originalStyle) return;
@@ -2093,6 +2098,12 @@
 				</div>
 				<div class="block">(ﾉ◕ヮ◕)ﾉ 遇到 Bug 要记得去 <a class="pl-a" href="https://github.com/hmjz100/LinkSwift/issues" target="_blank">Github 议题</a> 向我报告哦~</div>
 				<div class="block">
+					<name>V1.1.1.8</name>
+					<div>
+					<div>1、修复 - 适配新版 123 云盘分享页。</div>
+					</div>
+				</div>
+				<div class="block">
 					<name>V1.1.1.7</name>
 					<div>
 					<div>1、修复 - 缺失声明 @connect 导致的问题。</div>
@@ -2573,63 +2584,88 @@
 		 * @see {@link temp.color} 使用全局主题色渲染文件大小信息
 		 */
 		createTip() {
-			let tooltip = $('<div class="pl-tooltip"></div>');
-			this.waitForKeyElements(`.${mount}`, (element) => {
-				if ($('.pl-tooltip').length <= 0) element.append(tooltip);
-				return true;
-			}, true);
+			// 使用原生JavaScript创建tooltip元素
+			let tooltip = document.querySelector('.pl-tooltip');
+			
 			// 提取公共显示逻辑
 			const showTooltip = (target, x, y) => {
-				if (!target.data("title") && !target.data("size") && !target.text()) return;
+				const title = target.dataset.title;
+				const size = target.dataset.size;
+				const innerText = target.innerText;
+				
+				if (!title && !size && !innerText) return;
+				
 				let tip = "";
-				let title = target.data("title");
 				if (title) {
 					tip += `<span>${title}</span>`;
 				} else {
-					let name = target.find(".name").text();
-					let size = target.find(".size").text();
+					// 使用原生方法查找子元素
+					const nameElement = target.querySelector(".name");
+					const sizeElement = target.querySelector(".size");
+					const name = nameElement ? nameElement.textContent : "";
+					const sizeText = sizeElement ? sizeElement.textContent : "";
+					
 					tip += `<span>${name}</span>`;
-					if (size !== undefined) {
-						tip += `<span style="background-color:${temp.color}">${size}</span>`;
+					if (sizeText !== undefined) {
+						tip += `<span style="background-color:${temp.color}">${sizeText}</span>`;
 					}
 				}
-				tooltip.html(tip).css({
-					left: x + 10 + 'px',
-					top: y + 20 + 'px',
-					display: 'flex'
-				});
+				if (!tooltip) {
+					tooltip = document.createElement('div');
+					tooltip.className = 'pl-tooltip';
+					temp.mount[0].appendChild(tooltip);
+				}
+				
+				tooltip.innerHTML = tip;
+				tooltip.style.display = 'flex';
+				tooltip.style.top = (y + 20) + 'px';
+				tooltip.style.left = (x + 10) + 'px';
 			};
+			
 			// 鼠标/触摸移动时更新位置
-			$doc.on('mousemove touchmove', '.listener-tip', function (e) {
+			const handleMove = (e) => {
 				const isTouch = e.type.startsWith('touch');
-				const pageX = isTouch ? e.originalEvent.touches[0].pageX : e.pageX;
-				const pageY = isTouch ? e.originalEvent.touches[0].pageY : e.pageY;
-				showTooltip($(e.currentTarget), pageX, pageY);
-			});
+				const pageX = isTouch ? e.touches[0].pageX : e.pageX;
+				const pageY = isTouch ? e.touches[0].pageY : e.pageY;
+				const target = e.currentTarget;
+				showTooltip(target, pageX, pageY);
+			};
+			
 			// 触摸开始时立即显示
-			$doc.on('touchstart', '.listener-tip', function (e) {
+			const handleTouchStart = (e) => {
 				// 阻止滚动避免干扰
 				e.preventDefault();
-				const touch = e.originalEvent.touches[0];
-				showTooltip($(e.currentTarget), touch.pageX, touch.pageY);
-			});
+				const touch = e.touches[0];
+				const target = e.currentTarget;
+				showTooltip(target, touch.pageX, touch.pageY);
+			};
+			
 			// 统一隐藏逻辑
-			$doc.on('mouseleave touchend touchcancel', '.listener-tip, .pl-tooltip', function (e) {
-				tooltip.css({ display: "" });
-			});
+			const hideTooltip = () => {
+				tooltip.style.display = '';
+			};
+			
 			// 增强跨事件类型检测
-			$doc.on('mousemove touchmove', function (e) {
-				const $tooltip = tooltip;
-				if (!$tooltip.is(':visible')) return;
+			const handleGlobalMove = (e) => {
+				if (tooltip.style.display !== 'flex') return;
+				
 				const isTouch = e.type.startsWith('touch');
-				const touch = isTouch ? e.originalEvent.touches[0] : null;
+				const touch = isTouch ? e.touches[0] : null;
 				const target = isTouch
 					? document.elementFromPoint(touch.clientX, touch.clientY)
 					: e.target;
-				if (!$(target).closest('.listener-tip, .pl-tooltip').length) {
-					$tooltip.css({ display: "" });
+					
+				const closest = target.closest('.listener-tip, .pl-tooltip');
+				if (!closest) {
+					tooltip.style.display = '';
 				}
-			});
+			};
+			
+			// 绑定事件（仍使用jQuery简化事件绑定）
+			$doc.on('mousemove touchmove', '.listener-tip', handleMove);
+			$doc.on('touchstart', '.listener-tip', handleTouchStart);
+			$doc.on('mouseleave touchend touchcancel', '.listener-tip, .pl-tooltip', hideTooltip);
+			$doc.on('mousemove touchmove', handleGlobalMove);
 		},
 		/**
 		 * 创建加载状态弹窗
@@ -2645,11 +2681,9 @@
 		 * @description 该方法会创建一个隐藏的 iframe 元素，并将其插入到指定的挂载点中，用于后续的下载操作。
 		 * iframe 的 src 设置为 "javascript:;" 以避免加载额外资源，提升性能。
 		 */
-		createDownloadIframe() {
+		createIframe() {
 			let iframe = $('<iframe style="padding:0;margin:0;display:block;display:none" src="javascript:;" id="downloadIframe"></iframe>');
-			base.waitForKeyElements(`.${mount}`, (element) => {
-				element.append(iframe);
-			}, true)
+			temp.mount.append(iframe);
 		},
 		/**
 		 * 创建用于下载页面的 HTML
@@ -3084,6 +3118,7 @@
 		 */
 		addPanLinkerStyle() {
 			temp.color = base.getValue('setting_ui_theme').color;
+			if ('beautifyPage' in temp.main) temp.main.beautifyPage();
 			base.addStyle('swal-pub-style', 'style', `@media (prefers-color-scheme:light){${GM_getResourceText('SwalLigt')}}`);
 			base.addStyle('swal-pub-dark-style', 'style', `@media (prefers-color-scheme:dark){${GM_getResourceText('SwalDark').replace(/#19191a/, '#222226')}}`);
 			base.addStyle('swal-pub-custom-style', 'style', `
@@ -3535,11 +3570,11 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
-				$baidu.getLink();
+				temp.main.getLink();
 			});
 			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				let selectList = $baidu.getSelectedList();
+				let selectList = temp.main.getSelectedList();
 				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
@@ -3669,7 +3704,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			});
 		},
 		greenerPage() {
-			temp.pege = $baidu.detectPage();
+			temp.page = temp.main.detectPage();
 			base.waitForKeyElements(".wp-s-header-user__vip-center", function (tag) {
 				tag.remove();
 			}, true);
@@ -3801,7 +3836,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				</div>`);
 			}, true)
 			// 美化分享页面
-			if (temp.pege === 'share') {
+			if (temp.page === 'share') {
 				base.waitForKeyElements(`iframe[src^="/buy/ad"]`, function (tag) {
 					tag.fadeOut();
 				}, true)
@@ -3833,7 +3868,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			}
 		},
 		beautifyPage() {
-			if ($baidu.detectPage() !== 'home') {
+			if (base.getValue('setting_ui_theme').custom.$baidu !== true) return;
+			if (temp.main.detectPage() !== 'home') {
 				base.adaptiveThemeOverride([
 					['#717fff', temp.color],
 					['#717FFF', temp.color],
@@ -4037,8 +4073,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		},
 		addButton() {
 			base.waitForKeyElements(config.$baidu.mount.home, (element) => {
-				temp.pege = $baidu.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<div class="g-dropdown-button pl-button">
 					<div class="g-button g-button-blue color-button"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width:60px;">下载助手</span></span></div>
 					<div class="menu" style="color:${temp.color};border-color:${temp.color};width:auto;z-index:41;">
@@ -4055,8 +4091,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$baidu.mount.main, (element) => {
-				temp.pege = $baidu.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'main') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'main') return;
 				let $button = $(`<div class="wp-s-agile-tool-bar__h-group pl-button">
 					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main color-button">
 						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button color-button">
@@ -4078,8 +4114,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$baidu.mount.main, (element) => {
-				temp.pege = $baidu.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'youth') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'youth') return;
 				let $button = $(`<div class="wp-s-agile-tool-bar__h-group pl-button">
 					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main color-button">
 						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button color-button" style="font-size:14px;font-weight:700">
@@ -4096,8 +4132,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$baidu.mount.share, (element) => {
-				temp.pege = $baidu.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
 				let $button = $(`<a class="g-button tools-share-V20-btn save_btn pl-button color-button" style="padding:0;">
 					<span class="g-button-right" style="padding-left:10px">
 						<em class="icon icon-download" style="color:#fff;line-height:27px"></em>
@@ -4115,15 +4151,15 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		},
 		addInitButton() {
 			base.waitForKeyElements(config.$baidu.mount.home, (element) => {
-				temp.pege = $baidu.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<div class="g-dropdown-button pl-button-init" style="opacity:0.5"><div style="color:#fff;" class="g-button g-button-blue color-button"><span class="g-button-right"><em class="icon icon-download" style="color:#fff;"></em><span class="text" style="width:60px;">点我点亮</span></span></div></div>`);
 				$button.click(base.showInitDialog);
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$baidu.mount.main, (element) => {
-				temp.pege = $baidu.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || (temp.pege !== 'main' && temp.pege !== 'youth')) return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || (temp.page !== 'main' && temp.page !== 'youth')) return;
 				let $button = $(`<div class="wp-s-agile-tool-bar__h-group pl-button-init">
 					<div class="wp-s-agile-tool-bar__h-action is-need-left-sep is-main color-button">
 						<button type="button" class="u-button nd-file-list-toolbar-action-item u-button--primary u-button--small is-round is-has-icon pl-button color-button" style="font-size:14px;font-weight:700">
@@ -4136,8 +4172,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$baidu.mount.share, (element) => {
-				temp.pege = $baidu.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
 				let $button = $(`<a class="g-button tools-share-V20-btn save_btn pl-button-init color-button" href="javascript:;">
 					<span class="g-button-right">
 						<em class="icon icon-download" style="color:#fff;line-height:27px"></em>
@@ -4172,7 +4208,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			});
 			// 获取选择的文件列表
 			let selectList = this.getSelectedList();
-			let accessToken = (base.getValue('baidu_access_token') || await $baidu.getToken());
+			let accessToken = (base.getValue('baidu_access_token') || await temp.main.getToken());
 			if (!accessToken) {
 				message.info('提示：<br/>稍后请在新标签页中授权助手哦~');
 				base.delValue('baidu_access_token');
@@ -4193,7 +4229,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				return;
 			}
 			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
-			if (temp.pege === 'home' || temp.pege === 'main') {
+			if (temp.page === 'home' || temp.page === 'main') {
 				let cnt = 0;
 				let processed = selectList.filter(f => !f.isdir).length;
 				async function fetchFiles(dirs) {
@@ -4311,7 +4347,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			return "";
 		},
 		async initPanLinker() {
-			base.createTip();
 			base.registerMenuCommand();
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
 				this.addButton();
@@ -4320,7 +4355,9 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			}
 			this.addPageListener();
 		},
-		async initAuthorize() {
+	};
+	let $baiduAuthorize = {
+		async initPanLinker() {
 			base.registerMenuCommand();
 			Swal.fire({
 				...temp.swalDefault,
@@ -4334,7 +4371,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				},
 			});
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
-				let url = new URL(location.href);
+				let url = new URL(location);
 				let auth = new URL(config.$baidu.api.getAccessToken);
 				let allowedClientIds = [
 					auth.searchParams.get("client_id"),
@@ -4346,6 +4383,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					'Kyr013gHQBf2immy3fQt1jZ3nZVpiGAm', // 简单打印
 					'iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v', // Alist
 					'omiOnr2tYnN9vSyDErcVFWpPU2mZA7YO', // OpenList
+					'QHOuRXiepJBMjtk0esLhrPoNlQyYd0mF', // mcp_server
 					'IlLqBbU3GjQ0t46TRwFateTprHWl39zF',  // 百度手机助手
 				];
 				if (
@@ -4445,7 +4483,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				Swal.close()
 			}
 		}
-	};
+	}
 	/**
 	 * 阿里云盘
 	 * @author 油小猴
@@ -4473,7 +4511,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					}
 					return false;
 				}
-				let selectList = $aliyun.getSelectedList();
+				let selectList = temp.main.getSelectedList();
 				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
@@ -4502,7 +4540,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					}
 					return false;
 				}
-				$aliyun.getLink();
+				temp.main.getLink();
 			});
 			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
@@ -4629,6 +4667,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			}, true);
 		},
 		beautifyPage() {
+			if (base.getValue('setting_ui_theme').custom.$aliyun !== true) return;
 			base.adaptiveThemeOverride([
 				['#3763ff', temp.color],
 				['#8664ff', `${temp.color}D0`],
@@ -4645,10 +4684,10 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		svg: `<svg class="ali-btn-icon" style="margin-right:3px;" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M853.333 938.667H170.667a85.333 85.333 0 0 1-85.334-85.334v-384A85.333 85.333 0 0 1 170.667 384H288a32 32 0 0 1 0 64H170.667a21.333 21.333 0 0 0-21.334 21.333v384a21.333 21.333 0 0 0 21.334 21.334h682.666a21.333 21.333 0 0 0 21.334-21.334v-384A21.333 21.333 0 0 0 853.333 448H736a32 32 0 0 1 0-64h117.333a85.333 85.333 0 0 1 85.334 85.333v384a85.333 85.333 0 0 1-85.334 85.334z" fill="#FFFFFF"></path><path d="M715.03 543.552a32.81 32.81 0 0 0-46.251 0L554.005 657.813v-540.48a32 32 0 0 0-64 0v539.734L375.893 543.488a32.79 32.79 0 0 0-46.229 0 32.427 32.427 0 0 0 0 46.037l169.557 168.811a32.81 32.81 0 0 0 46.251 0l169.557-168.81a32.47 32.47 0 0 0 0-45.974z" fill="#FFFFFF"></path></svg>`,
 		addButton() {
 			base.waitForKeyElements(config.$aliyun.mount.home, (element) => {
-				temp.pege = $aliyun.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<div class="ali-button pl-button">
-					<span data-role="icon" data-render-as="svg" class="icon">${$aliyun.svg}下载助手</span>
+					<span data-role="icon" data-render-as="svg" class="icon">${temp.main.svg}下载助手</span>
 					<ul class="pl-dropdown-menu" style="top:30px; right:0;">
 						<li class="pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
 						<li class="pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg>cURL 下载</li>
@@ -4663,10 +4702,10 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.append($button);
 			})
 			base.waitForKeyElements(config.$aliyun.mount.share, (element) => {
-				temp.pege = $aliyun.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
 				let $button = $(`<div class="ali-button pl-button">
-					<span data-role="icon" data-render-as="svg" class="icon">${$aliyun.svg}下载助手</span>
+					<span data-role="icon" data-render-as="svg" class="icon">${temp.main.svg}下载助手</span>
 					<ul class="pl-dropdown-menu" style="top:30px; right:16px;">
 						<li class="pl-button-mode pl-button-save"><use xlink:href="#pl-icon-fa-save"/></svg>保存后下载</li>
 						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
@@ -4679,17 +4718,17 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			})
 		},
 		addInitButton() {
-			let $button = $(`<div class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon">${$aliyun.svg}点我点亮</span></div>`);
+			let $button = $(`<div class="ali-button pl-button-init"><span data-role="icon" data-render-as="svg" class="icon">${temp.main.svg}点我点亮</span></div>`);
 			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$aliyun.mount.home, (element) => {
-				temp.pege = $aliyun.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'home') return;
 				$button.css({ "width": "auto" });
 				element.append($button);
 			})
 			base.waitForKeyElements(config.$aliyun.mount.share, (element) => {
-				temp.pege = $aliyun.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
 				$button.css({ 'margin-right': '10px', "height": "36px", "padding": "1px 30px", "width": "auto" });
 				element.prepend($button);
 			})
@@ -4719,7 +4758,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let selectList = this.getSelectedList();
 			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
 			if (selectList.every(item => item.type !== 'file')) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			if (temp.pege === 'home') {
+			if (temp.page === 'home') {
 				selectList = selectList.filter(item => item.type === 'file')
 				let batchSize = 15;
 				let processed = 0;
@@ -4807,7 +4846,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			return "";
 		},
 		async initPanLinker() {
-			base.createTip();
 			base.registerMenuCommand();
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
 				this.addButton();
@@ -4827,11 +4865,11 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
-				$mcloud.getLink();
+				temp.main.getLink();
 			});
 			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				let selectList = $mcloud.getSelectedList();
+				let selectList = temp.main.getSelectedList();
 				if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
 				if (selectList.every(item => !item.contentID && !item.contentName)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
 				message.info('提示：<br/>因网盘限制，只能够通过页面直接下载哦~');
@@ -4971,6 +5009,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			}, true);
 		},
 		beautifyPage() {
+			if (base.getValue('setting_ui_theme').custom.$mcloud !== true) return;
 			base.adaptiveThemeOverride([
 				['#3181f9', temp.color],
 				['#5a9afa', temp.color],
@@ -4981,8 +5020,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		},
 		addButton() {
 			base.waitForKeyElements(config.$mcloud.mount.home, (element) => {
-				temp.pege = $mcloud.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<div class="pl-button mcloud-button btn-top">
 					<span class="mcloud-btn">下载助手</span>
 					<ul class="pl-dropdown-menu" style="top:36px; left:0; letter-spacing:normal;">
@@ -4999,8 +5038,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$mcloud.mount.share, (element) => {
-				temp.pege = $mcloud.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
 				let $button = $(`<div class="pl-button mcloud-share-button">
 					<span class="mcloud-btn">下载助手</span>
 					<ul class="pl-dropdown-menu" style="top:36px; left:0; letter-spacing:normal;">
@@ -5017,14 +5056,14 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let $button = $(`<div class="pl-button-init"><span class="mcloud-btn">点我点亮</span></div>`);
 			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$mcloud.mount.home, (element) => {
-				temp.pege = $mcloud.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'home') return;
 				$button.addClass('mcloud-button');
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$mcloud.mount.share, (element) => {
-				temp.pege = $mcloud.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
 				$button.addClass('mcloud-share-button').css({ "cursor": "pointer" });
 				element.prepend($button);
 			})
@@ -5168,7 +5207,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let selectList = this.getSelectedList();
 			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
 			if (selectList.every(item => !item.contentID && !item.contentName)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			if (temp.pege === 'home') {
+			if (temp.page === 'home') {
 				selectList = selectList.filter(item => item.contentID && item.contentName && item.contentSuffix);
 				let batchSize = 15;
 				let processed = 0;
@@ -5229,7 +5268,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			return "";
 		},
 		async initPanLinker() {
-			base.createTip();
 			base.registerMenuCommand();
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
 				this.addButton();
@@ -5249,7 +5287,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
-				$tcloud.getLink();
+				temp.main.getLink();
 			});
 			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
@@ -5364,6 +5402,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			}, true);
 		},
 		beautifyPage() {
+			if (base.getValue('setting_ui_theme').custom.$tcloud !== true) return;
 			base.adaptiveThemeOverride([
 				['#2b89ea', temp.color],
 				['#1874d3', `${temp.color}F0`],
@@ -5399,14 +5438,14 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			</div>`);
 			$button.find(".pl-dropdown-menu").css({ 'position': 'absolute', 'left': '-1px' })
 			base.waitForKeyElements(config.$tcloud.mount.home, (element) => {
-				temp.pege = $tcloud.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'home') return;
 				$button.find(".pl-dropdown-menu").css({ 'top': '28px' })
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$tcloud.mount.share, (element) => {
-				temp.pege = $tcloud.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
 				$button.css({ 'height': '28px', 'border-radius': '15px' })
 				$button.find(".pl-dropdown-menu").css({ 'top': '25px' })
 				element.prepend($button);
@@ -5416,13 +5455,13 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let $button = $(`<div class="tcloud-button pl-button-init">点我点亮</div>`);
 			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$tcloud.mount.home, (element) => {
-				temp.pege = $tcloud.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'home') return;
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$tcloud.mount.share, (element) => {
-				temp.pege = $tcloud.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
 				$button.css({ 'height': '28px', 'border-radius': '15px' })
 				element.prepend($button);
 			})
@@ -5562,7 +5601,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			return "";
 		},
 		async initPanLinker() {
-			base.createTip();
 			base.registerMenuCommand();
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
 				this.addButton();
@@ -5583,11 +5621,11 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
-				$xunlei.getLink();
+				temp.main.getLink();
 			});
 			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				let selectList = $xunlei.getSelectedList();
+				let selectList = temp.main.getSelectedList();
 				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
@@ -5700,6 +5738,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			});
 		},
 		beautifyPage() {
+			if (base.getValue('setting_ui_theme').custom.$xunlei !== true) return;
 			base.adaptiveThemeOverride([
 				['#3f85ff', temp.color],
 				['63,133,255,.1', base.hexToRgba(`${temp.color}20`)],
@@ -5716,8 +5755,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		},
 		addButton() {
 			base.waitForKeyElements(config.$xunlei.mount.home, (element) => {
-				temp.pege = $xunlei.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<div class="xunlei-button pl-button"><i class="xlpfont xlp-download"></i><span style="font-size:13px;margin-left:6px;">下载助手</span>
 					<ul class="pl-dropdown-menu" style="top:34px;">
 						<li class="pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
@@ -5733,8 +5772,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$xunlei.mount.share, (element) => {
-				temp.pege = $xunlei.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
 				let $button = $(`<div class="xunlei-button pl-button">
 					<i class="xlpfont xlp-download"></i><span style="font-size:13px;margin-left:6px;">下载助手</span>
 					<ul class="pl-dropdown-menu" style="top:34px;">
@@ -5752,13 +5791,13 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let $button = $(`<div class="xunlei-button pl-button-init"><i class="xlpfont xlp-download"></i><span style="font-size:13px;margin-left:6px;">点我点亮</span></div>`);
 			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$xunlei.mount.home, (element) => {
-				temp.pege = $xunlei.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'home') return;
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$xunlei.mount.share, (element) => {
-				temp.pege = $xunlei.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
 				$button.css({ 'margin-right': '10px' });
 				element.prepend($button);
 			})
@@ -5831,7 +5870,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let selectList = this.getSelectedList();
 			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
 			if (selectList.every(item => item.kind !== 'drive#file')) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			if (temp.pege === 'home') {
+			if (temp.page === 'home') {
 				let token = this.getToken();
 				let batchSize = 15;
 				let processed = 0;
@@ -5890,7 +5929,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			return "";
 		},
 		async initPanLinker() {
-			base.createTip();
 			base.registerMenuCommand();
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
 				this.addButton();
@@ -5910,11 +5948,11 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
-				$quark.getLink();
+				temp.main.getLink();
 			});
 			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				let selectList = $quark.getSelectedList();
+				let selectList = temp.main.getSelectedList();
 				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
@@ -6077,6 +6115,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			}, true);
 		},
 		beautifyPage() {
+			if (base.getValue('setting_ui_theme').custom.$quark !== true) return;
 			base.adaptiveThemeOverride([
 				['#0d53ff', temp.color],
 				['#e6f1ff', `${temp.color}20`],
@@ -6093,8 +6132,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		svg: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNNiA5bDIgMiAyLTJ6Ii8+PHBhdGggZD0iTTExIDVoMS41NTNjLjg1IDAgMS4xNi4wOTMgMS40Ny4yNjcuMzExLjE3NC41NTYuNDMuNzIyLjc1Ni4xNjYuMzI2LjI1NS42NS4yNTUgMS41NHY0Ljg3M2MwIC44OTItLjA4OSAxLjIxNS0uMjU1IDEuNTQtLjE2Ni4zMjctLjQxLjU4My0uNzIyLjc1Ny0uMzEuMTc0LS42Mi4yNjctMS40Ny4yNjdIMy40NDdjLS44NSAwLTEuMTYtLjA5My0xLjQ3LS4yNjdhMS43NzggMS43NzggMCAwMS0uNzIyLS43NTZjLS4xNjYtLjMyNi0uMjU1LS42NS0uMjU1LTEuNTRWNy41NjNjMC0uODkyLjA4OS0xLjIxNS4yNTUtMS41NC4xNjYtLjMyNy40MS0uNTgzLjcyMi0uNzU3LjMxLS4xNzQuNjItLjI2NyAxLjQ3LS4yNjdIOCIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTggMXY5Ii8+PC9nPjwvc3ZnPg==',
 		addButton() {
 			base.waitForKeyElements(config.$quark.mount.home, (element) => {
-				temp.pege = $quark.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<div class="ant-dropdown-trigger pl-button" style="display: inline-block;">
 					<div class="ant-upload ant-upload-select ant-upload-select-text">
 						<ul class="pl-dropdown-menu" style="top:35px">
@@ -6108,7 +6147,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 							<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 						</ul>
 						<button type="button" class="ant-btn ant-btn-primary quark-button">
-							<img class="btn-icon" src="${$quark.svg}">
+							<img class="btn-icon" src="${temp.main.svg}">
 							<span>下载助手</span>
 						</button>
 					</div>
@@ -6117,26 +6156,26 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$quark.mount.share, (element) => {
-				temp.pege = $quark.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
-				let $button = $(`<button type="button" class="ant-btn btn-file ant-btn-primary pl-button quark-button"><img class="btn-icon" src="${$quark.svg}"><span>下载助手</span><ul class="pl-dropdown-menu" style="bottom:22px;left:0"><li class="pl-button-mode pl-button-save"><span class="share-save-ico"></span>保存后下载</li><li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li><li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li><li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li></ul></button>`);
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
+				let $button = $(`<button type="button" class="ant-btn btn-file ant-btn-primary pl-button quark-button"><img class="btn-icon" src="${temp.main.svg}"><span>下载助手</span><ul class="pl-dropdown-menu" style="bottom:22px;left:0"><li class="pl-button-mode pl-button-save"><span class="share-save-ico"></span>保存后下载</li><li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li><li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li><li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li></ul></button>`);
 				$button.css({ "height": "36px", "margin-left": "16px", "border-radius": "6px", "display": "inline-block" });
 				element.append($button);
 			})
 		},
 		addInitButton() {
 			base.waitForKeyElements(config.$quark.mount.home, (element) => {
-				temp.pege = $quark.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
-				let $button = $(`<button type="button" class="ant-btn ant-btn-primary quark-button pl-button-init"><img class="btn-icon" src="${$quark.svg}"><span>点我点亮</span></button>`);
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'home') return;
+				let $button = $(`<button type="button" class="ant-btn ant-btn-primary quark-button pl-button-init"><img class="btn-icon" src="${temp.main.svg}"><span>点我点亮</span></button>`);
 				$button.css({ "margin-right": "16px", "display": "inline-block" });
 				$button.click(base.showInitDialog);
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$quark.mount.share, (element) => {
-				temp.pege = $quark.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
-				let $button = $(`<button type="button" class="ant-btn btn-file ant-btn-primary pl-button-init quark-button"><img class="btn-icon" src="${$quark.svg}"><span>点我点亮</span></button>`);
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
+				let $button = $(`<button type="button" class="ant-btn btn-file ant-btn-primary pl-button-init quark-button"><img class="btn-icon" src="${temp.main.svg}"><span>点我点亮</span></button>`);
 				$button.css({ "height": "36px", "margin-left": "16px", "border-radius": "6px", "display": "inline-block" });
 				$button.click(base.showInitDialog);
 				element.append($button);
@@ -6167,7 +6206,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let selectList = this.getSelectedList();
 			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
 			if (selectList.every(item => !item.file)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			if (temp.pege === 'home') {
+			if (temp.page === 'home') {
 				let data = [];
 				let batchSize = 15;
 				let processed = 0;
@@ -6240,7 +6279,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			return "";
 		},
 		async initPanLinker() {
-			base.createTip();
 			base.registerMenuCommand();
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
 				this.addButton();
@@ -6260,11 +6298,11 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
-				$uc.getLink();
+				temp.main.getLink();
 			});
 			$doc.on('click', '.pl-button-save', async function (e) {
 				e.preventDefault();
-				let selectList = $uc.getSelectedList();
+				let selectList = temp.main.getSelectedList();
 				if (selectList.length === 0) {
 					return message.error('提示：<br/>请勾选要保存到网盘的文件哦~');
 				}
@@ -6390,6 +6428,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			}, true);
 		},
 		beautifyPage() {
+			if (base.getValue('setting_ui_theme').custom.$uc !== true) return;
 			base.adaptiveThemeOverride([
 				['#12161a', temp.color],
 				['#e6f1ff', `${temp.color}20`],
@@ -6406,11 +6445,11 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		svg: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNOSAxMmwyIDIgMi0yeiIvPjxwYXRoIGQ9Ik0xNCA4aDEuNTUzYy44NSAwIDEuMTYuMDkzIDEuNDcuMjY3LjMxMS4xNzQuNTU2LjQzLjcyMi43NTYuMTY2LjMyNi4yNTUuNjUuMjU1IDEuNTR2NC44NzNjMCAuODkyLS4wODkgMS4yMTUtLjI1NSAxLjU0LS4xNjYuMzI3LS40MS41ODMtLjcyMi43NTctLjMxLjE3NC0uNjIuMjY3LTEuNDcuMjY3SDYuNDQ3Yy0uODUgMC0xLjE2LS4wOTMtMS40Ny0uMjY3YTEuNzc4IDEuNzc4IDAgMDEtLjcyMi0uNzU2Yy0uMTY2LS4zMjYtLjI1NS0uNjUtLjI1NS0xLjU0di00Ljg3M2MwLS44OTIuMDg5LTEuMjE1LjI1NS0xLjU0LjE2Ni0uMzI3LjQxLS41ODMuNzIyLS43NTcuMzEtLjE3NC42Mi0uMjY3IDEuNDctLjI2N0gxMSIvPjxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTTExIDN2MTAiLz48L2c+PC9zdmc+',
 		addButton() {
 			base.waitForKeyElements(config.$uc.mount.home, (element) => {
-				temp.pege = $uc.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<div class="ant-dropdown-trigger pl-button">
 					<button type="button" class="uc-button ant-btn btn-file ant-btn-primary">
-						<img class="uc-btn-icon" src="${$uc.svg}"><span>下载助手</span>
+						<img class="uc-btn-icon" src="${temp.main.svg}"><span>下载助手</span>
 					</button>
 					<ul class="pl-dropdown-menu" style="top:39px;">
 						<li class="pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
@@ -6427,25 +6466,25 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$uc.mount.share, (element) => {
-				temp.pege = $uc.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
-				let $button = $(`<div class="ant-dropdown-trigger pl-button"><button type="button" class="uc-button ant-btn btn-file ant-btn-primary" style="height:40px;"><img class="uc-btn-icon" src="${$uc.svg}"><span>下载助手</span></button><ul class="pl-dropdown-menu"><li class="pl-button-mode pl-button-save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li><li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li><li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li></ul></div>`);
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
+				let $button = $(`<div class="ant-dropdown-trigger pl-button"><button type="button" class="uc-button ant-btn btn-file ant-btn-primary" style="height:40px;"><img class="uc-btn-icon" src="${temp.main.svg}"><span>下载助手</span></button><ul class="pl-dropdown-menu"><li class="pl-button-mode pl-button-save"><span class="save-btn-icon"></span>保存后下载</li><li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li><li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li><li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li></ul></div>`);
 				$button.css({ "margin-left": "10px", "display": "inline-block" });
 				element.append($button);
 			})
 		},
 		addInitButton() {
-			let $button = $(`<div class="ant-dropdown-trigger pl-button-init"><button type="button" class="uc-button ant-btn btn-file ant-btn-primary" style="height:40px;"><img class="uc-btn-icon" src="${$uc.svg}"><span>点我点亮</span></button></div>`);
+			let $button = $(`<div class="ant-dropdown-trigger pl-button-init"><button type="button" class="uc-button ant-btn btn-file ant-btn-primary" style="height:40px;"><img class="uc-btn-icon" src="${temp.main.svg}"><span>点我点亮</span></button></div>`);
 			$button.click(base.showInitDialog);
 			base.waitForKeyElements(config.$uc.mount.home, (element) => {
-				temp.pege = $uc.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'home') return;
 				$button.css({ "margin-right": "10px", "display": "inline-block" });
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$uc.mount.share, (element) => {
-				temp.pege = $uc.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
 				$button.css({ "margin-left": "10px", "display": "inline-block" });
 				element.append($button);
 			})
@@ -6475,7 +6514,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let selectList = this.getSelectedList();
 			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
 			if (selectList.every(item => !item.file)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			if (temp.pege === 'home') {
+			if (temp.page === 'home') {
 				let data = [];
 				let batchSize = 15;
 				let processed = 0;
@@ -6548,7 +6587,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			return "";
 		},
 		async initPanLinker() {
-			base.createTip();
 			base.registerMenuCommand();
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
 				this.addButton();
@@ -6568,7 +6606,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			$doc.on('click', '.pl-button-mode', async function (e) {
 				temp.mode = e.currentTarget.dataset.mode;
 				if (!temp.mode) return;
-				$123pan.getLink();
+				temp.main.getLink();
 			});
 			$doc.on('click', '.listener-api-download.enhance', async function (e) {
 				e.preventDefault();
@@ -6580,7 +6618,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				let size = Number(o.link[0].dataset.size) || 0;
 				let originalHtml = o.link.html();
 				base._resetData(index);
-				let token = $123pan.getToken();
 				base.get(e.currentTarget.dataset.link, undefined, 'blob', { filename, index });
 				let startTime = Date.now();
 				let prevLoaded = 0;
@@ -6676,24 +6713,69 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			});
 		},
 		greenerPage() {
-			base.waitForKeyElements(".cent > .cent-not-login > .ant-btn", (tag) => {
+			// 加个登录按钮很难吗？
+			base.waitForKeyElements(".share-header_center > .share-header_center-not-login > .ant-btn", (tag) => {
 				if (tag.hasClass("reg") || tag.hasClass("log")) return;
-				tag.addClass("reg");
-				tag.removeClass("loginRight");
+				tag.removeClass("ant-btn-variant-solid").addClass("ant-btn-variant-outlined");
+				tag.addClass("ant-btn-two-chinese-chars").addClass("reg");
 				tag.find("span").text("注册");
 				if (tag.next().hasClass("log")) return;
-				let button = $(`<button type="button" class="ant-btn ant-btn-default ant-btn-two-chinese-chars log loginRight" style="width:auto!important;height:auto!important;margin-left:10px!important"><span>登录</span></button>`);
+				let button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="ant-btn css-"]').classList].find(c => /^css-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid loginRight mfy-button ant-btn-two-chinese-chars log" style="margin-left:10px!important"><span>登录</span></button>`);
+				// 加个跳转到原页面也不难吧？
 				button.on("click", () => {
 					let login = new URL(`https://login.123pan.com/centerlogin`);
 					login.searchParams.set("redirect_url", location.href);
 					location.href = login;
 				});
 				tag.after(button);
+				try {
+					let container = tag.closest('.share-header_center-not-login');
+					if (container.length && !container.data('logObserverAttached')) {
+						container.data('logObserverAttached', true);
+						let observer = new MutationObserver((mutations) => {
+							for (let m of mutations) {
+								if (!m.removedNodes) continue;
+								for (let n of m.removedNodes) {
+									if (!(n instanceof HTMLElement)) continue;
+									// 如果被移除的节点是注册按钮或其包含注册按钮的容器，则清理登录按钮
+									if (n.classList && (n.classList.contains('reg') || n.querySelector && n.querySelector('.reg'))) {
+										try { container.find('.log').remove(); } catch (e) { }
+									}
+								}
+							}
+						});
+						observer.observe(container[0], { childList: true, subtree: true });
+						container.data('logObserver', observer);
+					}
+				} catch (e) { }
 			});
+			// 一点都不难。
+			base.waitForKeyElements(".login-footer-240828", (tag) => {
+				if (tag.find(".replaced").length) return;
+				tag.children().each(function () {
+					let $child = $(this);
+					if ($child.hasClass("pointer-text")) {
+						let button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="ant-btn css-"]').classList].find(c => /^css-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid loginRight mfy-button replaced"><span>${$child.text()}</span></button>`);
+						button.on("click", () => {
+							if ($child.text().includes("登录")) {
+								let login = new URL(`https://login.123pan.com/centerlogin`);
+								login.searchParams.set("redirect_url", location.href);
+								location.href = login;
+							} else {
+								return $child.click();
+							}
+						});
+						$child.after(button);
+						$child.hide();
+					}
+				});
+			}, true);
+			// 不至于连会员都推送会员广告吧……
 			base.waitForKeyElements(".new-menu-item-image, .special-menu-item-container-migration--label, .sider-member-btn, .video-new-user-tips", (tag) => {
 				if (tag.is(":hidden")) return;
 				tag.hide();
 			}, true);
+			// 少一点花里胡哨
 			base.waitForKeyElements('.frontend-layout-header-right > span > [alt^="buttonMall"]', (tag) => {
 				if (tag.parent().is(":hidden")) return;
 				tag.parent().hide();
@@ -6701,36 +6783,22 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				button.on("click", () => { tag.click() });
 				tag.parent().after(button);
 			}, true);
-			let disallowTexts = ["同步空间", "其他网盘数据转入", "下载客户端"];
-			base.waitForKeyElements('ul[role="menu"] li[role="menuitem"]', (tag) => {
-				let menuText = tag.text().trim();
-				if (tag.is(":hidden")) return;
-				if (disallowTexts.includes(menuText)) tag.hide();
-			}, true);
-			base.waitForKeyElements(`.rightInfo .register:not(.pl-button, .pl-button-init),
-				.homeClass > div > .ant-dropdown-trigger:not(.pl-button, .pl-button-init),
-				.homeClass > div > .sysbut`, function (tag) {
-				let hasTextNode = false;
-				tag.contents().each(function () {
-					if (this.nodeType === 3 && $.trim(this.textContent)) {
-						hasTextNode = true;
-						return;
-					}
-				});
-				if (!hasTextNode) return;
-				tag.css({ "width": "38px" });
-				tag.contents().each(function () {
-					if (this.nodeType === 3) {
-						$(this).remove();
-					}
-				});
-				tag.find('svg').css({ "margin-right": "0" });
-			});
+			// 我都用上电脑了……
 			base.waitForKeyElements('.rightInfo .qrcode_btn', function (tag) {
 				tag.hide();
 			}, true);
+			// 为页面主动添加 notoken 参数（token 太长影响观感，故不添加），以避免被新版页面屎山代码搞得二次刷新
+			setInterval(() => {
+				let url = new URL(location);
+				if (!url.searchParams.has('notoken') && !url.searchParams.has('token')) {
+					url.searchParams.delete('token');
+					url.searchParams.set('notoken', '1');
+					history.replaceState({}, "", url);
+				}
+			}, 500)
 		},
 		beautifyPage() {
+			if (base.getValue('setting_ui_theme').custom.$123pan !== true) return;
 			base.adaptiveThemeOverride([
 				['#597dfc', temp.color],
 				['#5a7cfc', temp.color],
@@ -6740,7 +6808,9 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				['#40a9ff', temp.color],
 				['#3c80ff', temp.color],
 				['#3C80FF', temp.color],
+				['#1677ff', temp.color],
 				['#1890ff', temp.color],
+				['#0958d9', temp.color],
 				['#F0F8FF', `${temp.color}10`],
 				['#f0f9ff', `${temp.color}20`],
 				['#F2F5FF', `${temp.color}20`],
@@ -6749,6 +6819,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				['#b8d8ff', `${temp.color}20`],
 				['#325cf0', `${temp.color}D0`],
 				['#66A1FF', `${temp.color}D0`],
+				['#69b1ff', `${temp.color}D0`],
 				['60, 128, 255', base.hexToRgba(temp.color)],
 				['42, 130, 228', base.hexToRgba(temp.color)],
 				['89, 125, 252', base.hexToRgba(temp.color)],
@@ -6785,7 +6856,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let selectList = this.getSelectedList();
 			if (selectList.length === 0) return message.error('提示：<br/>请勾选要下载的文件哦~');
 			if (selectList.every(item => item.Type !== 0)) return message.error('提示：<br/>请打开文件夹后再勾选文件~');
-			if (temp.pege === 'home') {
+			if (temp.page === 'home') {
 				let token = this.getToken();
 				let batchSize = 15;
 				let processed = 0;
@@ -6818,7 +6889,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					tooltip: config.$123pan.dom
 				}]
 				base.showMainDialog(config.base.dom.button[temp.mode].title, base.generateDom(temp.links), config.base.dom.button[temp.mode].footer);
-			} else if (temp.pege === 'share') {
+			} else if (temp.page === 'share') {
 				let token = this.getToken();
 				let batchSize = 15;
 				let processed = 0;
@@ -6897,11 +6968,14 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				let selectedList = [];
 				let reactDom = $(".ant-table-wrapper, .tiled-list, .file-list")[0];
 				let reactObj = base.findReact(reactDom);
-				let props = reactObj.pendingProps;
+				let props = reactObj.return?.pendingProps || reactObj.pendingProps;
 				if (props) {
 					let fileList = props?.dataSource || props?.loadedFileList || props?.files || [];
+					let selectedKey = props?.rowSelection?.selectedRowKeys || [];
 					fileList.forEach(function (val) {
 						if (val?.checked === true) {
+							selectedList.push(val);
+						} else if (selectedKey.includes(val.FileId)) {
 							selectedList.push(val);
 						}
 					});
@@ -6913,8 +6987,8 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 		},
 		addButton() {
 			base.waitForKeyElements(config.$123pan.mount.home, (element) => {
-				temp.pege = $123pan.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="css-dev-only-do-not-override-"]').classList].find(c => /^css-dev-only-do-not-override-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-dropdown-trigger mfy-button upload-button pl-button color-button" style="user-select: text !important;">
 					<svg class="icon home-operator-icon-upload" aria-hidden="true"><use xlink:href="#general_download_16_1"></use></svg>
 					<span>下载助手</span>
@@ -6932,12 +7006,12 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$123pan.mount.share, (element) => {
-				element = element.parent();
-				temp.pege = $123pan.detectPage();
-				if ($(".pl-button").length > 0 || !temp.pege || temp.pege !== 'share') return;
-				let $button = $(`<div class="register pl-button color-button">
-					<svg class="icon" aria-hidden="true" style="color:rgb(255, 255, 255);margin-right:5px;"><use xlink:href="#top_btn_download2"></use></svg>下载助手
-					<ul class="pl-dropdown-menu" style="top:37px">
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
+				let $button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="ant-btn css-"]').classList].find(c => /^css-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid mfy-button pl-button color-button" style="user-select: text !important;">
+					<svg class="icon" aria-hidden="true" style="color: rgb(255, 255, 255);"><use xlink:href="#general_download_16_1"></use></svg>
+					<span>下载助手</span>
+					<ul class="pl-dropdown-menu" style="top:20px">
 						<li class="pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
 						<li class="pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg>cURL 下载</li>
 						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
@@ -6947,15 +7021,14 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
 						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
 					</ul>
-				</div>`);
-				$button.css({ "width": "100px" })
+				</button>`);
 				element.append($button);
 			})
 		},
 		addInitButton() {
 			base.waitForKeyElements(config.$123pan.mount.home, (element) => {
-				temp.pege = $123pan.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'home') return;
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'home') return;
 				let $button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="css-dev-only-do-not-override-"]').classList].find(c => /^css-dev-only-do-not-override-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid ant-dropdown-trigger mfy-button upload-button pl-button-init color-button" style="user-select: text !important;">
 					<svg class="icon home-operator-icon-upload" aria-hidden="true"><use xlink:href="#general_download_16_1"></use></svg>
 					<span>点我点亮</span>
@@ -6964,14 +7037,13 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$123pan.mount.share, (element) => {
-				element = element.parent();
-				temp.pege = $123pan.detectPage();
-				if ($(".pl-button-init").length > 0 || !temp.pege || temp.pege !== 'share') return;
-				let $button = $(`<div class="register pl-button-init color-button">
-					<svg class="icon" aria-hidden="true" style="color:rgb(255, 255, 255);margin-right:5px;"><use xlink:href="#top_btn_download2"></use></svg>点我点亮
-				</div>`);
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
+				let $button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="ant-btn css-"]').classList].find(c => /^css-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid mfy-button pl-button-init color-button" style="user-select: text !important;">
+					<svg class="icon" aria-hidden="true" style="color: rgb(255, 255, 255);"><use xlink:href="#general_download_16_1"></use></svg>
+					<span>点我点亮</span>
+				</button>`);
 				$button.click(base.showInitDialog);
-				$button.css({ "width": "100px" })
 				element.append($button);
 			})
 		},
@@ -6982,7 +7054,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			return "";
 		},
 		async initPanLinker() {
-			base.createTip();
 			base.registerMenuCommand();
 			if (config.base.num === base.getValue('setting_init').code || config.base.license === base.getValue('setting_init').license) {
 				this.addButton();
@@ -6995,69 +7066,6 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 	// 主代码
 	let main = {
 		async init() {
-			base.waitForKeyElements(`html:not(:has(> .${mount})) head`, (element) => {
-				if ($(`.${mount}`).length > 0) return;
-				element.after(`<${mount} class="${mount}" />`);
-			})
-			base.waitForKeyElements(`.${mount}`, (element) => {
-				element.append(`<svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
-					<symbol id="pl-icon-fa-downward" viewBox="0 0 512 512">
-						<path d="M425.199,223.957c-13.303-13.303-34.961-13.303-48.205-0.06l-86.861,85.086V34.133C290.133,15.309,274.824,0,256,0 s-34.133,15.309-34.133,34.133v274.867l-86.801-85.052c-13.312-13.312-34.961-13.312-48.273,0 c-13.312,13.312-13.303,34.97,0,48.273c0.017,0.017,0.034,0.026,0.043,0.043l148.361,146.5c5.726,5.658,13.227,8.482,20.727,8.482 c7.543,0,15.078-2.859,20.787-8.568L425.199,272.23c6.451-6.443,10.001-15.019,10.001-24.132S431.65,230.409,425.199,223.957z"></path>
-						<path d="M401.067,443.733H110.933c-18.825,0-34.133,15.309-34.133,34.133S92.109,512,110.933,512h290.133 c18.825,0,34.133-15.309,34.133-34.133S419.883,443.733,401.067,443.733z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-plug" viewBox="0 0 384 512">
-						<path d="M96 0C78.3 0 64 14.3 64 32l0 96 64 0 0-96c0-17.7-14.3-32-32-32zM288 0c-17.7 0-32 14.3-32 32l0 96 64 0 0-96c0-17.7-14.3-32-32-32zM32 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l0 32c0 77.4 55 142 128 156.8l0 67.2c0 17.7 14.3 32 32 32s32-14.3 32-32l0-67.2C297 398 352 333.4 352 256l0-32c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 160z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-cloud-arrow-down" viewBox="0 0 640 512">
-						<path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128l-368 0zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39L344 184c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 134.1-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-gear" viewBox="0 0 512 512">
-						<path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-palette" viewBox="0 0 512 512">
-						<path d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3L344 320c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-newspaper" viewBox="0 0 512 512">
-						<path d="M96 96c0-35.3 28.7-64 64-64l288 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L80 480c-44.2 0-80-35.8-80-80L0 128c0-17.7 14.3-32 32-32s32 14.3 32 32l0 272c0 8.8 7.2 16 16 16s16-7.2 16-16L96 96zm64 24l0 80c0 13.3 10.7 24 24 24l112 0c13.3 0 24-10.7 24-24l0-80c0-13.3-10.7-24-24-24L184 96c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16l48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-256 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-256 0c-8.8 0-16 7.2-16 16z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-cloud-arrow-up" viewBox="0 0 640 512">
-						<path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128l-368 0zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39L296 392c0 13.3 10.7 24 24 24s24-10.7 24-24l0-134.1 39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-copy" viewBox="0 0 448 512">
-						<path d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-check" viewBox="0 0 448 512">
-						<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-list-check" viewBox="0 0 512 512">
-						<path d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32l224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32l224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32l288 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-288 0c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-x-mark" viewBox="0 0 384 512">
-						<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-unlock-keyhole" viewBox="0 0 448 512">
-						<path d="M224 64c-44.2 0-80 35.8-80 80l0 48 240 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0 0-48C80 64.5 144.5 0 224 0c57.5 0 107 33.7 130.1 82.3c7.6 16 .8 35.1-15.2 42.6s-35.1 .8-42.6-15.2C283.4 82.6 255.9 64 224 64zm32 320c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-star" viewBox="0 0 576 512">
-						<path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
-					</symbol>
-					<symbol id="pl-icon-fa-link" viewBox="0 0 640 512">
-						<path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path>
-					</symbol>
-					<symbol id="pl-icon-si-tampermonkey" viewBox="0 0 24 24">
-						<path d="M5.955.002C3-.071.275 2.386.043 5.335c-.069 3.32-.011 6.646-.03 9.969.06 1.87-.276 3.873.715 5.573 1.083 2.076 3.456 3.288 5.77 3.105 4.003-.011 8.008.022 12.011-.017 2.953-.156 5.478-2.815 5.482-5.772-.007-4.235.023-8.473-.015-12.708C23.82 2.533 21.16.007 18.205.003c-4.083-.005-8.167 0-12.25-.002zm.447 12.683c2.333-.046 4.506 1.805 4.83 4.116.412 2.287-1.056 4.716-3.274 5.411-2.187.783-4.825-.268-5.874-2.341-1.137-2.039-.52-4.827 1.37-6.197a4.896 4.896 0 012.948-.99zm11.245 0c2.333-.046 4.505 1.805 4.829 4.116.413 2.287-1.056 4.716-3.273 5.411-2.188.783-4.825-.268-5.875-2.341-1.136-2.039-.52-4.827 1.37-6.197a4.896 4.896 0 012.949-.99z"/>
-					</symbol>
-				</svg>`);
-				return true;
-			}, true)
-			// 智能默认设置
-			base.initDefaultConfig();
-			// 加载美化样式
-			base.addPanLinkerStyle();
-			// 加载按钮监听
-			base.addPageListener();
-			// 创建下载用 iframe
-			base.createDownloadIframe();
 			/**
 			 * 控制台输出
 			 * @author 油小猴
@@ -7065,49 +7073,43 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			 * @description 来自【网盘智能识别助手】，有改动
 			 */
 			console.log(`%c %c LinkSwift\n一个基于 JavaScript 的网盘文件下载地址获取工具\n仓库：https://github.com/hmjz100/LinkSwift\n版本：${info.version}\n领域：${(window.self !== window.top ? "[iframe] " : "") + (document.title ? (document.title + " (" + location.origin + location.pathname + ")") : location.href)}`, `background:url(${info.icon}) center center no-repeat;background-size:12px;padding:3px`, `padding:2px`);
-			// 最后判断页面地址并加载对应的initPanLinker
-			if (/(pan|yun).baidu.com/.test(location.host)) {
-				base.getValue('setting_ui_theme').custom.$baidu === true && $baidu.beautifyPage();
-				$baidu.initPanLinker();
-				$baidu.greenerPage();
-			}
-			if (/openapi.baidu.com\/oauth/.test(location.href)) {
-				$baidu.initAuthorize()
-			}
-			if (/www.(aliyundrive|alipan).com/.test(location.host)) {
-				base.getValue('setting_ui_theme').custom.$aliyun === true && $aliyun.beautifyPage();
-				$aliyun.initPanLinker();
-				$aliyun.greenerPage();
-			}
-			if (/(yun|caiyun).139.com/.test(location.host)) {
-				base.getValue('setting_ui_theme').custom.$mcloud === true && $mcloud.beautifyPage();
-				$mcloud.initPanLinker();
-				$mcloud.greenerPage();
-			}
-			if (/cloud.189.cn/.test(location.host)) {
-				base.getValue('setting_ui_theme').custom.$tcloud === true && $tcloud.beautifyPage();
-				$tcloud.initPanLinker();
-				$tcloud.greenerPage();
-			}
-			if (/pan.xunlei.com/.test(location.host)) {
-				base.getValue('setting_ui_theme').custom.$xunlei === true && $xunlei.beautifyPage();
-				$xunlei.initPanLinker();
-			}
-			if (/pan.quark.cn/.test(location.host)) {
-				base.getValue('setting_ui_theme').custom.$quark === true && $quark.beautifyPage();
-				$quark.initPanLinker();
-				$quark.greenerPage();
-			}
-			if (/drive.uc.cn/.test(location.host)) {
-				base.getValue('setting_ui_theme').custom.$uc === true && $uc.beautifyPage();
-				$uc.initPanLinker();
-				$uc.greenerPage();
-			}
-			if (/(www|login).(123(pan|684|865|952|912).com|123pan.cn)/.test(location.host)) {
-				base.getValue('setting_ui_theme').custom.$123pan === true && $123pan.beautifyPage();
-				$123pan.initPanLinker();
-				$123pan.greenerPage();
-			}
+			// 创建挂载点
+			let mountElem = $(`<${mount} class="${mount}" />`);
+			temp.mount = mountElem;
+
+			base.waitForKeyElements(`html:not(:has(> .${mount})) body`, (element) => {
+				if ($(`.${mount}`).length > 0) return;
+				element.after(temp.mount);
+			})
+			
+			// 判断页面地址，定义主执行
+			if (/(pan|yun).baidu.com/.test(location.host)) temp.main = $baidu;
+			else if (/openapi.baidu.com\/oauth/.test(location.href)) temp.main = $baiduAuthorize;
+			else if (/www.(aliyundrive|alipan).com/.test(location.host)) temp.main = $aliyun;
+			else if (/(yun|caiyun).139.com/.test(location.host)) temp.main = $mcloud;
+			else if (/cloud.189.cn/.test(location.host)) temp.main = $tcloud;
+			else if (/pan.xunlei.com/.test(location.host)) temp.main = $xunlei;
+			else if (/pan.quark.cn/.test(location.host)) temp.main = $quark;
+			else if (/drive.uc.cn/.test(location.host)) temp.main = $uc;
+			else if (/(www|login).(123(pan|684|865|952|912).com|123pan.cn)/.test(location.host)) temp.main = $123pan;
+			
+			// 智能默认设置
+			base.initDefaultConfig();
+			// 创建美化样式
+			base.addPanLinkerStyle();
+			// 创建按钮事件
+			base.addPageListener();
+			// 创建提示信息用的隐藏 tip
+			base.createTip();
+			// 创建下载用的隐藏 iframe
+			base.createIframe();
+
+			// 运行主程序
+			if ('initPanLinker' in temp.main) temp.main.initPanLinker();
+			// 运行绿化程序
+			if ('greenerPage' in temp.main) temp.main.greenerPage();
+
+			// 脚本更新后提示消息
 			let storedVersion = base.getValue("setting_init").version;
 			if (!storedVersion || base.isNewerVersion(info.version, storedVersion)) {
 				base.waitForKeyElements("body:not(.swal2-shown)", async () => {
@@ -7118,13 +7120,62 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					return true;
 				}, true);
 			}
+			// 创建图标
+			temp.mount.append(`<svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+				<symbol id="pl-icon-fa-downward" viewBox="0 0 512 512">
+					<path d="M425.199,223.957c-13.303-13.303-34.961-13.303-48.205-0.06l-86.861,85.086V34.133C290.133,15.309,274.824,0,256,0 s-34.133,15.309-34.133,34.133v274.867l-86.801-85.052c-13.312-13.312-34.961-13.312-48.273,0 c-13.312,13.312-13.303,34.97,0,48.273c0.017,0.017,0.034,0.026,0.043,0.043l148.361,146.5c5.726,5.658,13.227,8.482,20.727,8.482 c7.543,0,15.078-2.859,20.787-8.568L425.199,272.23c6.451-6.443,10.001-15.019,10.001-24.132S431.65,230.409,425.199,223.957z"></path>
+					<path d="M401.067,443.733H110.933c-18.825,0-34.133,15.309-34.133,34.133S92.109,512,110.933,512h290.133 c18.825,0,34.133-15.309,34.133-34.133S419.883,443.733,401.067,443.733z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-plug" viewBox="0 0 384 512">
+					<path d="M96 0C78.3 0 64 14.3 64 32l0 96 64 0 0-96c0-17.7-14.3-32-32-32zM288 0c-17.7 0-32 14.3-32 32l0 96 64 0 0-96c0-17.7-14.3-32-32-32zM32 160c-17.7 0-32 14.3-32 32s14.3 32 32 32l0 32c0 77.4 55 142 128 156.8l0 67.2c0 17.7 14.3 32 32 32s32-14.3 32-32l0-67.2C297 398 352 333.4 352 256l0-32c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 160z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-cloud-arrow-down" viewBox="0 0 640 512">
+					<path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128l-368 0zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39L344 184c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 134.1-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-gear" viewBox="0 0 512 512">
+					<path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-palette" viewBox="0 0 512 512">
+					<path d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3L344 320c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-newspaper" viewBox="0 0 512 512">
+					<path d="M96 96c0-35.3 28.7-64 64-64l288 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L80 480c-44.2 0-80-35.8-80-80L0 128c0-17.7 14.3-32 32-32s32 14.3 32 32l0 272c0 8.8 7.2 16 16 16s16-7.2 16-16L96 96zm64 24l0 80c0 13.3 10.7 24 24 24l112 0c13.3 0 24-10.7 24-24l0-80c0-13.3-10.7-24-24-24L184 96c-13.3 0-24 10.7-24 24zm208-8c0 8.8 7.2 16 16 16l48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l48 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-48 0c-8.8 0-16 7.2-16 16zM160 304c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-256 0c-8.8 0-16 7.2-16 16zm0 96c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-256 0c-8.8 0-16 7.2-16 16z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-cloud-arrow-up" viewBox="0 0 640 512">
+					<path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128l-368 0zm79-217c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l39-39L296 392c0 13.3 10.7 24 24 24s24-10.7 24-24l0-134.1 39 39c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-80-80c-9.4-9.4-24.6-9.4-33.9 0l-80 80z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-copy" viewBox="0 0 448 512">
+					<path d="M208 0L332.1 0c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9L448 336c0 26.5-21.5 48-48 48l-192 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48zM48 128l80 0 0 64-64 0 0 256 192 0 0-32 64 0 0 48c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 176c0-26.5 21.5-48 48-48z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-check" viewBox="0 0 448 512">
+					<path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-list-check" viewBox="0 0 512 512">
+					<path d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32l224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32l224 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-224 0c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32l288 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-288 0c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-x-mark" viewBox="0 0 384 512">
+					<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-unlock-keyhole" viewBox="0 0 448 512">
+					<path d="M224 64c-44.2 0-80 35.8-80 80l0 48 240 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0 0-48C80 64.5 144.5 0 224 0c57.5 0 107 33.7 130.1 82.3c7.6 16 .8 35.1-15.2 42.6s-35.1 .8-42.6-15.2C283.4 82.6 255.9 64 224 64zm32 320c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-star" viewBox="0 0 576 512">
+					<path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+				</symbol>
+				<symbol id="pl-icon-fa-link" viewBox="0 0 640 512">
+					<path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path>
+				</symbol>
+				<symbol id="pl-icon-si-tampermonkey" viewBox="0 0 24 24">
+					<path d="M5.955.002C3-.071.275 2.386.043 5.335c-.069 3.32-.011 6.646-.03 9.969.06 1.87-.276 3.873.715 5.573 1.083 2.076 3.456 3.288 5.77 3.105 4.003-.011 8.008.022 12.011-.017 2.953-.156 5.478-2.815 5.482-5.772-.007-4.235.023-8.473-.015-12.708C23.82 2.533 21.16.007 18.205.003c-4.083-.005-8.167 0-12.25-.002zm.447 12.683c2.333-.046 4.506 1.805 4.83 4.116.412 2.287-1.056 4.716-3.274 5.411-2.187.783-4.825-.268-5.874-2.341-1.137-2.039-.52-4.827 1.37-6.197a4.896 4.896 0 012.948-.99zm11.245 0c2.333-.046 4.505 1.805 4.829 4.116.413 2.287-1.056 4.716-3.273 5.411-2.188.783-4.825-.268-5.875-2.341-1.136-2.039-.52-4.827 1.37-6.197a4.896 4.896 0 012.949-.99z"/>
+				</symbol>
+			</svg>`);
 		}
 	};
 	main.init();
 	// 这是啥？我不到啊
 	function idontknow(input) {
 		let charArray = input.split("");
-		// Fisher-Yates 洗牌算法
+		// 这是 Fisher-Yates 洗牌算法的实现
 		for (let i = charArray.length - 1; i > 0; i--) {
 			let j = Math.floor(Math.random() * (i + 1));
 			[charArray[i], charArray[j]] = [charArray[j], charArray[i]];
