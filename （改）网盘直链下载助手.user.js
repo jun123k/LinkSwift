@@ -404,7 +404,8 @@
 			},
 			mount: {
 				home: "main .homeClass .home-operator .home-operator-button-group",
-				share: ".content .content-header-container-wrap .rightInfo"
+				share: ".conter .rightInfo",
+				shareNew: ".content .content-header-container-wrap .rightInfo"
 			},
 			dom: {
 				enhance: `+<br/>此方式下载不会被 IDM 捕获下载链接`,
@@ -6714,7 +6715,42 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			});
 		},
 		greenerPage() {
-			// 加个登录按钮很难吗？
+			// 旧版 分享 登录按钮
+			base.waitForKeyElements(".cent > .cent-not-login > .ant-btn", (tag) => {
+				if (tag.hasClass("reg") || tag.hasClass("log")) return;
+				tag.addClass("reg");
+				tag.removeClass("loginRight");
+				tag.find("span").text("注册");
+				if (tag.next().hasClass("log")) return;
+				let button = $(`<button type="button" class="ant-btn ant-btn-default ant-btn-two-chinese-chars log loginRight" style="width:auto!important;height:auto!important;margin-left:10px!important"><span>登录</span></button>`);
+				button.on("click", () => {
+					let login = new URL(`https://login.123pan.com/centerlogin`);
+					login.searchParams.set("redirect_url", location.href);
+					location.href = login;
+				});
+				tag.after(button);
+			});
+			// 旧版 分享 按钮去除文本
+			base.waitForKeyElements(`.rightInfo .register:not(.pl-button, .pl-button-init),
+				.homeClass > div > .ant-dropdown-trigger:not(.pl-button, .pl-button-init),
+				.homeClass > div > .sysbut`, function (tag) {
+				let hasTextNode = false;
+				tag.contents().each(function () {
+					if (this.nodeType === 3 && $.trim(this.textContent)) {
+						hasTextNode = true;
+						return;
+					}
+				});
+				if (!hasTextNode) return;
+				tag.css({ "width": "38px" });
+				tag.contents().each(function () {
+					if (this.nodeType === 3) {
+						$(this).remove();
+					}
+				});
+				tag.find('svg').css({ "margin-right": "0" });
+			});
+			// 新版 分享 登录按钮
 			base.waitForKeyElements(".share-header_center > .share-header_center-not-login > .ant-btn", (tag) => {
 				if (tag.hasClass("reg") || tag.hasClass("log")) return;
 				tag.removeClass("ant-btn-variant-solid").addClass("ant-btn-variant-outlined");
@@ -6750,7 +6786,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					}
 				} catch (e) { }
 			});
-			// 一点都不难。
+			// 新版 分享 超限登录
 			base.waitForKeyElements(".login-footer-240828", (tag) => {
 				if (tag.find(".replaced").length) return;
 				tag.children().each(function () {
@@ -6771,12 +6807,12 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 					}
 				});
 			}, true);
-			// 不至于连会员都推送会员广告吧……
+			// 旧版 主页 播放器会员广告
 			base.waitForKeyElements(".new-menu-item-image, .special-menu-item-container-migration--label, .sider-member-btn, .video-new-user-tips", (tag) => {
 				if (tag.is(":hidden")) return;
 				tag.hide();
 			}, true);
-			// 少一点花里胡哨
+			// 新版 主页 顶栏会员广告
 			base.waitForKeyElements('.frontend-layout-header-right > span > [alt^="buttonMall"]', (tag) => {
 				if (tag.parent().is(":hidden")) return;
 				tag.parent().hide();
@@ -6784,7 +6820,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				button.on("click", () => { tag.click() });
 				tag.parent().after(button);
 			}, true);
-			// 我都用上电脑了……
+			// 分享 手机二维码
 			base.waitForKeyElements('.rightInfo .qrcode_btn', function (tag) {
 				tag.hide();
 			}, true);
@@ -6969,7 +7005,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				let selectedList = [];
 				let reactDom = $(".ant-table-wrapper, .tiled-list, .file-list")[0];
 				let reactObj = base.findReact(reactDom);
-				let props = reactObj.return?.pendingProps || reactObj.pendingProps;
+				let props = reactObj.pendingProps;
 				if (props) {
 					let fileList = props?.dataSource || props?.loadedFileList || props?.files || [];
 					let selectedKey = props?.rowSelection?.selectedRowKeys || [];
@@ -7009,6 +7045,25 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			base.waitForKeyElements(config.$123pan.mount.share, (element) => {
 				temp.page = temp.main.detectPage();
 				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
+				let $button = $(`<div class="register pl-button color-button">
+					<svg class="icon" aria-hidden="true" style="color:rgb(255, 255, 255);margin-right:5px;"><use xlink:href="#top_btn_download2"></use></svg>下载助手
+					<ul class="pl-dropdown-menu" style="top:37px">
+						<li class="pl-button-mode" data-mode="api"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-downward"/></svg>API 下载</li>
+						<li class="pl-button-mode" data-mode="curl"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-plug"/></svg>cURL 下载</li>
+						<li class="pl-button-mode" data-mode="aria2"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>Aria2 下载</li>
+						<li class="pl-button-mode" data-mode="bitcomet"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>彗星下载</li>
+						<li class="pl-button-mode" data-mode="abdm"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-cloud-arrow-down"/></svg>ABDM 下载</li>
+						<li class="pl-button-mode listener-open-setting"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-gear"/></svg>助手设置</li>
+						<li class="pl-button-mode listener-open-beautify"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-palette"/></svg>助手美化</li>
+						<li class="pl-button-mode listener-open-updatelog"><svg class="pl-icon"><use xlink:href="#pl-icon-fa-newspaper"/></svg>更新日志</li>
+					</ul>
+				</div>`);
+				$button.css({ "width": "100px" });
+				element.append($button);
+			})
+			base.waitForKeyElements(config.$123pan.mount.shareNew, (element) => {
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button").length > 0 || !temp.page || temp.page !== 'share') return;
 				let $button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="ant-btn css-"]').classList].find(c => /^css-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid mfy-button pl-button color-button" style="user-select: text !important;">
 					<svg class="icon" aria-hidden="true" style="color: rgb(255, 255, 255);"><use xlink:href="#general_download_16_1"></use></svg>
 					<span>下载助手</span>
@@ -7038,6 +7093,16 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 				element.prepend($button);
 			})
 			base.waitForKeyElements(config.$123pan.mount.share, (element) => {
+				temp.page = temp.main.detectPage();
+				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
+				let $button = $(`<div class="register pl-button-init color-button">
+					<svg class="icon" aria-hidden="true" style="color:rgb(255, 255, 255);margin-right:5px;"><use xlink:href="#top_btn_download2"></use></svg>点我点亮
+				</div>`);
+				$button.click(base.showInitDialog);
+				$button.css({ "width": "100px" });
+				element.append($button);
+			})
+			base.waitForKeyElements(config.$123pan.mount.shareNew, (element) => {
 				temp.page = temp.main.detectPage();
 				if ($(".pl-button-init").length > 0 || !temp.page || temp.page !== 'share') return;
 				let $button = $(`<button type="button" class="ant-btn ${[...document.querySelector('[class*="ant-btn css-"]').classList].find(c => /^css-[a-z0-9]+$/.test(c))} ant-btn-primary ant-btn-color-primary ant-btn-variant-solid mfy-button pl-button-init color-button" style="user-select: text !important;">
