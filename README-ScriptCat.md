@@ -29,7 +29,7 @@
 	<p>
 		搭配使用，效果更佳！👋扩展脚本
 		<br/>
-		<a href="https://scriptcat.org/script-show-page/2385" target="_blank">123 云盘会员青春版</a> | <a href="https://scriptcat.org/script-show-page/2236" target="_blank">百度网盘会员青春版</a> | <a href="https://scriptcat.org/script-show-page/2470" target="_blank">阿里云盘会员青春版</a>
+		<a href="https://scriptcat.org/script-show-page/2385" target="_blank">123 云盘会员青春版（全面适配新版分享）</a> | <a href="https://scriptcat.org/script-show-page/2236" target="_blank">百度网盘会员青春版</a> | <a href="https://scriptcat.org/script-show-page/2470" target="_blank">阿里云盘会员青春版</a>
 		<br/>
 		↓&nbsp;&nbsp;↓&nbsp;&nbsp;↓&nbsp;&nbsp;↓&nbsp;&nbsp;↓
 	</p>
