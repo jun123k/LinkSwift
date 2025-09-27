@@ -3269,7 +3269,7 @@ header[style="display:none;"]~.pl-button{display:inline-block;position:fixed;top
 .pl-setting-item > *:nth-child(2){max-width:80%;display:flex;justify-content:space-between;align-items:center}
 .pl-setting-item .pl-setting-item{margin:0;gap:5px}
 .pl-input{padding:8px 10px!important;border:1px solid #c2c2c2;border-radius:5px;font-size:14px!important;margin:0;appearance:auto!important}
-.pl-setting-item > .pl-input{width:80%}
+.pl-setting-item > .pl-input:not([type="checkbox"]){width:80%}
 .init-input{width:90%;margin:0;margin:10px 0;text-align:center;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;font-weight:300}
 .pl-tooltip{position:absolute;z-index:110000;display:none;align-items:center;color:#ffffff;background:#333;font-size:12px;line-height:1.3;max-width:600px;border-radius:5px;word-break:break-all;will-change:display,top,left}
 .pl-tooltip>*{padding:5px 10px}
@@ -7139,7 +7139,7 @@ a.downloadSubtitle:disabled, button.downloadSubtitle:disabled{background-color:$
 			let mountElem = $(`<${mount} class="${mount}" />`);
 			temp.mount = mountElem;
 
-			base.waitForKeyElements(`html:not(:has(> .${mount})) body`, (element) => {
+			base.waitForKeyElements(`html:not(:has(> .${mount})) head`, (element) => {
 				if ($(`.${mount}`).length > 0) return;
 				element.after(temp.mount);
 			})
