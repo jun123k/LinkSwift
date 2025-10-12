@@ -35,22 +35,22 @@
 
 - LinkSwift - 直链获取、UI 美化
   - Github 国际: [hmjz100/LinkSwift/（改）网盘直链下载助手.user.js](https://github.com/hmjz100/LinkSwift/raw/main/（改）网盘直链下载助手.user.js)
-  - OpenUserJS 国际（更新不及时）：[hmjz100/LinkSwift.user.js](https://openuserjs.org/install/hmjz100/LinkSwift.user.js)
+  - OpenUserJS 国际（更新不及时）: [hmjz100/LinkSwift.user.js](https://openuserjs.org/install/hmjz100/LinkSwift.user.js)
   - Gitee 国内: [hmjz100/LinkSwift/（改）网盘直链下载助手.user.js](https://gitee.com/hmjz100/LinkSwift/raw/main/（改）网盘直链下载助手.user.js)
-  - 脚本猫 国内：[hmjz100/1604/LinkSwift.user.js](https://scriptcat.org/scripts/code/1604/LinkSwift.user.js)
+  - 脚本猫 国内: [hmjz100/1604/LinkSwift.user.js](https://scriptcat.org/scripts/code/1604/LinkSwift.user.js)
 - （改）百度网盘会员青春版 - 使用 "netfilter" 进一步优化/修改 UI
   - Github 国际: [hmjz100/LinkSwift/（改）百度网盘会员青春版.user.js](https://github.com/hmjz100/LinkSwift/raw/main/（改）百度网盘会员青春版.user.js)
-  - OpenUserJS 国际（更新不及时）：[hmjz100/（改）百度网盘会员青春版.user.js](https://openuserjs.org/install/hmjz100/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js)
+  - OpenUserJS 国际（更新不及时）: [hmjz100/（改）百度网盘会员青春版.user.js](https://openuserjs.org/install/hmjz100/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js)
   - Gitee 国内: [hmjz100/LinkSwift/（改）百度网盘会员青春版.user.js](https://gitee.com/hmjz100/LinkSwift/raw/main/（改）百度网盘会员青春版.user.js)
-  - 脚本猫 国内：[hmjz100/2236/（改）百度网盘会员青春版.user.js](https://scriptcat.org/scripts/code/2236/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js)
+  - 脚本猫 国内: [hmjz100/2236/（改）百度网盘会员青春版.user.js](https://scriptcat.org/scripts/code/2236/%EF%BC%88%E6%94%B9%EF%BC%89%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%BC%9A%E5%91%98%E9%9D%92%E6%98%A5%E7%89%88.user.js)
 
 ## 说明
 
 基于[【网盘直链下载助手】](https://www.baiduyun.wiki/install.html)修改
-- 原作者：[油小猴](https://www.youxiaohou.com/)  
-- 原仓库：[https://github.com/syhyz1990/baiduyun](https://github.com/syhyz1990/baiduyun)
-- 本脚本发布至脚本猫：[https://scriptcat.org/script-show-page/1604](https://scriptcat.org/script-show-page/1604)
-  - 还有 OpenUserJS：[https://openuserjs.org/scripts/hmjz100/LinkSwift](https://openuserjs.org/scripts/hmjz100/LinkSwift)
+- 原作者: [油小猴](https://www.youxiaohou.com/)  
+- 原仓库: [https://github.com/syhyz1990/baiduyun](https://github.com/syhyz1990/baiduyun)
+- 本脚本发布至脚本猫: [https://scriptcat.org/script-show-page/1604](https://scriptcat.org/script-show-page/1604)
+  - 还有 OpenUserJS: [https://openuserjs.org/scripts/hmjz100/LinkSwift](https://openuserjs.org/scripts/hmjz100/LinkSwift)
 
 ## 简介
 
